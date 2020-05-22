@@ -205,7 +205,7 @@ export function getAssetNamespaces() {
     if (_isTestnet()) {
         return [];
     }
-    return ["IOB.", "RUDEX.", "GDEX.", "XBTSX.", "CITADEL."];
+    return ["RUDEX.", "GDEX.", "XBTSX.", "CITADEL."];
 }
 
 /**
