@@ -93,14 +93,14 @@ export function getUnits() {
     if (_isTestnet()) {
         return ["TEST"];
     }
-    return ["BTS", "HONEST.USD", "HONEST.CNY", "HONEST.BTC"];
+    return ["BTS", "HONEST.BTC", "HONEST.USD", "HONEST.CNY"];
 }
 
 export function getDefaultMarket() {
     if (_isTestnet()) {
-        return "USD_TEST";
+        return "BTS_TEST";
     }
-    return "USD_BTS";
+    return "HONEST.BTC_BTS";
 }
 
 /**
@@ -138,25 +138,19 @@ export function getMyMarketsQuotes() {
         gdexTokens: ["GDEX.BTC", "GDEX.EOS", "GDEX.ETH", "GDEX.USDT"],
 
         rudexTokens: [
-            "RUDEX.GBG",
-            "RUDEX.GOLOS",
-            "RUDEX.KRM",
             "RUDEX.BTC",
             "RUDEX.ETH",
             "RUDEX.EOS",
             "RUDEX.WLS",
-            "RUDEX.SMOKE",
-            "RUDEX.GRC"
+            "RUDEX.SMOKE"
         ],
 
         xbtsxTokens: [
-            "XBTSX.STH",
             "XBTSX.DOGE",
             "XBTSX.BTC",
             "XBTSX.BCH",
             "XBTSX.LTC",
             "XBTSX.DASH",
-            "XBTSX.NVC",
             "XBTSX.ETH"
         ],
         otherTokens: []
@@ -176,12 +170,16 @@ export function getMyMarketsQuotes() {
  */
 export function getFeaturedMarkets(quotes = []) {
     if (_isTestnet()) {
-        return [["USD", "TEST"]];
+        return [["BTS", "TEST"]];
     }
     return [
-        ["USD", "BTS"],
-        ["IOB.XRP", "BTS"],
-        ["BTS", "IOB.XRP"],
+        ["HONEST.BTC", "BTS"],
+        ["HONEST.CNY", "BTS"],
+        ["HONEST.USD", "BTS"],
+        ["HONEST.ETH", "BTS"],
+        ["HONEST.XRP", "BTS"],
+        ["HONEST.XAU", "BTS"],
+        ["HONEST.XAG", "BTS"],
         ["BTS", "GDEX.BTC"],
         ["BTS", "GDEX.ETH"],
         ["BTS", "GDEX.EOS"],
@@ -191,9 +189,7 @@ export function getFeaturedMarkets(quotes = []) {
         ["BTS", "RUDEX.ETH"],
         ["BTS", "RUDEX.WLS"],
         ["BTS", "RUDEX.SMOKE"],
-        ["BTS", "RUDEX.GRC"],
-        ["BTS", "RUDEX.USDT"],
-        ["BTS", "XBTSX.STH"]
+        ["BTS", "RUDEX.USDT"]
     ].filter(a => {
         if (!quotes.length) return true;
         return quotes.indexOf(a[0]) !== -1;
