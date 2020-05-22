@@ -93,7 +93,7 @@ export function getUnits() {
     if (_isTestnet()) {
         return ["TEST"];
     }
-    return ["BTS", "USD", "CNY", "BTC", "EUR", "GBP"];
+    return ["BTS", "HONEST.USD", "HONEST.CNY", "HONEST.BTC"];
 }
 
 export function getDefaultMarket() {
@@ -112,7 +112,7 @@ export function getMyMarketsBases() {
     if (_isTestnet()) {
         return ["TEST"];
     }
-    return ["BTS", "BTC", "ETH", "USD", "CNY"];
+    return ["BTS"];
 }
 
 /**
@@ -126,48 +126,21 @@ export function getMyMarketsQuotes() {
     }
     let tokens = {
         nativeTokens: [
-            "BTC",
             "BTS",
-            "CNY",
-            "EUR",
-            "GOLD",
-            "KRW",
-            "RUBLE",
-            "SILVER",
-            "USD"
+            "HONEST.BTC",
+            "HONEST.ETH",
+            "HONEST.XRP",
+            "HONEST.USD",
+            "HONEST.CNY",
+            "HONEST.XAU",
+            "HONEST.XAG"
         ],
-        iobankerTokens: ["IOB.XRP"],
-        bridgeTokens: ["BRIDGE.BCO", "BRIDGE.BTC", "BRIDGE.MONA", "BRIDGE.ZNY"],
-        gdexTokens: [
-            "GDEX.BTC",
-            "GDEX.BTO",
-            "GDEX.EOS",
-            "GDEX.ETH",
-            "GDEX.BTM",
-            "GDEX.NEO",
-            "GDEX.GAS",
-            "GDEX.QTUM",
-            "GDEX.BKBT",
-            "GDEX.GXC",
-            "GDEX.HPB",
-            "GDEX.SEER",
-            "GDEX.FOTA",
-            "GDEX.JRC",
-            "GDEX.EOSDAC",
-            "GDEX.MTS",
-            "GDEX.GUSD",
-            "GDEX.IQ",
-            "GDEX.NULS",
-            "GDEX.USDT"
-        ],
+        gdexTokens: ["GDEX.BTC", "GDEX.EOS", "GDEX.ETH", "GDEX.USDT"],
 
         rudexTokens: [
-            "PPY",
             "RUDEX.GBG",
             "RUDEX.GOLOS",
             "RUDEX.KRM",
-            "RUDEX.SBD",
-            "RUDEX.STEEM",
             "RUDEX.BTC",
             "RUDEX.ETH",
             "RUDEX.EOS",
@@ -175,49 +148,18 @@ export function getMyMarketsQuotes() {
             "RUDEX.SMOKE",
             "RUDEX.GRC"
         ],
-        sparkTokens: [
-            "ZEPH",
-            "PEG.PHP",
-            "SPARKDEX.ETH",
-            "SPARKDEX.BTC",
-            "SPARKDEX.HKD",
-            "SPARKDEX.SGD",
-            "SPARKDEX.AUD",
-            "SPARKDEX.EUR",
-            "SPARKDEX.GBP"
-        ],
+
         xbtsxTokens: [
             "XBTSX.STH",
-            "XBTSX.POST",
             "XBTSX.DOGE",
             "XBTSX.BTC",
-            "XBTSX.BTG",
             "XBTSX.BCH",
             "XBTSX.LTC",
             "XBTSX.DASH",
-            "XBTSX.XSPEC",
             "XBTSX.NVC",
-            "XBTSX.UNI",
-            "XBTSX.NMC",
-            "XBTSX.WAVES",
-            "XBTSX.COF",
-            "XBTSX.MDL",
-            "XBTSX.ETH",
-            "XBTSX.EXR"
+            "XBTSX.ETH"
         ],
-        otherTokens: [
-            "BTWTY",
-            "TWENTIX",
-
-            "CVCOIN",
-            "HERO",
-            "OCT",
-            "HERTZ",
-            "ICOO",
-            "SMOKE",
-            "STEALTH",
-            "YOYOW"
-        ]
+        otherTokens: []
     };
 
     let allTokens = [];
