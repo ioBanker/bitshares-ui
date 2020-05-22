@@ -136,13 +136,20 @@ export function getMyMarketsQuotes() {
             "SILVER",
             "USD"
         ],
+        iobankerTokens: ["IOB.XRP"],
+        bridgeTokens: ["BRIDGE.BCO", "BRIDGE.BTC", "BRIDGE.MONA", "BRIDGE.ZNY"],
         gdexTokens: [
             "GDEX.BTC",
             "GDEX.BTO",
             "GDEX.EOS",
             "GDEX.ETH",
+            "GDEX.BTM",
+            "GDEX.NEO",
+            "GDEX.GAS",
+            "GDEX.QTUM",
             "GDEX.BKBT",
             "GDEX.GXC",
+            "GDEX.HPB",
             "GDEX.SEER",
             "GDEX.FOTA",
             "GDEX.JRC",
@@ -153,22 +160,31 @@ export function getMyMarketsQuotes() {
             "GDEX.NULS",
             "GDEX.USDT"
         ],
-        openledgerTokens: ["OBITS"],
+
         rudexTokens: [
             "PPY",
+            "RUDEX.GBG",
+            "RUDEX.GOLOS",
+            "RUDEX.KRM",
+            "RUDEX.SBD",
+            "RUDEX.STEEM",
             "RUDEX.BTC",
             "RUDEX.ETH",
-            "RUDEX.USDT",
             "RUDEX.EOS",
-            "RUDEX.GOLOS",
-            "RUDEX.GBG",
-            "RUDEX.STEEM",
-            "RUDEX.SBD",
-            "RUDEX.KRM",
             "RUDEX.WLS",
             "RUDEX.SMOKE",
-            "RUDEX.GRC",
-            "RUDEX.PZM"
+            "RUDEX.GRC"
+        ],
+        sparkTokens: [
+            "ZEPH",
+            "PEG.PHP",
+            "SPARKDEX.ETH",
+            "SPARKDEX.BTC",
+            "SPARKDEX.HKD",
+            "SPARKDEX.SGD",
+            "SPARKDEX.AUD",
+            "SPARKDEX.EUR",
+            "SPARKDEX.GBP"
         ],
         xbtsxTokens: [
             "XBTSX.STH",
@@ -179,6 +195,7 @@ export function getMyMarketsQuotes() {
             "XBTSX.BCH",
             "XBTSX.LTC",
             "XBTSX.DASH",
+            "XBTSX.XSPEC",
             "XBTSX.NVC",
             "XBTSX.UNI",
             "XBTSX.NMC",
@@ -188,7 +205,19 @@ export function getMyMarketsQuotes() {
             "XBTSX.ETH",
             "XBTSX.EXR"
         ],
-        otherTokens: ["CVCOIN", "HERO", "OCT", "HERTZ", "YOYOW"]
+        otherTokens: [
+            "BTWTY",
+            "TWENTIX",
+
+            "CVCOIN",
+            "HERO",
+            "OCT",
+            "HERTZ",
+            "ICOO",
+            "SMOKE",
+            "STEALTH",
+            "YOYOW"
+        ]
     };
 
     let allTokens = [];
@@ -209,81 +238,20 @@ export function getFeaturedMarkets(quotes = []) {
     }
     return [
         ["USD", "BTS"],
-        ["USD", "GOLD"],
-        ["USD", "HERO"],
-        ["USD", "GDEX.BTC"],
-        ["USD", "GDEX.ETH"],
-        ["USD", "GDEX.EOS"],
-        ["USD", "GDEX.BTO"],
-        ["USD", "RUDEX.GOLOS"],
-        ["USD", "RUDEX.STEEM"],
-        ["USD", "RUDEX.EOS"],
-        ["USD", "RUDEX.BTC"],
-        ["USD", "RUDEX.ETH"],
-        ["USD", "RUDEX.USDT"],
-        ["USD", "RUDEX.WLS"],
-        ["USD", "RUDEX.SMOKE"],
-        ["CNY", "BTS"],
-        ["CNY", "USD"],
-        ["CNY", "YOYOW"],
-        ["CNY", "OCT"],
-        ["CNY", "GDEX.BTC"],
-        ["CNY", "GDEX.ETH"],
-        ["CNY", "GDEX.EOS"],
-        ["CNY", "GDEX.BTO"],
-        ["CNY", "GDEX.SEER"],
-        ["CNY", "GDEX.BKBT"],
-        ["CNY", "GDEX.USDT"],
-        ["CNY", "GDEX.GXC"],
-        ["CNY", "RUDEX.GOLOS"],
-        ["CNY", "RUDEX.STEEM"],
-        ["CNY", "RUDEX.EOS"],
-        ["CNY", "RUDEX.BTC"],
-        ["CNY", "RUDEX.ETH"],
-        ["CNY", "RUDEX.USDT"],
-        ["CNY", "RUDEX.WLS"],
-        ["CNY", "RUDEX.SMOKE"],
-        ["BTS", "PPY"],
-        ["BTS", "RUBLE"],
-        ["BTS", "HERO"],
-        ["BTS", "OCT"],
-        ["BTS", "SILVER"],
-        ["BTS", "GOLD"],
+        ["IOB.XRP", "BTS"],
+        ["BTS", "IOB.XRP"],
         ["BTS", "GDEX.BTC"],
         ["BTS", "GDEX.ETH"],
         ["BTS", "GDEX.EOS"],
-        ["BTS", "GDEX.BTO"],
         ["BTS", "GDEX.USDT"],
-        ["RUDEX.USDT", "RUDEX.BTC"],
-        ["RUDEX.USDT", "RUDEX.ETH"],
-        ["RUDEX.USDT", "RUDEX.EOS"],
-        ["RUDEX.USDT", "RUDEX.PZM"],
-        ["RUDEX.USDT", "PPY"],
-        ["RUDEX.USDT", "RUBLE"],
-        ["RUDEX.BTC", "RUDEX.ETH"],
-        ["RUDEX.BTC", "RUDEX.EOS"],
-        ["RUDEX.BTC", "RUDEX.STEEM"],
-        ["RUDEX.BTC", "RUDEX.GOLOS"],
-        ["RUDEX.BTC", "RUDEX.WLS"],
-        ["RUDEX.BTC", "PPY"],
-        ["RUBLE", "RUDEX.BTC"],
-        ["RUBLE", "RUDEX.ETH"],
-        ["RUBLE", "RUDEX.USDT"],
-        ["RUBLE", "RUDEX.GOLOS"],
-        ["RUDEX.BTC", "RUDEX.PZM"],
-        ["RUB", "RUDEX.GOLOS"],
-        ["BTS", "RUDEX.GOLOS"],
-        ["BTS", "RUDEX.STEEM"],
         ["BTS", "RUDEX.EOS"],
         ["BTS", "RUDEX.BTC"],
         ["BTS", "RUDEX.ETH"],
-        ["BTS", "RUDEX.USDT"],
         ["BTS", "RUDEX.WLS"],
         ["BTS", "RUDEX.SMOKE"],
-        ["BTS", "RUDEX.PZM"],
-        ["BTS", "XBTSX.STH"],
-        ["BTS", "XBTSX.WAVES"],
-        ["BTS", "HERTZ"]
+        ["BTS", "RUDEX.GRC"],
+        ["BTS", "RUDEX.USDT"],
+        ["BTS", "XBTSX.STH"]
     ].filter(a => {
         if (!quotes.length) return true;
         return quotes.indexOf(a[0]) !== -1;
@@ -299,7 +267,7 @@ export function getAssetNamespaces() {
     if (_isTestnet()) {
         return [];
     }
-    return ["OPEN.", "RUDEX.", "GDEX.", "XBTSX.", "CITADEL."];
+    return ["IOB.", "RUDEX.", "GDEX.", "XBTSX.", "CITADEL."];
 }
 
 /**
@@ -318,13 +286,12 @@ export function getAssetHideNamespaces() {
  */
 export function allowedGateway(gateway) {
     const allowedGateways = [
+        "IOB",
         "TRADE",
-        "OPEN", // keep to display the warning icon, permanently disabled in gateways.js
         "RUDEX",
         "GDEX",
         "XBTSX",
-        "CITADEL",
-        "BRIDGE" // keep to display the warning icon, permanently disabled in gateways.js
+        "CITADEL"
     ];
     if (!gateway) {
         // answers the question: are any allowed?
@@ -355,8 +322,4 @@ export function getConfigurationAsset() {
         explanation:
             "This asset is used for decentralized configuration of the BitShares UI placed under bitshares.org."
     };
-}
-
-export function getSteemNewsTag() {
-    return null;
 }
