@@ -171,8 +171,6 @@ export function getFeaturedMarkets(quotes = []) {
         ["BTS", "RUDEX.WLS"],
         ["BTS", "RUDEX.SMOKE"],
         ["BTS", "SOUNDAC.XSD"],
-        ["BTS", "BEOS"],
-        ["BTS", "DEEX"],
 
         ["BTS", "HONEST.BTC"], // BTS HONEST pairs
         ["BTS", "HONEST.CNY"],
@@ -193,7 +191,6 @@ export function getFeaturedMarkets(quotes = []) {
         ["HONEST.BTC", "HONEST.XAG"],
 
         ["HONEST.USD", "HONEST.CNY"], // HONEST.USD pairs
-        ["HONEST.USD", "HONEST.CNY"],
         ["HONEST.USD", "HONEST.ETH"],
         ["HONEST.USD", "HONEST.XRP"],
         ["HONEST.USD", "HONEST.XAU"],
