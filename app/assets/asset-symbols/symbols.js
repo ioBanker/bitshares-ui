@@ -5,9 +5,13 @@ require("file-loader?name=asset-symbols/[name].png!./pic/unknown.png");
 require("file-loader?name=asset-symbols/[name].png!./pic/bts.png");
 
 // HONEST Assets
-require("file-loader?name=asset-symbols/[name].png!./pic/HONEST.BTC.png");
-require("file-loader?name=asset-symbols/[name].png!./pic/HONEST.USD.png");
-require("file-loader?name=asset-symbols/[name].png!./pic/HONEST.CNY.png");
+require("file-loader?name=asset-symbols/[name].png!./pic/honest.btc.png");
+require("file-loader?name=asset-symbols/[name].png!./pic/honest.usd.png");
+require("file-loader?name=asset-symbols/[name].png!./pic/honest.cny.png");
+
+// BitAssets
+require("file-loader?name=asset-symbols/[name].png!./pic/eur.png");
+
 // 3rd party assets
 require("file-loader?name=asset-symbols/[name].png!./pic/eth.png");
 require("file-loader?name=asset-symbols/[name].png!./pic/usdt.png");
