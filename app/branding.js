@@ -170,6 +170,9 @@ export function getFeaturedMarkets(quotes = []) {
         ["BTS", "RUDEX.EOS"],
         ["BTS", "RUDEX.WLS"],
         ["BTS", "RUDEX.SMOKE"],
+        ["BTS", "SOUNDAC.XSD"],
+        ["BTS", "BEOS"],
+        ["BTS", "DEEX"],
 
         ["BTS", "HONEST.BTC"], // BTS HONEST pairs
         ["BTS", "HONEST.CNY"],
