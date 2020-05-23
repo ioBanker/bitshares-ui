@@ -145,14 +145,7 @@ export function getMyMarketsQuotes() {
             "RUDEX.SMOKE"
         ],
 
-        xbtsxTokens: [
-            "XBTSX.DOGE",
-            "XBTSX.BTC",
-            "XBTSX.BCH",
-            "XBTSX.LTC",
-            "XBTSX.DASH",
-            "XBTSX.ETH"
-        ],
+        xbtsxTokens: ["XBTSX.BTC", "XBTSX.LTC", "XBTSX.ETH"],
         otherTokens: []
     };
 
@@ -173,23 +166,35 @@ export function getFeaturedMarkets(quotes = []) {
         return [["BTS", "TEST"]];
     }
     return [
-        ["HONEST.BTC", "BTS"],
-        ["HONEST.CNY", "BTS"],
-        ["HONEST.USD", "BTS"],
-        ["HONEST.ETH", "BTS"],
-        ["HONEST.XRP", "BTS"],
-        ["HONEST.XAU", "BTS"],
-        ["HONEST.XAG", "BTS"],
-        ["BTS", "GDEX.BTC"],
-        ["BTS", "GDEX.ETH"],
-        ["BTS", "GDEX.EOS"],
-        ["BTS", "GDEX.USDT"],
+        ["BTS", "GDEX.EOS"], // Gateway UIA with no direct HONEST pairs
         ["BTS", "RUDEX.EOS"],
-        ["BTS", "RUDEX.BTC"],
-        ["BTS", "RUDEX.ETH"],
         ["BTS", "RUDEX.WLS"],
         ["BTS", "RUDEX.SMOKE"],
-        ["BTS", "RUDEX.USDT"]
+
+        ["BTS", "HONEST.BTC"], // BTS HONEST pairs
+        ["BTS", "HONEST.CNY"],
+        ["BTS", "HONEST.ETH"],
+        ["BTS", "HONEST.XRP"],
+        ["BTS", "HONEST.XAU"],
+        ["BTS", "HONEST.XAG"],
+        ["BTS", "HONEST.BTC"],
+
+        ["HONEST.BTC", "GDEX.BTC"], // Gateway BTC
+        ["HONEST.BTC", "RUDEX.BTC"],
+
+        ["HONEST.BTC", "HONEST.USD"], // HONEST.BTC pairs
+        ["HONEST.BTC", "HONEST.CNY"],
+        ["HONEST.BTC", "HONEST.ETH"],
+        ["HONEST.BTC", "HONEST.XRP"],
+        ["HONEST.BTC", "HONEST.XAU"],
+        ["HONEST.BTC", "HONEST.XAG"],
+
+        ["HONEST.USD", "HONEST.CNY"], // HONEST.USD pairs
+        ["HONEST.USD", "HONEST.CNY"],
+        ["HONEST.USD", "HONEST.ETH"],
+        ["HONEST.USD", "HONEST.XRP"],
+        ["HONEST.USD", "HONEST.XAU"],
+        ["HONEST.USD", "HONEST.XAG"]
     ].filter(a => {
         if (!quotes.length) return true;
         return quotes.indexOf(a[0]) !== -1;
@@ -223,14 +228,7 @@ export function getAssetHideNamespaces() {
  * @returns {boolean}
  */
 export function allowedGateway(gateway) {
-    const allowedGateways = [
-        "IOB",
-        "TRADE",
-        "RUDEX",
-        "GDEX",
-        "XBTSX",
-        "CITADEL"
-    ];
+    const allowedGateways = ["TRADE", "RUDEX", "GDEX", "XBTSX", "CITADEL"];
     if (!gateway) {
         // answers the question: are any allowed?
         return allowedGateways.length > 0;
