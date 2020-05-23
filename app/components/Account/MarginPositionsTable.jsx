@@ -178,13 +178,15 @@ ListGenerator = AssetWrapper(ListGenerator, {
     propNames: ["bitAssets"],
     defaultProps: {
         bitAssets: [
-            "1.3.113",
-            "1.3.120",
-            "1.3.121",
-            "1.3.1325",
-            "1.3.105",
-            "1.3.106",
-            "1.3.103"
+            "1.3.5650", // H.BTC
+            "1.3.5649", // H.USD
+            "1.3.5641", // H.CNY
+            "1.3.5659", // H.ETH
+            "1.3.5660", // H.XRP
+            "1.3.5651", // H.XAU
+            "1.3.5652", // H.XAG
+            "1.3.5661", // H.ETH1
+            "1.3.5662" // H.XRP1
         ]
     },
     asList: true
