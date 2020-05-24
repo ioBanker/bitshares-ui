@@ -113,7 +113,7 @@ class SettingsStore {
             faucet_address: settingsAPIs.DEFAULT_FAUCET,
             unit: CORE_ASSET,
             fee_asset: CORE_ASSET,
-            showSettles: false,
+            showSettles: true,
             showAssetPercent: false,
             walletLockTimeout: 60 * 10,
             themes: getDefaultTheme(),
@@ -453,8 +453,7 @@ class SettingsStore {
                 markets_4018d784: getMyMarketsQuotes(),
                 markets_39f5e2ed: [
                     // TESTNET
-                    "PEG.FAKEUSD",
-                    "BTWTY"
+                    "TEST"
                 ]
             };
 
