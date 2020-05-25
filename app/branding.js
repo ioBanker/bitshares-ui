@@ -144,8 +144,6 @@ export function getMyMarketsQuotes() {
             "RUDEX.WLS",
             "RUDEX.SMOKE"
         ],
-
-        xbtsxTokens: ["XBTSX.BTC", "XBTSX.LTC", "XBTSX.ETH"],
         otherTokens: []
     };
 
@@ -189,6 +187,9 @@ export function getFeaturedMarkets(quotes = []) {
         ["HONEST.BTC", "HONEST.XRP"],
         ["HONEST.BTC", "HONEST.XAU"],
         ["HONEST.BTC", "HONEST.XAG"],
+
+        ["HONEST.USD", "GDEX.USDT"], // Gateway USDT
+        ["HONEST.USD", "RUDEX.USDT"],
 
         ["HONEST.USD", "HONEST.CNY"], // HONEST.USD pairs
         ["HONEST.USD", "HONEST.ETH"],
