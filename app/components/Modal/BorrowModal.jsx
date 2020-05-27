@@ -82,7 +82,7 @@ class BorrowModalContent extends React.Component {
                 collateral_ratio: this._getInitialCollateralRatio(props),
                 target_collateral_ratio: this._getMaintenanceRatio(),
                 errors: this._getInitialErrors(),
-                useTargetCollateral: false,
+                useTargetCollateral: true,
                 original_position: {
                     debt: 0,
                     collateral: 0
@@ -287,7 +287,7 @@ class BorrowModalContent extends React.Component {
         this._setUpdatedPosition(newState);
     }
 
-    _maximizeCollateral() {
+    _maximizeCollateral(percentage) {
         let currentPosition = this.props
             ? this._getCurrentPosition(this.props)
             : {};
@@ -306,7 +306,11 @@ class BorrowModalContent extends React.Component {
 
         // make sure we don't go over the maximum available collateral balance, and also not negative
         let maximizedCollateral = Math.max(
-            Math.floor(backingAssetBalanceTyped + initialCollateralTyped - 10),
+            Math.floor(
+                ((backingAssetBalanceTyped + initialCollateralTyped - 10) *
+                    percentage) /
+                    100
+            ),
             0
         );
 
@@ -550,12 +554,14 @@ class BorrowModalContent extends React.Component {
         };
 
         if (props && props.hasCallOrders && props.call_orders) {
-            currentPosition = props.call_orders.filter(a => !!a).find(a => {
-                return (
-                    a.getIn(["call_price", "quote", "asset_id"]) ===
-                    props.quoteAssetObj.get("id")
-                );
-            });
+            currentPosition = props.call_orders
+                .filter(a => !!a)
+                .find(a => {
+                    return (
+                        a.getIn(["call_price", "quote", "asset_id"]) ===
+                        props.quoteAssetObj.get("id")
+                    );
+                });
 
             currentPosition = !!currentPosition
                 ? currentPosition.toJS()
@@ -660,7 +666,7 @@ class BorrowModalContent extends React.Component {
                 collateral_ratio
                     .toString()
                     .split(".")[1]
-                    .substr(0, 2);
+                    .substr(0, 3);
         }
 
         if (
