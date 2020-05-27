@@ -72,8 +72,8 @@ class OrderBookRowVertical extends React.Component {
         let integerClass = isCall
             ? "orderHistoryCall"
             : isBid
-                ? "orderHistoryBid"
-                : "orderHistoryAsk";
+            ? "orderHistoryBid"
+            : "orderHistoryAsk";
 
         let price = (
             <PriceText price={order.getPrice()} quote={quote} base={base} />
@@ -130,8 +130,8 @@ class OrderBookRowHorizontal extends React.Component {
         let integerClass = isCall
             ? "orderHistoryCall"
             : isBid
-                ? "orderHistoryBid"
-                : "orderHistoryAsk";
+            ? "orderHistoryBid"
+            : "orderHistoryAsk";
 
         let price = (
             <PriceText price={order.getPrice()} quote={quote} base={base} />
@@ -548,8 +548,8 @@ class OrderBook extends React.Component {
                         ? this.props.groupedAsks
                         : this.props.groupedBids
                     : !this.props.orderBookReversed
-                        ? this.props.combinedAsks
-                        : this.props.combinedBids;
+                    ? this.props.combinedAsks
+                    : this.props.combinedBids;
 
             const rowsHeight = rows.length * singleRowHeight;
 
@@ -964,7 +964,8 @@ class OrderBook extends React.Component {
                                 //    "walkthrough.sell_orders"
                                 //)}
                             >
-                                <Translate content="exchange.asks" />
+                                <Translate content="exchange.asks" />{" "}
+                                <AssetName name={quoteSymbol} />
                                 {flipOrderBook &&
                                 !this.props.hideFunctionButtons ? (
                                     <div style={{display: "inline-block"}}>
@@ -1034,15 +1035,14 @@ class OrderBook extends React.Component {
                                     style={{lineHeight: "16px"}}
                                     className="header-sub-title float-right"
                                 >
-                                    <Translate content="exchange.market_depth" />
-                                    <span>: </span>
+                                    <Translate content="exchange.market_depth" />{" "}
                                     {utils.format_number(
                                         totalAsks,
                                         quote.get("precision")
                                     )}
                                     <span>
                                         {" "}
-                                        (<AssetName name={quoteSymbol} />)
+                                        <AssetName name={quoteSymbol} />
                                     </span>
                                 </div>
                             </div>
@@ -1111,7 +1111,8 @@ class OrderBook extends React.Component {
                                 //    "walkthrough.buy_orders"
                                 //)}
                             >
-                                <Translate content="exchange.bids" />
+                                <Translate content="exchange.bids" />{" "}
+                                <AssetName name={quoteSymbol} />
                                 {!flipOrderBook &&
                                 !this.props.hideFunctionButtons ? (
                                     <div style={{display: "inline-block"}}>
@@ -1194,15 +1195,14 @@ class OrderBook extends React.Component {
                                     style={{lineHeight: "16px"}}
                                     className="float-right header-sub-title"
                                 >
-                                    <Translate content="exchange.market_depth" />
-                                    <span>: </span>
+                                    <Translate content="exchange.market_depth" />{" "}
                                     {utils.format_number(
                                         totalBids,
                                         base.get("precision")
                                     )}
                                     <span>
                                         {" "}
-                                        (<AssetName name={baseSymbol} />)
+                                        <AssetName name={baseSymbol} />
                                     </span>
                                 </div>
                             </div>
