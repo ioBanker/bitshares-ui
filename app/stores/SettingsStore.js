@@ -172,6 +172,7 @@ class SettingsStore {
             viewOnlyMode: [{translate: "show"}, {translate: "hide"}]
         };
     }
+    this.starredMarkets = SettingsStore.get("starredMarkets", "HONEST.BTC_BTS");
     /**
      * Checks if an object is actually empty (no keys or only empty keys)
      * @param object
@@ -200,7 +201,6 @@ class SettingsStore {
         if (defaultSettings == null) {
             // this method might be called recursively, so not always use the whole defaults
             defaultSettings = this._getDefaultSetting();
-            this.starredMarkets = SettingsStore.get("starredMarkets", "HONEST.BTC_BTS");
         }
 
         let excludedKeys = ["activeNode"];
