@@ -465,7 +465,7 @@ class SettingsStore {
                     "TEST"
                 ]
             };
-            let topStarred = { markets_4018d784: "HONEST.BTC_BTS" };
+            let markets_4018d784 = {"GDEX.USDT_BTS":{"quote":"GDEX.USDT","base":"BTS"},"GDEX.BTC_BTS":{"quote":"GDEX.BTC","base":"BTS"}};
             let coreAssets = {
                 markets_4018d784: "BTS",
                 markets_39f5e2ed: "TEST"
@@ -486,8 +486,6 @@ class SettingsStore {
             );
 
             this.chainMarkets = topMarkets[this.starredKey] || [];
-            this.starredMarkets = topStarred[this.starredKey] || topStarred.markets_4018d784;
-
             let defaultMarkets = this._getDefaultMarkets();
             this.defaultMarkets = Immutable.Map(defaultMarkets);
             this.starredMarkets = Immutable.Map(ss.get(this.starredKey, []));
