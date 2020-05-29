@@ -471,7 +471,7 @@ class SettingsStore {
             };
             let coreAsset = coreAssets[this.starredKey] || "BTS";
             
-            let marketID = marketID[this.starredKey] || "HONEST.BTC_BTS`;
+            let marketID = marketID[this.starredKey] || "HONEST.BTC_BTS";
             
             /*
              * Update units depending on the chain, also make sure the 0 index
