@@ -112,7 +112,6 @@ class SettingsStore {
             filteredServiceProviders: ["all"],
             faucet_address: settingsAPIs.DEFAULT_FAUCET,
             unit: CORE_ASSET,
-            starredMarkets: ["HONEST.BTC_BTS"],
             fee_asset: CORE_ASSET,
             showSettles: true,
             showAssetPercent: false,
@@ -173,7 +172,6 @@ class SettingsStore {
             viewOnlyMode: [{translate: "show"}, {translate: "hide"}]
         };
     }
-
     /**
      * Checks if an object is actually empty (no keys or only empty keys)
      * @param object
@@ -202,6 +200,7 @@ class SettingsStore {
         if (defaultSettings == null) {
             // this method might be called recursively, so not always use the whole defaults
             defaultSettings = this._getDefaultSetting();
+            this.starredMarkets = SettingsStore.get("starredMarkets", "HONEST.BTC_BTS");
         }
 
         let excludedKeys = ["activeNode"];
