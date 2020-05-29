@@ -475,6 +475,7 @@ class SettingsStore {
              * asset is always the correct CORE asset name
              */
             this.onUpdateUnits();
+            
             this.defaults.unit[0] = coreAsset;
 
             let defaultBases = bases[this.starredKey] || bases.markets_4018d784;
@@ -489,7 +490,7 @@ class SettingsStore {
             this.defaultMarkets = Immutable.Map(defaultMarkets);
             this.starredMarkets = Immutable.Map(ss.get(this.starredKey, []));
             this.userMarkets = Immutable.Map(ss.get(this.marketsKey, {}));
-            
+            this.Defaultstarred();
             this.initDone = true;
             resolve();
         });
