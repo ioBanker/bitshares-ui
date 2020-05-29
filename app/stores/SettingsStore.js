@@ -450,13 +450,13 @@ class SettingsStore {
             this.basesKey = this._getChainKey("preferredBases");
             // Default markets setup
             let topMarkets = {
-                markets_4018d784: getMyMarketsQuotes(),
+                markets_4018d784: [ "BTS", "HONEST.USD", "HONEST.BTC" ],
                 markets_39f5e2ed: [
                     // TESTNET
                     "TEST"
                 ]
             };
-
+            let HonestBases = bases[this.starredKey] || bases.markets_4018d784;
             let bases = {
                 markets_4018d784: getMyMarketsBases(),
                 markets_39f5e2ed: [
