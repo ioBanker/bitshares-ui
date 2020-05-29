@@ -450,14 +450,15 @@ class SettingsStore {
             this.basesKey = this._getChainKey("preferredBases");
             // Default markets setup
             let topMarkets = {
-                markets_4018d784: [ "BTS", "HONEST.USD", "HONEST.BTC" ],
+                markets_4018d784: getMyMarketsQuotes(),
                 markets_39f5e2ed: [
                     // TESTNET
                     "TEST"
                 ]
             };
+
             let bases = {
-                markets_4018d784: [ "BTS", "HONEST.USD", "HONEST.BTC" ],
+                markets_4018d784: getMyMarketsBases(),
                 markets_39f5e2ed: [
                     // TESTNET
                     "TEST"
@@ -477,16 +478,16 @@ class SettingsStore {
             this.defaults.unit[0] = coreAsset;
 
             let defaultBases = bases[this.starredKey] || bases.markets_4018d784;
-            let storedBases = ss.get(this.basesKey, ["HONEST.USD", "HONEST.BTC"]);
+            let storedBases = ss.get(this.basesKey, []);
             this.preferredBases = Immutable.List(
                 storedBases.length ? storedBases : defaultBases
             );
 
-            this.chainMarkets = topMarkets[this.starredKey] || ["HONEST.USD", "HONEST.BTC"];
+            this.chainMarkets = topMarkets[this.starredKey] || [];
 
             let defaultMarkets = this._getDefaultMarkets();
             this.defaultMarkets = Immutable.Map(defaultMarkets);
-            this.starredMarkets = Immutable.Map(ss.get(this.starredKey, {["BTS", "HONEST.USD", "HONEST.BTC"]}));
+            this.starredMarkets = Immutable.Map(ss.get(this.starredKey, []));
             this.userMarkets = Immutable.Map(ss.get(this.marketsKey, {}));
 
             this.initDone = true;
@@ -495,7 +496,7 @@ class SettingsStore {
     }
 
     _getDefaultMarkets() {
-        let markets = ["BTS", "HONEST.USD", "HONEST.BTC"];
+        let markets = [];
 
         this.preferredBases.forEach(base => {
             addMarkets(markets, base, this.chainMarkets);
