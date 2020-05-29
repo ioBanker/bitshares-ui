@@ -498,7 +498,8 @@ class SettingsStore {
 
     _getDefaultMarkets() {
         let markets = ["BTS", "HONEST.BTC"];
-
+        let {base, quote} = ["BTS", "HONEST.BTC"];
+        let marketID = quote.get("HONEST.BTC") + "_" + base.get("BTS");
         this.preferredBases.forEach(base => {
             addMarkets(markets, base, this.chainMarkets);
         });
@@ -514,8 +515,6 @@ class SettingsStore {
                         {quote: market, base: base}
                     ]);
                 });
-            let {base, quote} = ["BTS", "HONEST.BTC"];
-            let marketID = quote.get("HONEST.BTC") + "_" + base.get("BTS");
             {
             this.starredMarkets = this.starredMarkets.set(marketID, {
                 quote: market.quote,
