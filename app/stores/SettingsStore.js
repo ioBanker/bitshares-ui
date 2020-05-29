@@ -172,7 +172,6 @@ class SettingsStore {
             viewOnlyMode: [{translate: "show"}, {translate: "hide"}]
         };
     }
-    this.starredMarkets = SettingsStore.get("starredMarkets", "HONEST.BTC_BTS");
     /**
      * Checks if an object is actually empty (no keys or only empty keys)
      * @param object
@@ -449,6 +448,7 @@ class SettingsStore {
             this.marketsKey = this._getChainKey("userMarkets");
             this.basesKey = this._getChainKey("preferredBases");
             // Default markets setup
+            let starredMarkets = SettingsStore.get("starredMarkets", "HONEST.BTC_BTS");
             let topMarkets = {
                 markets_4018d784: getMyMarketsQuotes(),
                 markets_39f5e2ed: [
