@@ -23,13 +23,14 @@ nvm use v9
 Once you have Node installed, you can clone the repo:
 
 ```
-git clone https://github.com/bitshares/bitshares-ui.git
+git clone https://github.com/iobanker/bitshares-ui.git
 cd bitshares-ui
 ```
 
 Before launching the GUI you will need to install the npm packages:
 
 ```
+npm install -g n install
 npm install
 ```
 
