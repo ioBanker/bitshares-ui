@@ -458,7 +458,7 @@ class SettingsStore {
             };
 
             let bases = {
-                markets_4018d784: getMyMarketsBases(),
+                markets_4018d784: markets_4018d784[this.starredKey] || getMyMarketsBases(),
                 markets_39f5e2ed: [
                     // TESTNET
                     "TEST"
