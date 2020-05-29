@@ -592,7 +592,7 @@ export default connect(
                 marketDirections,
                 hiddenMarkets,
                 allMarketStats: MarketsStore.getState().allMarketStats,
-                starredMarkets: SettingsStore.getState().starredMarkets.get("starredMarkets", "HONEST.BTC_BTS"),
+                starredMarkets: SettingsStore.getState().starredMarkets.get("HONEST.BTC_BTS", { quote: "BTS", base: "HONEST.BTC" }),
                 onlyLiquid: SettingsStore.getState().viewSettings.get(
                     "onlyLiquid",
                     true
