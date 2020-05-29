@@ -92,6 +92,7 @@ class MarketsStore {
             }
         }
         this.allMarketStats = Immutable.Map(allMarketStats);
+        this.starredMarkets: ["HONEST.BTC_BTS"];
         this.onlyStars = marketStorage.get("onlyStars", true);
 
         this.baseAsset = {
