@@ -497,12 +497,10 @@ class SettingsStore {
     
     Defaultstarred() {
         if (!this.props.starredMarkets.has(marketID)) {
-        let {base, quote} = ["BTS", "HONEST.BTC"];
-        let marketID = quote + "_" + base;
-        this.starredMarkets = this.starredMarkets.set(marketID, { quote: quote, base: base });
-        };
-     
-    Defaultstarred();
+        let {dbase, dquote} = ["BTS", "HONEST.BTC"];
+        let marketID = dquote + "_" + dbase;
+        this.starredMarkets = this.starredMarkets.set(marketID, { quote: dquote, base: dbase });
+        }};
     
     _getDefaultMarkets() {
         let markets = [];
