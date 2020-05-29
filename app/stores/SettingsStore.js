@@ -483,7 +483,7 @@ class SettingsStore {
                 storedBases.length ? storedBases : defaultBases
             );
 
-            this.chainMarkets = topMarkets[this.starredKey] || ["BTS"];
+            this.chainMarkets = topMarkets[this.starredKey] || ["HONEST.BTC"];
 
             let defaultMarkets = this._getDefaultMarkets();
             this.defaultMarkets = Immutable.Map(defaultMarkets);
