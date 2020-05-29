@@ -458,7 +458,7 @@ class SettingsStore {
             };
 
             let bases = {
-                markets_4018d784: markets_4018d784[this.starredKey] || getMyMarketsBases(),
+                markets_4018d784: getMyMarketsBases(),
                 markets_39f5e2ed: [
                     // TESTNET
                     "TEST"
@@ -483,7 +483,7 @@ class SettingsStore {
                 storedBases.length ? storedBases : defaultBases
             );
 
-            this.chainMarkets = topMarkets[this.starredKey] || [];
+            this.chainMarkets = topMarkets[this.starredKey] || ["BTS"];
 
             let defaultMarkets = this._getDefaultMarkets();
             this.defaultMarkets = Immutable.Map(defaultMarkets);
