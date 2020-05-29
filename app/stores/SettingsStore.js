@@ -489,12 +489,19 @@ class SettingsStore {
             this.defaultMarkets = Immutable.Map(defaultMarkets);
             this.starredMarkets = Immutable.Map(ss.get(this.starredKey, []));
             this.userMarkets = Immutable.Map(ss.get(this.marketsKey, {}));
-
+            
             this.initDone = true;
             resolve();
         });
     }
-
+    
+    Defaultstarred() {
+        if (!this.props.starredMarkets.has(marketID)) {
+            SettingsActions.addStarMarket(["HONEST.BTC"], ["BTS"])};
+        };
+     
+    Defaultstarred();
+    
     _getDefaultMarkets() {
         let markets = [];
 
