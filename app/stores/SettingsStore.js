@@ -476,6 +476,13 @@ class SettingsStore {
              */
             this.onUpdateUnits();
             
+            Defaultstarred() {
+            if (!this.props.starredMarkets.has(marketID)) {
+            let {dbase, dquote} = ["BTS", "HONEST.BTC"];
+            let marketID = dquote + "_" + dbase;
+            this.starredMarkets = this.starredMarkets.set(marketID, { quote: dquote, base: dbase });
+            }};
+            
             this.defaults.unit[0] = coreAsset;
 
             let defaultBases = bases[this.starredKey] || bases.markets_4018d784;
@@ -490,18 +497,10 @@ class SettingsStore {
             this.defaultMarkets = Immutable.Map(defaultMarkets);
             this.starredMarkets = Immutable.Map(ss.get(this.starredKey, []));
             this.userMarkets = Immutable.Map(ss.get(this.marketsKey, {}));
-            this.Defaultstarred();
             this.initDone = true;
             resolve();
         });
     }
-    
-    Defaultstarred() {
-        if (!this.props.starredMarkets.has(marketID)) {
-        let {dbase, dquote} = ["BTS", "HONEST.BTC"];
-        let marketID = dquote + "_" + dbase;
-        this.starredMarkets = this.starredMarkets.set(marketID, { quote: dquote, base: dbase });
-        }};
     
     _getDefaultMarkets() {
         let markets = [];
