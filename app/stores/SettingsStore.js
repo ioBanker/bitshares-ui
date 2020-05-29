@@ -64,7 +64,7 @@ class SettingsStore {
         this.initDone = false;
 
         this.settings = Immutable.Map(this._getSetting());
-
+        
         // deprecated to support existing code
         this.defaultSettings = Immutable.Map(this._getDefaultSetting());
 
@@ -76,6 +76,7 @@ class SettingsStore {
 
         this.hiddenAssets = Immutable.List(ss.get("hiddenAssets", []));
         this.hiddenMarkets = Immutable.List(ss.get("hiddenMarkets", []));
+        this.starredMarkets = Immutable.Map(ss.get("starredMarkets", ["HONEST.BTC_BTS"]));
 
         this.apiLatencies = ss.get("apiLatencies", {});
 
@@ -447,8 +448,9 @@ class SettingsStore {
             this.starredKey = this._getChainKey("markets");
             this.marketsKey = this._getChainKey("userMarkets");
             this.basesKey = this._getChainKey("preferredBases");
+            
             // Default markets setup
-            let starredMarkets = SettingsStore.get("starredMarkets", "HONEST.BTC_BTS");
+
             let topMarkets = {
                 markets_4018d784: getMyMarketsQuotes(),
                 markets_39f5e2ed: [
