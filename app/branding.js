@@ -260,3 +260,6 @@ export function getConfigurationAsset() {
             "This asset is used for decentralized configuration of the BitShares UI placed under bitshares.org."
     };
 }
+export function getSteemNewsTag() {
+    return null;
+}
