@@ -45,6 +45,7 @@ class MarketsStore {
         this.feedPrice = null;
         this.marketSettleOrders = Immutable.OrderedSet();
         this.activeMarketHistory = Immutable.OrderedSet();
+        this.starredMarkets = { marketID: [{quote:"HONEST.BTC",base:"BTS"}] };
         this.marketData = {
             bids: [],
             asks: [],
