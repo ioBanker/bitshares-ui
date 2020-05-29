@@ -456,9 +456,8 @@ class SettingsStore {
                     "TEST"
                 ]
             };
-            let HonestBases = bases[this.starredKey] || bases.markets_4018d784;
             let bases = {
-                markets_4018d784: getMyMarketsBases(),
+                markets_4018d784: [ "BTS", "HONEST.USD", "HONEST.BTC" ],
                 markets_39f5e2ed: [
                     // TESTNET
                     "TEST"
