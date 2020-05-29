@@ -449,17 +449,6 @@ class SettingsStore {
             this.marketsKey = this._getChainKey("userMarkets");
             this.basesKey = this._getChainKey("preferredBases");
             // Default markets setup
-            let marketID = quote.get("HONEST.BTC") + "_" + base.get("BTS");
-            if (!this.props.starredMarkets.has(marketID)) {
-            SettingsActions.addStarMarket(quote, base);
-        } else {
-            SettingsActions.removeStarMarket(quote, base);
-        }
-    }
-    changeVolumeBase() {
-        this.setState({
-            volumeShowQuote: !this.state.volumeShowQuote
-        });
             
             let topMarkets = {
                 markets_4018d784: getMyMarketsQuotes(),
