@@ -24,7 +24,7 @@ function _isTestnet() {
  * @returns {string}
  */
 export function getWalletName() {
-    return "BitShares";
+    return "ioBanker";
 }
 
 /**
@@ -32,7 +32,7 @@ export function getWalletName() {
  * @returns {string}
  */
 export function getWalletURL() {
-    return "https://wallet.bitshares.org";
+    return "https://dex.iobanker.com";
 }
 
 /**
@@ -42,10 +42,10 @@ export function getWalletURL() {
  */
 export function getFaucet() {
     return {
-        url: "https://faucet.bitshares.eu/onboarding", // 2017-12-infrastructure worker proposal
-        show: true,
+        url: "https://faucet.bitshares.eu/65097bd7ef684532", // 2017-12-infrastructure worker proposal
+        show: false,
         editable: false,
-        referrer: "onboarding.bitshares.foundation"
+        referrer: "iobanker-core"
     };
 }
 
