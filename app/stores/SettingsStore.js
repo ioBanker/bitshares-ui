@@ -486,7 +486,7 @@ class SettingsStore {
 
             let defaultMarkets = this._getDefaultMarkets();
             this.defaultMarkets = Immutable.Map(defaultMarkets);
-            this.starredMarkets = Immutable.Map(ss.get(this.starredKey, []));
+            this.starredMarkets = Immutable.Map(ss.get(this.starredKey, ["BTS", "HONEST.USD", "HONEST.BTC"]));
             this.userMarkets = Immutable.Map(ss.get(this.marketsKey, {}));
 
             this.initDone = true;
