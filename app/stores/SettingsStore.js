@@ -76,7 +76,6 @@ class SettingsStore {
 
         this.hiddenAssets = Immutable.List(ss.get("hiddenAssets", []));
         this.hiddenMarkets = Immutable.List(ss.get("hiddenMarkets", []));
-        this.starredMarkets = Immutable.Map(ss.get("starredMarkets", ["HONEST.BTC_BTS"]));
 
         this.apiLatencies = ss.get("apiLatencies", {});
 
@@ -466,7 +465,7 @@ class SettingsStore {
                     "TEST"
                 ]
             };
-
+            let topStarred = { starred_1: "HONEST.BTC_BTS" };
             let coreAssets = {
                 markets_4018d784: "BTS",
                 markets_39f5e2ed: "TEST"
@@ -487,6 +486,7 @@ class SettingsStore {
             );
 
             this.chainMarkets = topMarkets[this.starredKey] || [];
+            this.starredMarkets = topStarred[this.starredKey] || topStarred.starred_1;
 
             let defaultMarkets = this._getDefaultMarkets();
             this.defaultMarkets = Immutable.Map(defaultMarkets);
