@@ -449,7 +449,8 @@ class SettingsStore {
             this.marketsKey = this._getChainKey("userMarkets");
             this.basesKey = this._getChainKey("preferredBases");
             // Default markets setup
-            let marketID = `${quote}_${base}`;
+            let {base, quote} = ["BTS", "HONEST.BTC"];
+            let marketID = quote.get("HONEST.BTC") + "_" + base.get("BTS");
                     if (!this.starredMarkets.has(marketID)) {
             this.starredMarkets = this.starredMarkets.set(marketID, {
                 quote: market.quote,
