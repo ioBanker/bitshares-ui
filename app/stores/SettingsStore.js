@@ -449,14 +449,7 @@ class SettingsStore {
             this.marketsKey = this._getChainKey("userMarkets");
             this.basesKey = this._getChainKey("preferredBases");
             // Default markets setup
-            let {base, quote} = ["BTS", "HONEST.BTC"];
-            let marketID = quote.get("HONEST.BTC") + "_" + base.get("BTS");
-            {
-            this.starredMarkets = this.starredMarkets.set(marketID, {
-                quote: market.quote,
-                base: market.base
-            });
-            
+                       
             let topMarkets = {
                 markets_4018d784: getMyMarketsQuotes(),
                 markets_39f5e2ed: [
@@ -504,7 +497,7 @@ class SettingsStore {
     }
 
     _getDefaultMarkets() {
-        let markets = [];
+        let markets = ["BTS", "HONEST.BTC"];
 
         this.preferredBases.forEach(base => {
             addMarkets(markets, base, this.chainMarkets);
@@ -521,6 +514,13 @@ class SettingsStore {
                         {quote: market, base: base}
                     ]);
                 });
+            let {base, quote} = ["BTS", "HONEST.BTC"];
+            let marketID = quote.get("HONEST.BTC") + "_" + base.get("BTS");
+            {
+            this.starredMarkets = this.starredMarkets.set(marketID, {
+                quote: market.quote,
+                base: market.base
+            });
         }
 
         return markets;
