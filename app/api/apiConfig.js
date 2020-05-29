@@ -127,6 +127,7 @@ export const settingsAPIs = {
             operator: "Witness: iobanker-core",
             contact: "email:admin@iobanker.com"
         },
+        ],
     ES_WRAPPER_LIST: [],
     DEFAULT_FAUCET: getFaucet().url,
     TESTNET_FAUCET: getTestFaucet().url
