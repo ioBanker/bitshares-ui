@@ -112,6 +112,7 @@ class SettingsStore {
             filteredServiceProviders: ["all"],
             faucet_address: settingsAPIs.DEFAULT_FAUCET,
             unit: CORE_ASSET,
+            starredMarkets: ["HONEST.BTC_BTS"],
             fee_asset: CORE_ASSET,
             showSettles: true,
             showAssetPercent: false,
@@ -470,8 +471,6 @@ class SettingsStore {
                 markets_39f5e2ed: "TEST"
             };
             let coreAsset = coreAssets[this.starredKey] || "BTS";
-            
-            let marketID = marketID[this.starredKey] || "HONEST.BTC_BTS";
             
             /*
              * Update units depending on the chain, also make sure the 0 index
