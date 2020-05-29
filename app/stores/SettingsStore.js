@@ -465,7 +465,7 @@ class SettingsStore {
                     "TEST"
                 ]
             };
-            let topStarred = { starred_1: "HONEST.BTC_BTS" };
+            let topStarred = { markets_4018d784: "{"HONEST.BTC_BTS":{"quote":"HONEST.BTC","base":"BTS"}}" };
             let coreAssets = {
                 markets_4018d784: "BTS",
                 markets_39f5e2ed: "TEST"
