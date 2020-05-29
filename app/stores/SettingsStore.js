@@ -451,7 +451,7 @@ class SettingsStore {
             // Default markets setup
             let {base, quote} = ["BTS", "HONEST.BTC"];
             let marketID = quote.get("HONEST.BTC") + "_" + base.get("BTS");
-                    if (!this.starredMarkets.has(marketID)) {
+            {
             this.starredMarkets = this.starredMarkets.set(marketID, {
                 quote: market.quote,
                 base: market.base
