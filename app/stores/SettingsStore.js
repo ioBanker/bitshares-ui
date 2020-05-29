@@ -64,7 +64,7 @@ class SettingsStore {
         this.initDone = false;
 
         this.settings = Immutable.Map(this._getSetting());
-        
+
         // deprecated to support existing code
         this.defaultSettings = Immutable.Map(this._getDefaultSetting());
 
@@ -172,6 +172,7 @@ class SettingsStore {
             viewOnlyMode: [{translate: "show"}, {translate: "hide"}]
         };
     }
+
     /**
      * Checks if an object is actually empty (no keys or only empty keys)
      * @param object
@@ -447,9 +448,7 @@ class SettingsStore {
             this.starredKey = this._getChainKey("markets");
             this.marketsKey = this._getChainKey("userMarkets");
             this.basesKey = this._getChainKey("preferredBases");
-            
             // Default markets setup
-
             let topMarkets = {
                 markets_4018d784: getMyMarketsQuotes(),
                 markets_39f5e2ed: [
@@ -465,13 +464,12 @@ class SettingsStore {
                     "TEST"
                 ]
             };
-            let markets_4018d784 = {"GDEX.USDT_BTS":{"quote":"GDEX.USDT","base":"BTS"},"GDEX.BTC_BTS":{"quote":"GDEX.BTC","base":"BTS"}};
+
             let coreAssets = {
                 markets_4018d784: "BTS",
                 markets_39f5e2ed: "TEST"
             };
             let coreAsset = coreAssets[this.starredKey] || "BTS";
-            
             /*
              * Update units depending on the chain, also make sure the 0 index
              * asset is always the correct CORE asset name
@@ -486,6 +484,7 @@ class SettingsStore {
             );
 
             this.chainMarkets = topMarkets[this.starredKey] || [];
+
             let defaultMarkets = this._getDefaultMarkets();
             this.defaultMarkets = Immutable.Map(defaultMarkets);
             this.starredMarkets = Immutable.Map(ss.get(this.starredKey, []));
