@@ -449,6 +449,12 @@ class SettingsStore {
             this.marketsKey = this._getChainKey("userMarkets");
             this.basesKey = this._getChainKey("preferredBases");
             // Default markets setup
+            let marketID = `${quote}_${base}`;
+                    if (!this.starredMarkets.has(marketID)) {
+            this.starredMarkets = this.starredMarkets.set(marketID, {
+                quote: market.quote,
+                base: market.base
+            });
             
             let topMarkets = {
                 markets_4018d784: getMyMarketsQuotes(),
