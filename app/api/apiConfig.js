@@ -113,7 +113,7 @@ export const nodeRegions = [
 export const settingsAPIs = {
     // If you want a location to be translated, add the translation to settings in locale-xx.js
     // and use an object {translate: key} in WS_NODE_LIST
-    DEFAULT_WS_NODE: "wss://fake.automatic-selection.com",
+    DEFAULT_WS_NODE: "wss://dex.iobanker.com:9090",
     WS_NODE_LIST: [
         {
             url: "ws://127.0.0.1:8090",
