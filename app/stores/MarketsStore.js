@@ -96,11 +96,6 @@ class MarketsStore {
         this.allMarketStats = Immutable.Map(allMarketStats);
         this.onlyStars = marketStorage.get("onlyStars", true);
         
-        onAddStarMarket(market)(
-            this.starredMarkets = ["HONEST.BTC_BTS":{"quote":"HONEST.BTC","base":"BTS"}];
-            SettingsStore.set("starredMarkets", this.starredMarkets);
-        );
-        
         this.baseAsset = {
             id: "1.3.0",
             symbol: "BTS",
@@ -146,6 +141,10 @@ class MarketsStore {
     /**
      *  Add a callback that will be called anytime any object in the cache is updated
      */
+     onAddStarMarket(market) {
+            this.starredMarkets.set(["HONEST.BTC_BTS"], [quote:"HONEST.BTC", base:"BTS"]);
+}
+
     subscribe(id, callback) {
         if (this.subscribers.has(id) && this.subscribers.get(id) === callback)
             return console.error("Subscribe callback already exists", callback);
