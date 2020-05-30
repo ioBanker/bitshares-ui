@@ -95,7 +95,7 @@ class MarketsStore {
         }
         this.allMarketStats = Immutable.Map(allMarketStats);
         this.onlyStars = marketStorage.get("onlyStars", true);
-        this.onAddStarMarket = this.onAddStarMarket(market)({"HONEST.BTC_BTS":{"quote":"HONEST.BTC","base":"BTS"}});
+        let this.onAddStarMarket(market) = {"HONEST.BTC_BTS":{"quote":"HONEST.BTC","base":"BTS"}};
 
         this.baseAsset = {
             id: "1.3.0",
