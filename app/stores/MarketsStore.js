@@ -45,7 +45,7 @@ class MarketsStore {
         this.feedPrice = null;
         this.marketSettleOrders = Immutable.OrderedSet();
         this.activeMarketHistory = Immutable.OrderedSet();
-        this.starredMarkets = { marketID: [{quote:"HONEST.BTC",base:"BTS"}] };
+        this.starredMarkets = { marketID: [{quote:"HONEST.BTC", base:"BTS"}] };
         this.marketData = {
             bids: [],
             asks: [],
@@ -94,6 +94,7 @@ class MarketsStore {
         }
         this.allMarketStats = Immutable.Map(allMarketStats);
         this.onlyStars = marketStorage.get("onlyStars", true);
+        this.starredMarkets = { marketID: "HONEST.BTC_BTS", quote: "HONEST.BTC", base: "BTS" };
 
         this.baseAsset = {
             id: "1.3.0",
