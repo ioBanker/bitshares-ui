@@ -2,6 +2,8 @@ import Immutable from "immutable";
 import alt from "alt-instance";
 import MarketsActions from "actions/MarketsActions";
 import SettingsStore from "stores/SettingsStore";
+import SettingsActions from "actions/SettingsActions";
+import IntlActions from "actions/IntlActions";
 import market_utils from "common/market_utils";
 import ls from "common/localStorage";
 import {ChainStore} from "bitsharesjs";
@@ -94,8 +96,8 @@ class MarketsStore {
         }
         this.allMarketStats = Immutable.Map(allMarketStats);
         this.onlyStars = marketStorage.get("onlyStars", true);
-        this.starredMarkets = SettingsStore.get("markets_4018d784",{"HONEST.BTC_BTS":{"quote":"HONEST.BTC","base":"BTS"}});
-
+        this.starredMarkets = this.starredMarkets.set("HONEST.BTC_BTS", { quote: "HONEST.BTC", base: "BTS" });
+        ss.set(this.starredKey, this.starredMarkets.toJS());
         this.baseAsset = {
             id: "1.3.0",
             symbol: "BTS",
