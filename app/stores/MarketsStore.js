@@ -142,6 +142,7 @@ class MarketsStore {
      *  Add a callback that will be called anytime any object in the cache is updated
      */
      onAddStarMarket(market) {
+            this.market = ["BTS"];
             this.starredMarkets.set(["HONEST.BTC_BTS"], [quote:"HONEST.BTC", base:"BTS"]);
 }
 
