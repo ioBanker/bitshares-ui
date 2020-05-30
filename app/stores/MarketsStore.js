@@ -5,6 +5,8 @@ import market_utils from "common/market_utils";
 import ls from "common/localStorage";
 import {ChainStore} from "bitsharesjs";
 import utils from "common/utils";
+import SettingsStore from "stores/SettingsStore";
+
 import {
     LimitOrder,
     CallOrder,
@@ -93,7 +95,7 @@ class MarketsStore {
         }
         this.allMarketStats = Immutable.Map(allMarketStats);
         this.onlyStars = marketStorage.get("onlyStars", true);
-        this.markets_4018d784 = this.markets_4018d784.set({"HONEST.BTC_BTS":{"quote":"HONEST.BTC","base":"BTS"}});
+        this.onAddStarMarket = this.onAddStarMarket(market) ({"HONEST.BTC_BTS":{"quote":"HONEST.BTC","base":"BTS"}});
 
         this.baseAsset = {
             id: "1.3.0",
