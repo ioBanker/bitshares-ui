@@ -112,7 +112,7 @@ export function getMyMarketsBases() {
     if (_isTestnet()) {
         return ["TEST"];
     }
-    return ["BTS", "HONEST.BTC", "HONEST.USD"];
+    return ["BTS", "BTC", "USD"];
 }
 
 /**
