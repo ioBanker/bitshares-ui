@@ -458,12 +458,7 @@ var Utils = {
         return Math.round((a / b) * 100) + "%";
     },
 
-    replaceName(name) {
-        if (!asset) return {name: "", prefix: null, isBitAsset: false};
-        const isBitAsset =
-            asset.get("bitasset") &&
-            !asset.getIn(["bitasset", "is_prediction_market"]) &&
-            asset.get("issuer") === "1.2.0";
+    replaceName(name, isBitAsset = false) {
 
         let toReplace = getAssetNamespaces();
         let suffix = "";
