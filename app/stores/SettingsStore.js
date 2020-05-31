@@ -492,11 +492,19 @@ class SettingsStore {
             this.userMarkets = Immutable.Map(ss.get(this.marketsKey, {}));
 
             
+//            let marketID = "HONEST.BTC" + "_" + "BTS";
+//            this.starredMarkets = this.starredMarkets.set(marketID, {
+//                quote: "HONEST.BTC",
+//                base: "BTS"
+//            });
+            
+            
             let marketID = "HONEST.BTC" + "_" + "BTS";
-            this.starredMarkets = this.starredMarkets.set(marketID, {
-                quote: "HONEST.BTC",
-                base: "BTS"
-            });
+			let marketID2 = "HONEST.USD" + "_" + "BTS";
+            this.starredMarkets = this.starredMarkets.set([marketID, {quote: "HONEST.BTC", base: "BTS"}],[marketID2, {quote: "HONEST.USD", base: "BTS"}] );
+            
+            
+            
             ss.set(this.starredKey, this.starredMarkets.toJS());
             
             this.initDone = true;
