@@ -449,7 +449,14 @@ class SettingsStore {
             this.marketsKey = this._getChainKey("userMarkets");
             this.basesKey = this._getChainKey("preferredBases");
             // Default markets setup
-
+            
+            
+            let marketID = "HONEST.BTC" + "_" + "BTS";
+            this.starredMarkets = this.starredMarkets.set(marketID, {
+                quote: market.quote,
+                base: market.base
+            });
+            
             let topMarkets = {
                 markets_4018d784: getMyMarketsQuotes(),
                 markets_39f5e2ed: [
@@ -491,16 +498,6 @@ class SettingsStore {
             this.starredMarkets = Immutable.Map(ss.get(this.starredKey, []));
             this.userMarkets = Immutable.Map(ss.get(this.marketsKey, {}));
 
-            
-            let marketID = "HONEST.BTC" + "_" + "BTS";
-            this.starredMarkets = this.starredMarkets.set(marketID, {
-                quote: market.quote,
-                base: market.base
-            });
-            ss.set(this.starredKey, this.starredMarkets.toJS());
-            
-            
-            
             this.initDone = true;
             resolve();
         });
