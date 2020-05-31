@@ -466,7 +466,7 @@ var Utils = {
             !asset.getIn(["bitasset", "is_prediction_market"]) &&
             asset.get("issuer") === "1.2.0";
 
-        let toReplace = getAssetNamespaces();
+        let toReplace = ["HONEST."];
         let suffix = "";
         let i;
         for (i = 0; i < toReplace.length; i++) {
