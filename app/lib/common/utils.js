@@ -1,6 +1,6 @@
 import sanitize from "xss";
 import asset_utils from "./asset_utils";
-import {getAssetNamespaces, getAssetHideNamespaces} from "branding";
+import {getAssetNamespaces, getAssetHideNamespaces} from "../../branding";
 import {ChainTypes} from "bitsharesjs";
 
 var numeral = require("numeral");
@@ -486,6 +486,24 @@ var Utils = {
             name,
             prefix,
             isBitAsset: !!isBitAsset
+        };
+    },
+    replaceName(name, isBitAsset = false) {
+        let toReplace = ["HONEST."];
+        let suffix = "";
+        let i;
+        for (i = 0; i < toReplace.length; i++) {
+            if (name.indexOf(toReplace[i]) !== -1) {
+                name = name.replace(toReplace[i], "") + suffix;
+                break;
+            }
+        }
+
+        let prefix = isBitAsset ? "bit" : toReplace[i] ? toReplace[i].toLowerCase() : null;
+
+        return {
+            name,
+            prefix
         };
     },
 
