@@ -458,36 +458,6 @@ var Utils = {
         return Math.round((a / b) * 100) + "%";
     },
 
-    replaceName(asset) {
-        if (!asset) return {name: "", prefix: null, isBitAsset: false};
-        let name = asset.get("symbol");
-        const isBitAsset =
-            asset.get("bitasset") &&
-            !asset.getIn(["bitasset", "is_prediction_market"]) &&
-            asset.get("issuer") === "1.2.0";
-
-        let toReplace = getAssetNamespaces();
-        let suffix = "";
-        let i;
-        for (i = 0; i < toReplace.length; i++) {
-            if (name.indexOf(toReplace[i]) !== -1) {
-                name = name.replace(toReplace[i], "") + suffix;
-                break;
-            }
-        }
-
-        let namespace = isBitAsset ? "bit" : toReplace[i];
-        let prefix = null;
-        if (!getAssetHideNamespaces().find(a => a.indexOf(namespace) !== -1)) {
-            prefix = namespace ? namespace.toLowerCase() : null;
-        }
-
-        return {
-            name,
-            prefix,
-            isBitAsset: !!isBitAsset
-        };
-    },
     replaceName(name, isBitAsset = false) {
         let toReplace = ["HONEST."];
         let suffix = "";
