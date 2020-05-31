@@ -5,8 +5,6 @@ import market_utils from "common/market_utils";
 import ls from "common/localStorage";
 import {ChainStore} from "bitsharesjs";
 import utils from "common/utils";
-import SettingsStore from "stores/SettingsStore";
-
 import {
     LimitOrder,
     CallOrder,
@@ -95,7 +93,7 @@ class MarketsStore {
         }
         this.allMarketStats = Immutable.Map(allMarketStats);
         this.onlyStars = marketStorage.get("onlyStars", true);
-        
+
         this.baseAsset = {
             id: "1.3.0",
             symbol: "BTS",
@@ -141,11 +139,6 @@ class MarketsStore {
     /**
      *  Add a callback that will be called anytime any object in the cache is updated
      */
-     onAddStarMarket(market) {
-            this.market = ["BTS"];
-            this.starredMarkets.set(["HONEST.BTC_BTS"], [quote:"HONEST.BTC", base:"BTS"]);
-}
-
     subscribe(id, callback) {
         if (this.subscribers.has(id) && this.subscribers.get(id) === callback)
             return console.error("Subscribe callback already exists", callback);
