@@ -457,7 +457,15 @@ var Utils = {
     get_percentage(a, b) {
         return Math.round((a / b) * 100) + "%";
     },
-replaceName(name, isBitAsset = false) {
+
+    replaceName(name) {
+        if (!asset) return {name: "", prefix: null, isBitAsset: false};
+        let name = asset.get("symbol");
+        const isBitAsset =
+            asset.get("bitasset") &&
+            !asset.getIn(["bitasset", "is_prediction_market"]) &&
+            asset.get("issuer") === "1.2.0";
+
         let toReplace = getAssetNamespaces();
         let suffix = "";
         let i;
@@ -468,11 +476,16 @@ replaceName(name, isBitAsset = false) {
             }
         }
 
-        let prefix = isBitAsset ? "bit" : toReplace[i] ? toReplace[i].toLowerCase() : null;
+        let namespace = isBitAsset ? "bit" : toReplace[i];
+        let prefix = null;
+        if (!getAssetHideNamespaces().find(a => a.indexOf(namespace) !== -1)) {
+            prefix = namespace ? namespace.toLowerCase() : null;
+        }
 
         return {
             name,
-            prefix
+            prefix,
+            isBitAsset: !!isBitAsset
         };
     },
 
