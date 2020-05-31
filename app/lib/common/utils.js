@@ -460,7 +460,6 @@ var Utils = {
 
     replaceName(name) {
         if (!asset) return {name: "", prefix: null, isBitAsset: false};
-        let name = asset.get("symbol");
         const isBitAsset =
             asset.get("bitasset") &&
             !asset.getIn(["bitasset", "is_prediction_market"]) &&
