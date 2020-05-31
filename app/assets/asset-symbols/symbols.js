@@ -8,6 +8,11 @@ require("file-loader?name=asset-symbols/[name].png!./pic/bts.png");
 require("file-loader?name=asset-symbols/[name].png!./pic/honest.btc.png");
 require("file-loader?name=asset-symbols/[name].png!./pic/honest.usd.png");
 require("file-loader?name=asset-symbols/[name].png!./pic/honest.cny.png");
+require("file-loader?name=asset-symbols/[name].png!./btc.png");
+require("file-loader?name=asset-symbols/[name].png!./usd.png");
+require("file-loader?name=asset-symbols/[name].png!./cny.png");
+require("file-loader?name=asset-symbols/[name].png!./xag.png");
+require("file-loader?name=asset-symbols/[name].png!./xau.png");
 
 // BitAssets
 require("file-loader?name=asset-symbols/[name].png!./pic/eur.png");
