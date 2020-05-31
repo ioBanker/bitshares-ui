@@ -7,7 +7,7 @@ let id_regex = /\b\d+\.\d+\.(\d+)\b/;
 import {ChainTypes} from "bitsharesjs";
 var {object_type} = ChainTypes;
 
-import {getAssetNamespaces, getAssetHideNamespaces} from "branding";
+import {getAssetNamespaces, getAssetHideNamespaces} from "../../branding";
 
 var Utils = {
     is_object_id: obj_id => {
