@@ -464,7 +464,7 @@ var Utils = {
         const isBitAsset =
             asset.get("bitasset") &&
             !asset.getIn(["bitasset", "is_prediction_market"]) &&
-            asset.get("issuer") === "1.2.581357";
+            asset.get("issuer") === "1.2.0";
 
         let toReplace = getAssetNamespaces();
         let suffix = "";
@@ -476,7 +476,7 @@ var Utils = {
             }
         }
 
-        let namespace = isBitAsset ? "HONEST." : toReplace[i];
+        let namespace = isBitAsset ? "bit" : toReplace[i];
         let prefix = null;
         if (!getAssetHideNamespaces().find(a => a.indexOf(namespace) !== -1)) {
             prefix = namespace ? namespace.toLowerCase() : null;
