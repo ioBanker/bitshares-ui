@@ -500,8 +500,8 @@ class SettingsStore {
             
             
             let marketID = "HONEST.BTC" + "_" + "BTS";
-			let marketID2 = "HONEST.USD" + "_" + "BTS";
-            this.starredMarkets = this.starredMarkets.set([marketID, {quote: "HONEST.BTC", base: "BTS"}],[marketID2, {quote: "HONEST.USD", base: "BTS"}] );
+            let marketID2 = "HONEST.USD" + "_" + "BTS";
+            this.starredMarkets = this.starredMarkets.set({marketID, {quote: "HONEST.BTC", base: "BTS"}},{marketID2, {quote: "HONEST.USD", base: "BTS"}} );
             
             
             
