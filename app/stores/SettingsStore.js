@@ -453,8 +453,8 @@ class SettingsStore {
             
             let marketID = "HONEST.BTC" + "_" + "BTS";
             this.starredMarkets = this.starredMarkets.set(marketID, {
-                quote: market.quote,
-                base: market.base
+                quote: "HONEST.BTC",
+                base: "BTS"
             });
             
             let topMarkets = {
