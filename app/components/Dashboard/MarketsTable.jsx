@@ -230,8 +230,8 @@ class MarketsTable extends React.Component {
                         parseFloat(record.hour_24) > 0
                             ? "change-up"
                             : parseFloat(record.hour_24) < 0
-                                ? "change-down"
-                                : "";
+                            ? "change-down"
+                            : "";
                     return (
                         <span
                             style={{whiteSpace: "nowrap", textAlign: "right"}}
@@ -475,11 +475,11 @@ class MarketsTable extends React.Component {
                     let baseSymbol = row.base;
 
                     if (quoteIsBitAsset) {
-                        quoteSymbol = "HONEST." + quoteSymbol;
+                        quoteSymbol = quoteSymbol.replace("HONEST.", "");
                     }
 
                     if (baseIsBitAsset) {
-                        baseSymbol = "HONEST." + baseSymbol;
+                        baseSymbol = baseSymbol.replace("HONEST.", "");
                     }
 
                     const filterPair = filter.includes(":");
@@ -580,24 +580,21 @@ class MarketsTable extends React.Component {
     }
 }
 
-export default connect(
-    MarketsTable,
-    {
-        listenTo() {
-            return [SettingsStore, MarketsStore];
-        },
-        getProps() {
-            let {marketDirections, hiddenMarkets} = SettingsStore.getState();
-            return {
-                marketDirections,
-                hiddenMarkets,
-                allMarketStats: MarketsStore.getState().allMarketStats,
-                starredMarkets: SettingsStore.getState().starredMarkets,
-                onlyLiquid: SettingsStore.getState().viewSettings.get(
-                    "onlyLiquid",
-                    true
-                )
-            };
-        }
+export default connect(MarketsTable, {
+    listenTo() {
+        return [SettingsStore, MarketsStore];
+    },
+    getProps() {
+        let {marketDirections, hiddenMarkets} = SettingsStore.getState();
+        return {
+            marketDirections,
+            hiddenMarkets,
+            allMarketStats: MarketsStore.getState().allMarketStats,
+            starredMarkets: SettingsStore.getState().starredMarkets,
+            onlyLiquid: SettingsStore.getState().viewSettings.get(
+                "onlyLiquid",
+                true
+            )
+        };
     }
-);
+});
