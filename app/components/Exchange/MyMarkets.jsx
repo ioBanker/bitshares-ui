@@ -733,9 +733,7 @@ class MyMarkets extends React.Component {
                     let gatewayMarkets = activeMarkets
                         .map(m => {
                             if (m.quote === m.base) return null;
-                            let newID = `${
-                                m.quote
-                            }_${possibleGatewayAssetName}`;
+                            let newID = `${m.quote}_${possibleGatewayAssetName}`;
                             if (activeMarkets.has(newID)) return null;
                             return {
                                 base: possibleGatewayAssetName,
@@ -1199,28 +1197,25 @@ class MyMarketsWrapper extends React.Component {
     }
 }
 
-export default connect(
-    MyMarketsWrapper,
-    {
-        listenTo() {
-            return [SettingsStore, MarketsStore, AssetStore];
-        },
-        getProps() {
-            return {
-                starredMarkets: SettingsStore.getState().starredMarkets,
-                onlyLiquid: SettingsStore.getState().viewSettings.get(
-                    "onlyLiquid",
-                    true
-                ),
-                defaultMarkets: SettingsStore.getState().defaultMarkets,
-                viewSettings: SettingsStore.getState().viewSettings,
-                preferredBases: SettingsStore.getState().preferredBases,
-                marketStats: MarketsStore.getState().allMarketStats,
-                userMarkets: SettingsStore.getState().userMarkets,
-                searchAssets: AssetStore.getState().assets,
-                onlyStars: MarketsStore.getState().onlyStars,
-                assetsLoading: AssetStore.getState().assetsLoading
-            };
-        }
+export default connect(MyMarketsWrapper, {
+    listenTo() {
+        return [SettingsStore, MarketsStore, AssetStore];
+    },
+    getProps() {
+        return {
+            starredMarkets: SettingsStore.getState().starredMarkets,
+            onlyLiquid: SettingsStore.getState().viewSettings.get(
+                "onlyLiquid",
+                false
+            ),
+            defaultMarkets: SettingsStore.getState().defaultMarkets,
+            viewSettings: SettingsStore.getState().viewSettings,
+            preferredBases: SettingsStore.getState().preferredBases,
+            marketStats: MarketsStore.getState().allMarketStats,
+            userMarkets: SettingsStore.getState().userMarkets,
+            searchAssets: AssetStore.getState().assets,
+            onlyStars: MarketsStore.getState().onlyStars,
+            assetsLoading: AssetStore.getState().assetsLoading
+        };
     }
-);
+});
