@@ -593,7 +593,7 @@ export default connect(MarketsTable, {
             starredMarkets: SettingsStore.getState().starredMarkets,
             onlyLiquid: SettingsStore.getState().viewSettings.get(
                 "onlyLiquid",
-                true
+                false
             )
         };
     }
