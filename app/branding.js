@@ -141,6 +141,7 @@ export function getMyMarketsQuotes() {
             "RUDEX.BTC",
             "RUDEX.ETH",
             "RUDEX.EOS",
+            "RUDEX.USDT",
             "RUDEX.WLS",
             "RUDEX.SMOKE"
         ],
