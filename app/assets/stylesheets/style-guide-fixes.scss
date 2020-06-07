@@ -53,3 +53,20 @@ $ant-fix: ':not([class*="ant-"])';
     margin-bottom: 0 !important ;
     padding-bottom: 0 !important ;
 }
+
+.ant-table-column-sorter {
+    height: 0 !important ;
+}
+
+thead[class*="ant-table-thead"] th {
+    background-color: #00477f !important ;
+    .ant-table-header-column {
+        .ant-table-column-title {
+            padding: 1px;
+        }
+    }
+}
+
+.ant-table-footer {
+    background-color: #00477f !important ;
+}
