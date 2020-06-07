@@ -503,6 +503,8 @@ class SettingsStore {
             let marketID4 = "RUDEX.BTC" + "_" + "HONEST.BTC";
             let marketID5 = "GDEX.USDT" + "_" + "HONEST.USD";
             let marketID6 = "GDEX.BTC" + "_" + "HONEST.BTC";
+            let marketID7 = "HONEST.BTC" + "_" + "HONEST.USD";
+            let marketID8 = "HONEST.USD" + "_" + "HONEST.BTC";
 
             this.starredMarkets = this.starredMarkets.set(marketID, {
                 quote: "HONEST.BTC",
@@ -531,6 +533,16 @@ class SettingsStore {
 
             this.starredMarkets = this.starredMarkets.set(marketID6, {
                 quote: "GDEX.BTC",
+                base: "HONEST.BTC"
+            });
+
+            this.starredMarkets = this.starredMarkets.set(marketID7, {
+                quote: "HONEST.BTC",
+                base: "HONEST.USD"
+            });
+
+            this.starredMarkets = this.starredMarkets.set(marketID8, {
+                quote: "HONEST.USD",
                 base: "HONEST.BTC"
             });
 
