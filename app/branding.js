@@ -142,13 +142,15 @@ export function getMyMarketsQuotes() {
             "RUDEX.EOS",
             "RUDEX.USDT",
             "RUDEX.WLS",
-            "RUDEX.SMOKE",
+            "RUDEX.SMOKE"
 
+            /*
             "RUDEX.XBS", // RUDEX.MPAs
             "RUDEX.XBT",
             "RUDEX.RUB",
             "RUDEX.OIL",
             "RUDEX.XAU"
+*/
         ],
         otherTokens: []
     };
@@ -177,13 +179,13 @@ export function getFeaturedMarkets(quotes = []) {
         ["BTS", "HONEST.XAU"],
         ["BTS", "HONEST.XAG"],
         ["BTS", "HONEST.BTC"],
-
+        /*
         ["BTS", "RUDEX.XBS"], // RUDEX MPAs
         ["BTS", "RUDEX.XBT"],
         ["BTS", "RUDEX.OIL"],
         ["BTS", "RUDEX.XAU"],
         ["BTS", "RUDEX.RUB"],
-
+*/
         ["BTS", "RUDEX.EOS"], // Gateways
         ["BTS", "RUDEX.WLS"],
         ["BTS", "RUDEX.SMOKE"],
