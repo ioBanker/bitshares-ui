@@ -5,6 +5,9 @@
 */
 
 /* Exchange Overrides */
+body.darkTheme .ant-btn:hover {
+    background-color: #000F18 !important;
+}
 body.darkTheme .ant-btn {
     background-color: transparent  !important;
     border: 1px solid #000F18  !important;
