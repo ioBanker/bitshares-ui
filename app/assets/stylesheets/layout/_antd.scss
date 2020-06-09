@@ -5,6 +5,25 @@
 */
 
 /* Exchange Overrides */
+body {
+    background: #001E34 !important;
+    color: #fff !important;
+}
+body.darkTheme .ant-select-selection {
+    background-color: #001E34 !important;
+}
+.exchange-bordered {
+    border: 0px !important;
+}
+.top-bar {
+    border-bottom: 0px !important;
+}
+body.darkTheme .ant-select-dropdown-menu-item, body.darkTheme .ant-select-selection {
+    background-color: #001E34 !important;
+}
+body.darkTheme .ant-select-dropdown-menu-item-selected {
+    background-color: #000F18 !important;
+}
 .header .menu-bar > li {
     border-right: 0px !important;
 }
