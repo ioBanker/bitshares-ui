@@ -8,7 +8,7 @@ $primary-text-color: #e0e0e0;
 $secondary-text-color: darken($primary-text-color, 20%);
 $inactive-text-color: darken($primary-text-color, 30%);
 $link-text-color: #80ff80; // ioBanker
-$error-text-color: #80ff80; // ioBanker
+$error-text-color: #FF8080; // ioBanker
 
 $settings-select-bg: #7ad321; // ioBanker
 $settings-select-color: darken($primary-text-color, 20%);
@@ -32,7 +32,7 @@ $fee-color: $secondary-text-color;
 
 // Exchange colors
 $bid-color: #80ff80; // ioBanker
-$ask-color: #ff8080; // ioBanker
+$ask-color: #7AD321; // ioBanker
 $call-color: #bbbf2b;
 $positive-color: #258a14;
 $negative-color: #ff3950;
