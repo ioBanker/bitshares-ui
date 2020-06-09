@@ -18,7 +18,7 @@
 .loading-panel {
     max-height: 110px;
     width: 340px;
-    background-color: #999;
+    background-color: #fff;
     opacity: 0.75;
     border-radius: 5px;
     margin-left: auto;
@@ -83,7 +83,7 @@
 .spinner > div {
     width: 18px;
     height: 18px;
-    background-color: #333;
+    background-color: #fff;
     border-radius: 100%;
     display: inline-block;
     -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
@@ -148,7 +148,7 @@
     margin: 0 auto;
     width: 20%;
     height: 20%;
-    background-color: #777;
+    background-color: #333;
 
     border-radius: 100%;
     -webkit-animation: bouncedelay 1.2s infinite ease-in-out;
@@ -277,7 +277,7 @@
 .three-bounce > div {
     width: 18px;
     height: 18px;
-    background-color: #777;
+    background-color: #fff;
 
     border-radius: 100%;
     display: inline-block;
