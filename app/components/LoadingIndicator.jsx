@@ -78,7 +78,7 @@ class LoadingIndicator extends React.Component {
                             {this.props.loadingText && (
                                 <div
                                     className="text-center"
-                                    style={{paddingTop: "10px", color: "black"}}
+                                    style={{paddingTop: "10px", color: "white"}}
                                 >
                                     {this.props.loadingText}
                                 </div>
