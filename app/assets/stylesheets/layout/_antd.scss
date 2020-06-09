@@ -22,10 +22,17 @@ body.darkTheme .ant-select-selection {
     border-bottom: 0px !important;
 }
 body.darkTheme .ant-select-dropdown-menu-item, body.darkTheme .ant-select-selection {
-    background-color: #001E34 !important;
+    background-color: #000F18 !important;
 }
 body.darkTheme .ant-select-dropdown-menu-item-selected {
-    background-color: #000F18 !important;
+    background-color: #001E34 !important;
+}
+.loading-panel {
+    background-color: #001E34 !important;
+    color: #fff !important;
+}
+.darkTheme.introjs-tooltip {
+    background-color: #001E34;
 }
 .header .menu-bar > li {
     border-right: 0px !important;
