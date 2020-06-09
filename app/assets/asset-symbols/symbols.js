@@ -18,6 +18,7 @@ require("file-loader?name=asset-symbols/[name].png!./xau.png");
 require("file-loader?name=asset-symbols/[name].png!./pic/eur.png");
 
 // 3rd party assets
+require("file-loader?name=asset-symbols/[name].png!./xsd.png");
 require("file-loader?name=asset-symbols/[name].png!./pic/eth.png");
 require("file-loader?name=asset-symbols/[name].png!./pic/usdt.png");
 require("file-loader?name=asset-symbols/[name].png!./pic/incnt.png");
