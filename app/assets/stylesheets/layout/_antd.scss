@@ -5,6 +5,10 @@
 */
 
 /* Exchange Overrides */
+.darkTheme .settings-menu > ul > li:hover {
+    color: #fff !important;
+    background-color: #001E34 !important;
+}
 body.darkTheme .ant-table-placeholder {
     color: #fff !important;
     background: #000F18 !important;
