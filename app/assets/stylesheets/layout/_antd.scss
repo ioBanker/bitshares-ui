@@ -5,6 +5,9 @@
 */
 
 /* Exchange Overrides */
+.darkTheme .header-container .dropdown.header-menu li.divider {
+    border-bottom: 1px solid #000F18 !important;
+}
 .button.hollow.primary:hover {
     border-color: #049CCE !important;
         color: #049CCE !important;
