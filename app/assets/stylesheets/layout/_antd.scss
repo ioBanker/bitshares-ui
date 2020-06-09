@@ -5,8 +5,23 @@
 */
 
 /* Exchange Overrides */
+.header .menu-bar > li {
+    border-right: 0px !important;
+}
+.footer > div > div:last-of-type {
+    border-left: 0px !important;
+}
+.darkTheme .footer {
+    color: #fff !important;
+}
+.footer .logo {
+    border-right: 0px !important;
+}
+.darkTheme .footer .logo .version {
+    color: #fff !important;
+}
 body .buy-sell-container .ant-btn {
-    border-radius: 5px;
+    border-radius: 5px !important;
 }
 
 .market-layout {
