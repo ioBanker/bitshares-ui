@@ -5,6 +5,12 @@
 */
 
 /* Exchange Overrides */
+.button.hollow.primary {
+    border-color: #049CCE !important;
+    color: #049CCE !important;
+    background: transparent;
+        color: #fff !important;
+}
 body.darkTheme .ant-btn:hover {
     background-color: #000F18 !important;
 }
