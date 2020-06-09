@@ -5,6 +5,10 @@
 */
 
 /* Exchange Overrides */
+body.darkTheme .ant-input::placeholder {
+    color: #fff;
+    background-color: #000F18;
+}
 .darkTheme .header-container .dropdown.header-menu li.divider {
     border-bottom: 1px solid #000F18 !important;
 }
