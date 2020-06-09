@@ -5,6 +5,11 @@
 */
 
 /* Exchange Overrides */
+body.darkTheme .ant-input {
+        background-color: #001E34 !important;
+    border: 1px solid #001E34 !important;
+    border-top: 1.02px solid #001E34 !important;
+}
 body.darkTheme .ant-select-selection {
     background-color: #001E34 !important;
     border: 1px solid #001E34 !important;
@@ -23,27 +28,11 @@ body.darkTheme .ant-input::placeholder {
 .darkTheme .header-container .dropdown.header-menu li.divider {
     border-bottom: 1px solid #001E34 !important;
 }
-.button.hollow.primary:hover {
-    border-color: #049CCE !important;
-        color: #049CCE !important;
-        color: #fff !important;
-}
 div.account-creation .additional-account-options {
     border-top: 1px solid #001E34 !important;
 }
 .darkTheme div.account-creation {
     border: 1px solid #001E34 !important;
-}
-.button.hollow.primary {
-    border-color: #049CCE !important;
-    color: #049CCE !important;
-        color: #fff !important;
-}
-body.darkTheme .ant-btn:hover {
-    background-color: #000F18 !important;
-}
-body.darkTheme .ant-btn {
-    border: 1px solid #000F18  !important;
 }
 .darkTheme table.table.dashboard-table > tbody > tr > td {
     background-color: #000F18 !important;
@@ -67,9 +56,6 @@ body.darkTheme .ant-table-footer {
 body.darkTheme .ant-table-footer::before {
     background: #000F18 !important;
 }
-.darkTheme .button {
-    background: #049CCE !important;
-}
 .darkTheme .header-container span.icon.lock-unlock > svg > path {
     fill: #049CCE !important;
 }
@@ -82,9 +68,6 @@ body.darkTheme .ant-table-placeholder {
     background: #000F18 !important;
     border-top: 0px !important;
     border-bottom: 0px !important;
-}
-body.darkTheme .ant-table-placeholder {
-    color: #fff !important;
 }
 body.darkTheme .ant-modal-content {
     background-color: #000F18 !important;
