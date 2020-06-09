@@ -190,7 +190,7 @@ class FormattedPrice extends React.Component {
                 : price.base.precision;
             decimals = Math.min(8, decimals);
             formatted_value = ( //new
-                <span class="clickable" onClick={this.onFlip.bind(this)}>
+                <span className="clickable" onClick={this.onFlip.bind(this)}>
                     <FormattedNumber
                         value={value}
                         minimumFractionDigits={Math.max(2, decimals)}
