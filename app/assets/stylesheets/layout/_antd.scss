@@ -6,6 +6,9 @@
 
 /* Exchange Overrides */
 body.darkTheme .ant-btn-primary {
+    border-color: #000;
+}
+body.darkTheme .ant-btn-primary {
     color: #000F18 !important;
 }
 .darkTheme .settings-menu > ul > li.active {
