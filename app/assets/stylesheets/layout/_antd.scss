@@ -5,10 +5,18 @@
 */
 
 /* Exchange Overrides */
-body.darkTheme .ant-btn-primary {
-    border-color: #000;
+
+body.darkTheme .ant-table-thead > tr > th {
+    border-bottom: 0px !important;
+}
+body.darkTheme .ant-table table tbody.ant-table-tbody > tr.ant-table-row:nth-child(2n) {
+    background-color: #001E34 !important;
+}
+body.darkTheme .ant-table table tbody.ant-table-tbody > tr.ant-table-row:nth-child(2n+1) {
+    background-color: #000F18 !important;
 }
 body.darkTheme .ant-btn-primary {
+    border-color: #000 !important;
     color: #000F18 !important;
 }
 .darkTheme .settings-menu > ul > li.active {
