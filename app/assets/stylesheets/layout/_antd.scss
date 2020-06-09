@@ -5,8 +5,15 @@
 */
 
 /* Exchange Overrides */
-.darkTheme.introjs-helperLayer {
+.darkTheme .settings-menu > ul > li.active {
+    color: #fff;
     background-color: #001E34;
+}
+body.darkTheme .ant-tooltip-inner {
+    background-color: #001E34 !important;
+}
+.darkTheme.introjs-helperLayer {
+    background-color: #001E34 !important;
 }
 body.darkTheme button.ant-switch.ant-switch-checked {
     background-color: #001E34 !important;
@@ -38,7 +45,7 @@ body.darkTheme .ant-select-dropdown-menu-item-selected {
     color: #fff !important;
 }
 .darkTheme.introjs-tooltip {
-    background-color: #001E34;
+    background-color: #001E34 !important;
 }
 .header .menu-bar > li {
     border-right: 0px !important;
