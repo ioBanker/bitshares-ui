@@ -10,7 +10,7 @@ $inactive-text-color: darken($primary-text-color, 30%);
 $link-text-color: #80ff80; // ioBanker
 $error-text-color: #80ff80; // ioBanker
 
-$settings-select-bg: #3f3f3f;
+$settings-select-bg: #7ad321; // ioBanker
 $settings-select-color: darken($primary-text-color, 20%);
 $settings-api-node-border-color: #2a2a2a;
 $main-content-margin-block-bg-color: #1e1e1e;
@@ -31,8 +31,8 @@ $warning-color: #fcab53;
 $fee-color: $secondary-text-color;
 
 // Exchange colors
-$bid-color: #6ba583;
-$ask-color: #e3745b;
+$bid-color: #80ff80; // ioBanker
+$ask-color: #ff8080; // ioBanker
 $call-color: #bbbf2b;
 $positive-color: #258a14;
 $negative-color: #ff3950;
@@ -42,15 +42,15 @@ $header-color: #000f18; // ioBanker
 // Account table view colors
 $account-header: #001e34; // ioBanker
 $account-cells: #4b5158;
-$account-green: #0591d9; // ioBanker
+$account-green: #80ff80; // ioBanker
 $account-primarytext: white;
 $account-dimmed: #afafaf;
 $account-border: #323131;
-$account-background: #3f3f3f;
+$account-background: #000f18; // ioBanker
 $account-tabs-background: #2f2f2f;
 
 $pulsate-green-start: $account-green;
-$pulsate-green-end: #aaf25c;
+$pulsate-green-end: #7ad321; // ioBanker
 $pulsate-red-start: $negative-color;
 $pulsate-red-end: #ef4040;
 
