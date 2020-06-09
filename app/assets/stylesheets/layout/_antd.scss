@@ -5,6 +5,9 @@
 */
 
 /* Exchange Overrides */
+.darkTheme.introjs-helperLayer {
+    background-color: #001E34;
+}
 body.darkTheme button.ant-switch.ant-switch-checked {
     background-color: #001E34 !important;
 }
@@ -23,6 +26,9 @@ body.darkTheme .ant-select-selection {
 }
 body.darkTheme .ant-select-dropdown-menu-item, body.darkTheme .ant-select-selection {
     background-color: #000F18 !important;
+}
+body.darkTheme .ant-tabs-bar {
+    border-bottom: 1px solid #000F18 !important;
 }
 body.darkTheme .ant-select-dropdown-menu-item-selected {
     background-color: #001E34 !important;
