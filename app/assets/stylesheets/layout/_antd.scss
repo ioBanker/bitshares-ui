@@ -5,9 +5,15 @@
 */
 
 /* Exchange Overrides */
+body.darkTheme .ant-input-group-addon {
+    color: #fff !important;
+    background-color: #000F18 !important;
+    border: 1px solid #000F18 !important;
+}
 body.darkTheme .ant-input::placeholder {
-    color: #fff;
-    background-color: #000F18;
+    border: 1px solid #000F18 !important;
+    color: #fff !important;
+    background-color: #000F18 !important;
 }
 .darkTheme .header-container .dropdown.header-menu li.divider {
     border-bottom: 1px solid #000F18 !important;
