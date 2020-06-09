@@ -5,6 +5,9 @@
 */
 
 /* Exchange Overrides */
+body.darkTheme button.ant-switch.ant-switch-checked {
+    background-color: #001E34 !important;
+}
 body {
     background: #001E34 !important;
     color: #fff !important;
