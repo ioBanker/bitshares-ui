@@ -5,10 +5,22 @@
 */
 
 /* Exchange Overrides */
+body.darkTheme .ant-btn {
+    background-color: transparent  !important;
+    border: 1px solid #000F18  !important;
+}
 .darkTheme table.table.dashboard-table > tbody > tr > td {
-    background-color: #000F18;
-    color: white;
-    border-color: #000F18;
+    background-color: #000F18 !important;
+    color: white !important;
+    border-color: #000F18 !important;
+}
+.header-container .hamburger svg rect, .header-container .hamburger-x svg rect {
+    fill: #049CCE !important;
+}
+.darkTheme table.table.dashboard-table > tbody > tr > td {
+    background-color: #000F18 !important;
+    color: white !important;
+    border-color: #000F18 !important;
 }
 body.darkTheme .ant-table-footer {
     color: #fff !important;
