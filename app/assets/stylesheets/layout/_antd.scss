@@ -5,7 +5,16 @@
 */
 
 /* Exchange Overrides */
-
+body.darkTheme .ant-modal-content {
+    background-color: #000F18 !important;
+}
+body.darkTheme .ant-modal-header {
+    background: #000F18 !important;
+    border-bottom: 0px !important;
+}
+.darkTheme .expiration-datetime-picker select > option {
+    background-color: #001E34 !important;
+}
 body.darkTheme .ant-table-thead > tr > th {
     border-bottom: 0px !important;
 }
