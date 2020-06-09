@@ -5,9 +5,12 @@
 */
 
 /* Exchange Overrides */
+body.darkTheme .ant-btn-primary {
+    color: #000F18 !important;
+}
 .darkTheme .settings-menu > ul > li.active {
-    color: #fff;
-    background-color: #001E34;
+    color: #fff !important;
+    background-color: #001E34 !important;
 }
 body.darkTheme .ant-tooltip-inner {
     background-color: #001E34 !important;
