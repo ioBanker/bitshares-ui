@@ -152,7 +152,7 @@ export function getMyMarketsQuotes() {
             "RUDEX.XAU"
 */
         ],
-        otherTokens: []
+        otherTokens: ["SOUNDAC.XSD"]
     };
 
     let allTokens = [];
@@ -222,7 +222,7 @@ export function getAssetNamespaces() {
     if (_isTestnet()) {
         return [];
     }
-    return ["HONEST.", "RUDEX."];
+    return ["HONEST.", "RUDEX.", "SOUNDAC."];
 }
 
 /**
