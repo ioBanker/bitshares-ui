@@ -59,7 +59,7 @@ $ant-fix: ':not([class*="ant-"])';
 }
 
 thead[class*="ant-table-thead"] th {
-    background-color: #00477f !important ;
+    background-color: #041f31 !important ; // ioBanker
     .ant-table-header-column {
         .ant-table-column-title {
             padding: 1px;
@@ -68,5 +68,5 @@ thead[class*="ant-table-thead"] th {
 }
 
 .ant-table-footer {
-    background-color: #00477f !important ;
+    background-color: #041f31 !important ; // ioBanker
 }
