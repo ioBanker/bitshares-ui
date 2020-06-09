@@ -7,12 +7,14 @@
 /* Exchange Overrides */
 .button.hollow.primary:hover {
     border-color: #049CCE !important;
+        color: #049CCE !important;
+        color: #fff !important;
 }
 div.account-creation .additional-account-options {
-    border-top: 1px solid #000F18 !important;
+    border-top: 1px solid #001E34 !important;
 }
 .darkTheme div.account-creation {
-    border: 1px solid #000F18 !important;
+    border: 1px solid #001E34 !important;
 }
 .button.hollow.primary {
     border-color: #049CCE !important;
