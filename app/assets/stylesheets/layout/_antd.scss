@@ -5,6 +5,15 @@
 */
 
 /* Exchange Overrides */
+body.darkTheme .ant-table-placeholder {
+    color: #fff !important;
+    background: #000F18 !important;
+    border-top: 0px !important;
+    border-bottom: 0px !important;
+}
+body.darkTheme .ant-table-placeholder {
+    color: #fff !important;
+}
 body.darkTheme .ant-modal-content {
     background-color: #000F18 !important;
 }
