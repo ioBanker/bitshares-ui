@@ -7,20 +7,20 @@ $dark-text-color: #444;
 $primary-text-color: #e0e0e0;
 $secondary-text-color: darken($primary-text-color, 20%);
 $inactive-text-color: darken($primary-text-color, 30%);
-$link-text-color: #0293dc; // ioBanker
-$error-text-color: #ff3950;
+$link-text-color: #80ff80; // ioBanker
+$error-text-color: #80ff80; // ioBanker
 
 $settings-select-bg: #3f3f3f;
 $settings-select-color: darken($primary-text-color, 20%);
 $settings-api-node-border-color: #2a2a2a;
 $main-content-margin-block-bg-color: #1e1e1e;
-$bg-color: #2a2a2a;
-$panel-bg-color: #3f3f3f;
-$light-panel-bg-color: #0293dc; // ioBanker
+$bg-color: #000f18; // ioBanker
+$panel-bg-color: #001e34; // ioBanker
+$light-panel-bg-color: #7ad321; // ioBanker
 $super-light-panel-bg-color: lighten($light-panel-bg-color, 8%);
 $settings-menu-hover-bg: darken($light-panel-bg-color, 20%);
 $settings-menu-active-bg: darken($light-panel-bg-color, 20%);
-$button-bg-color: #0293dc; // ioBanker
+$button-bg-color: #7ad321; // ioBanker
 $secondary-button-bg-color: #999999;
 $input-background: lighten($bg-color, 1%);
 
@@ -37,12 +37,12 @@ $call-color: #bbbf2b;
 $positive-color: #258a14;
 $negative-color: #ff3950;
 $row-accent-color: #3c3c3c;
-$header-color: #484848;
+$header-color: #000f18; // ioBanker
 
 // Account table view colors
-$account-header: #041f31; // ioBanker
+$account-header: #001e34; // ioBanker
 $account-cells: #4b5158;
-$account-green: #7ed321;
+$account-green: #0591d9; // ioBanker
 $account-primarytext: white;
 $account-dimmed: #afafaf;
 $account-border: #323131;
@@ -95,10 +95,10 @@ $settings-label-color: rgba(255, 255, 255, 0.5);
 // color palette
 
 // branding colors
-$primary-color: #337ab7;
+$primary-color: #049cce; // ioBanker
 
 // help colors
-$primary-dark: #2a2a2a;
+$primary-dark: #000f18; // ioBanker
 $white: #fff;
 $dark: rgba(0, 0, 0, 0.6);
 $dark-1: lighten($dark, 30%);
@@ -106,7 +106,7 @@ $dark-2: lighten($dark, 60%);
 $dark-3: lighten($dark, 90%);
 
 // Header
-$header-background-color: #041f31; // ioBanker
+$header-background-color: #000f18; // ioBanker
 $header-shadow: 0 !important;
 $header-item--color: $white;
 $header-item-background-color: $dark;
