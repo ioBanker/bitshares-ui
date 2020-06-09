@@ -5,6 +5,12 @@
 */
 
 /* Exchange Overrides */
+.darkTheme .button {
+    background: #049CCE !important;
+}
+.darkTheme .header-container span.icon.lock-unlock > svg > path {
+    fill: #049CCE !important;
+}
 .darkTheme .settings-menu > ul > li:hover {
     color: #fff !important;
     background-color: #001E34 !important;
