@@ -5,6 +5,11 @@
 */
 
 /* Exchange Overrides */
+body.darkTheme .ant-popover-inner {
+    background-color: #000F18 !important;
+    border: 1px solid #001E34 !important;
+    border-top: 1.02px solid #001E34 !important;
+}
 body.darkTheme .ant-input {
         background-color: #001E34 !important;
     border: 1px solid #001E34 !important;
