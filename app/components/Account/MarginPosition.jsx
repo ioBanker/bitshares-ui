@@ -268,21 +268,31 @@ class MarginPosition extends React.Component {
                         <AssetName name={debtAsset.get("symbol")} />
                     </Link>
                 </td>
-                <td style={alignRight}>
+                <td
+                    onClick={this._onUpdatePosition.bind(this)}
+                    style={alignRight}
+                >
                     <FormattedAsset
                         amount={balance}
                         asset={balance_asset}
                         hide_asset
                     />
                 </td>
-                <td style={alignRight}>
+                <td
+                    onClick={this._onUpdatePosition.bind(this)}
+                    style={alignRight}
+                >
                     <FormattedAsset
                         amount={debt_amount}
                         asset={balance_asset}
                         hide_asset
                     />
                 </td>
-                <td style={alignRight} className="column-hide-medium">
+                <td
+                    onClick={this._onUpdatePosition.bind(this)}
+                    style={alignRight}
+                    className="column-hide-medium"
+                >
                     <FormattedAsset
                         decimalOffset={3}
                         amount={collateral_amount}
@@ -291,6 +301,7 @@ class MarginPosition extends React.Component {
                 </td>
                 {has_order ? (
                     <td
+                        onClick={this._onUpdatePosition.bind(this)}
                         data-place="bottom"
                         data-tip={this._getCRTip()}
                         className={"center-content " + this._getStatusClass()}
@@ -305,12 +316,16 @@ class MarginPosition extends React.Component {
                 ) : (
                     <td />
                 )}
-                <td>
+                {/* <td>
                     {target_collateral_ratio && !isPrediction
                         ? utils.format_number(target_collateral_ratio, 2)
                         : null}
                 </td>
-                <td style={alignRight}>
+                */}
+                <td
+                    onClick={this._onUpdatePosition.bind(this)}
+                    style={alignRight}
+                >
                     {has_order ? (
                         <TotalBalanceValue
                             balances={List()}
@@ -387,7 +402,7 @@ class MarginPosition extends React.Component {
                         />
                     </Link>
                 </td>
-                <td>
+                {/* <td>
                     {hasGlobalSettlement ? (
                         <Tooltip
                             placement={"left"}
@@ -423,6 +438,7 @@ class MarginPosition extends React.Component {
                         </Tooltip>
                     )}
                 </td>
+                */}
                 <td>
                     {has_order ? (
                         <div

@@ -228,7 +228,7 @@ const MarginPositionsTable = ({
                             <Translate content="borrow.coll_ratio" />
                         </Popover>
                     </th>
-                    <th>
+                    {/*  <th>
                         <Popover
                             placement="top"
                             content={
@@ -245,6 +245,7 @@ const MarginPositionsTable = ({
                             <Translate content="borrow.target_collateral_ratio_short" />
                         </Popover>
                     </th>
+                    */}
                     <th style={alignRight}>
                         <TranslateWithLinks
                             noLink
@@ -284,9 +285,10 @@ const MarginPositionsTable = ({
                     <th style={{textAlign: "center"}}>
                         <Translate content="exchange.market" />
                     </th>
-                    <th>
+                    {/* <th>
                         <Translate content="borrow.adjust_short" />
                     </th>
+                    */}
                     <th>
                         <Translate content="transfer.close" />
                     </th>
