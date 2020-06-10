@@ -11,7 +11,12 @@
     border: 1px solid #001E34 !important;
 }
 body.darkTheme .ant-btn:hover {
-    background-color: #001E34 !important;
+        background-color: #001E34 !important;
+        border-top-color: #001E34 !important;
+        border-right-color: #001E34 !important;
+        border-bottom-color: #001E34 !important;
+        border-left-color: #001E34 !important;
+        color: #fff !important;
 }
 .darkTheme .table {
     border-bottom-color: #001E34 !important;
