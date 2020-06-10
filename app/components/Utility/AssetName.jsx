@@ -19,7 +19,7 @@ class AssetName extends React.Component {
     static defaultProps = {
         replace: true,
         noPrefix: false,
-        noTip: false,
+        noTip: true,
         dataPlace: "bottom"
     };
 
@@ -127,8 +127,8 @@ class AssetName extends React.Component {
                 prefix && prefix === "bit"
                     ? prefix
                     : !!prefix
-                        ? prefix.toUpperCase()
-                        : prefix;
+                    ? prefix.toUpperCase()
+                    : prefix;
             let assetDiv = (
                 <div
                     className={

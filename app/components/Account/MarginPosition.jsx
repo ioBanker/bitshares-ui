@@ -265,7 +265,7 @@ class MarginPosition extends React.Component {
             <tr className="margin-row">
                 <td style={alignLeft}>
                     <Link to={`/asset/${debtAsset.get("symbol")}`}>
-                        <AssetName noTip name={debtAsset.get("symbol")} />
+                        <AssetName name={debtAsset.get("symbol")} />
                     </Link>
                 </td>
                 <td style={alignRight}>
@@ -313,7 +313,6 @@ class MarginPosition extends React.Component {
                 <td style={alignRight}>
                     {has_order ? (
                         <TotalBalanceValue
-                            noTip
                             balances={List()}
                             debt={{[debtAsset.get("id")]: co.debt}}
                             collateral={{
@@ -332,7 +331,6 @@ class MarginPosition extends React.Component {
                             "-"
                         ) : (
                             <FormattedPrice
-                                noPopOver
                                 base_amount={collateral_amount}
                                 base_asset={collateralAsset.get("id")}
                                 quote_amount={debt_amount * (mcr / 1000)}

@@ -35,6 +35,10 @@ class FormattedPrice extends React.Component {
         decimals: PropTypes.number
     };
 
+    static defaultProps = {
+        noPopOver: true
+    };
+
     constructor(props) {
         super(props);
         const {marketName, first, second} = marketUtils.getMarketName(
