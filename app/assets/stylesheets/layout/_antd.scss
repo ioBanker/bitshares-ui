@@ -5,6 +5,17 @@
 */
 
 /* Exchange Overrides */
+.darkTheme .table > thead > tr > th {
+    border-bottom-color: #001E34 !important;
+}
+body.darkTheme .ant-card .ant-card-body {
+    background-color: #000F18 !important;
+    border-color: #001E34 !important;
+}
+.darkTheme .page-layout {
+    background-color: #000F18 !important;
+    border: 1px solid #001E34 !important;
+}
 .darkTheme .explore-witness--info {
     border: 1px solid #001E34 !important;
 }
