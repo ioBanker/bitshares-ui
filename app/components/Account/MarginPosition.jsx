@@ -263,6 +263,20 @@ class MarginPosition extends React.Component {
 
         return (
             <tr className="margin-row">
+                <td style={{textAlign: "center"}}>
+                    <Link
+                        to={`/market/${debtAsset.get(
+                            "symbol"
+                        )}_${collateralAsset.get("symbol")}`}
+                    >
+                        <Icon
+                            name="trade"
+                            title="icons.trade.trade"
+                            className="icon-14px"
+                            style={{marginRight: 5}}
+                        />
+                    </Link>
+                </td>
                 <td style={alignLeft}>
                     <Link to={`/asset/${debtAsset.get("symbol")}`}>
                         <AssetName name={debtAsset.get("symbol")} />
@@ -355,7 +369,7 @@ class MarginPosition extends React.Component {
                         )
                     ) : null}
                 </td>
-                <td style={alignRight} className={"column-hide-small"}>
+                <td style={alignLeft} className={"column-hide-small"}>
                     {has_order ? (
                         isPrediction ? (
                             "1"
@@ -373,11 +387,7 @@ class MarginPosition extends React.Component {
                             />
                         )
                     ) : null}
-                </td>
-                <td
-                    className={"center-content column-hide-small"}
-                    style={alignLeft}
-                >
+
                     {has_order ? (
                         <FormattedPrice
                             base_amount={co.call_price.base.amount}
@@ -387,20 +397,6 @@ class MarginPosition extends React.Component {
                             hide_value
                         />
                     ) : null}
-                </td>
-                <td style={{textAlign: "center"}}>
-                    <Link
-                        to={`/market/${debtAsset.get(
-                            "symbol"
-                        )}_${collateralAsset.get("symbol")}`}
-                    >
-                        <Icon
-                            name="trade"
-                            title="icons.trade.trade"
-                            className="icon-14px"
-                            style={{marginRight: 5}}
-                        />
-                    </Link>
                 </td>
                 {/* <td>
                     {hasGlobalSettlement ? (

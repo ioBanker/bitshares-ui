@@ -203,6 +203,9 @@ const MarginPositionsTable = ({
         <table className={"table table-hover " + className}>
             <thead>
                 <tr>
+                    <th style={{textAlign: "center"}}>
+                        <Translate content="exchange.market" />
+                    </th>
                     <th style={alignLeft}>
                         <Translate content="explorer.asset.title" />
                     </th>
@@ -269,7 +272,7 @@ const MarginPositionsTable = ({
                             <Translate content="exchange.call" />
                         </Popover>
                     </th>
-                    <th style={alignRight} className="column-hide-small">
+                    <th style={alignLeft} className="column-hide-small">
                         <Popover
                             placement="top"
                             content={counterpart.translate(
@@ -279,12 +282,7 @@ const MarginPositionsTable = ({
                             <Translate content="exchange.feed_price" />
                         </Popover>
                     </th>
-                    <th className="column-hide-small" style={alignLeft}>
-                        <Translate content="explorer.assets.units" />
-                    </th>
-                    <th style={{textAlign: "center"}}>
-                        <Translate content="exchange.market" />
-                    </th>
+
                     {/* <th>
                         <Translate content="borrow.adjust_short" />
                     </th>
