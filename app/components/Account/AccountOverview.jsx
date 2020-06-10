@@ -467,7 +467,7 @@ class AccountOverview extends React.Component {
                                             callOrders={call_orders}
                                             account={account}
                                         >
-                                            <tr className="total-value">
+                                            <td></td><tr className="total-value">
                                                 <td>{totalValueText}</td>
                                                 <td />
                                                 <td>{debtValue}</td>
