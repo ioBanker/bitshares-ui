@@ -332,6 +332,7 @@ class MarginPosition extends React.Component {
                             "-"
                         ) : (
                             <FormattedPrice
+                                noPopOver
                                 base_amount={collateral_amount}
                                 base_asset={collateralAsset.get("id")}
                                 quote_amount={debt_amount * (mcr / 1000)}
