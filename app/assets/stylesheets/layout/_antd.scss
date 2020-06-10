@@ -5,6 +5,13 @@
 */
 
 /* Exchange Overrides */
+.darkTheme .table > thead > tr > th {
+    border-bottom-color: #001E34 !important;
+    color: #fff !important;
+}
+body.darkTheme .ant-card-bordered {
+    border: 0px !important;
+}
 .darkTheme .node-access-popup {
     color: #fff !important;
     background-color: #001e34 !important;
