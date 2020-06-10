@@ -5,6 +5,14 @@
 */
 
 /* Exchange Overrides */
+body.darkTheme .ant-pagination-item-active {
+    background: #000F18 !important;
+    border-color: #001E34 !important;
+}
+body.darkTheme .ant-pagination-item {
+    background-color: #000F18 !important;
+    border: 1px solid #001E34 !important;
+}
 body.darkTheme .ant-pagination-disabled .ant-pagination-item-link, body.darkTheme .ant-pagination-disabled:focus .ant-pagination-item-link, body.darkTheme .ant-pagination-disabled:focus a, body.darkTheme .ant-pagination-disabled:hover .ant-pagination-item-link, body.darkTheme .ant-pagination-disabled:hover a, body.darkTheme .ant-pagination-disabled a {
     border-color: #001E34 !important;
 }
