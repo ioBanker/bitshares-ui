@@ -5,6 +5,9 @@
 */
 
 /* Exchange Overrides */
+.darkTheme .explore-witness--info {
+    border: 1px solid #001E34 !important;
+}
 body.darkTheme .ant-pagination-item-active {
     background: #000F18 !important;
     border-color: #001E34 !important;
