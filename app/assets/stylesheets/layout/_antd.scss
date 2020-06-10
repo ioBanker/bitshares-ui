@@ -5,6 +5,9 @@
 */
 
 /* Exchange Overrides */
+body.darkTheme .ant-btn:hover {
+    background-color: transparent !important;
+}
 .darkTheme .table {
     border-bottom-color: #001E34 !important;
 }
