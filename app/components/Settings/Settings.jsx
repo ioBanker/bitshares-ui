@@ -35,7 +35,7 @@ class Settings extends React.Component {
             "browser_notifications",
             "showSettles",
             "walletLockTimeout",
-            "themes",
+            // "themes",
             "showAssetPercent",
             "viewOnlyMode",
             "showProposedTx"
@@ -223,12 +223,16 @@ class Settings extends React.Component {
                 }
                 break;
 
-            case "themes":
+                {
+                    /*
+              case "themes":
                 SettingsActions.changeSetting({
                     setting: "themes",
                     value: e.target.value
                 });
                 break;
+              */
+                }
 
             case "defaultMarkets":
                 break;
@@ -471,9 +475,7 @@ class Settings extends React.Component {
                                             paddingTop: 5,
                                             marginBottom: 30
                                         }}
-                                        content={`settings.${
-                                            menuEntries[activeSetting]
-                                        }_text`}
+                                        content={`settings.${menuEntries[activeSetting]}_text`}
                                         className="panel-bg-color"
                                     />
                                 )}
