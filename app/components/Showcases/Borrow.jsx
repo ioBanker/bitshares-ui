@@ -147,13 +147,13 @@ class Borrow extends Component {
                                     marginBottom: "1rem"
                                 }}
                                 assets={[
-                                    "1.3.113",
-                                    "1.3.120",
-                                    "1.3.121",
-                                    "1.3.1325",
-                                    "1.3.105",
-                                    "1.3.106",
-                                    "1.3.103"
+                                    "1.3.5641",
+                                    "1.3.5649",
+                                    "1.3.5650",
+                                    "1.3.5651",
+                                    "1.3.5652",
+                                    "1.3.5659",
+                                    "1.3.5660"
                                 ]}
                                 value={this.state.selectedAsset}
                                 onChange={this.onAssetChange.bind(this)}
@@ -352,20 +352,19 @@ class Borrow extends Component {
                         )}
                     </div>
                 </Card>
-                {accountLoaded &&
-                    !!selectedAssetObject && (
-                        <BorrowModal
-                            visible={this.state.isBorrowBaseModalVisible}
-                            hideModal={this.hideBorrowModal}
-                            quoteAssetObj={selectedAssetObject.get("id")}
-                            backingAssetObj={selectedAssetObject.getIn([
-                                "bitasset",
-                                "options",
-                                "short_backing_asset"
-                            ])}
-                            accountObj={currentAccount}
-                        />
-                    )}
+                {accountLoaded && !!selectedAssetObject && (
+                    <BorrowModal
+                        visible={this.state.isBorrowBaseModalVisible}
+                        hideModal={this.hideBorrowModal}
+                        quoteAssetObj={selectedAssetObject.get("id")}
+                        backingAssetObj={selectedAssetObject.getIn([
+                            "bitasset",
+                            "options",
+                            "short_backing_asset"
+                        ])}
+                        accountObj={currentAccount}
+                    />
+                )}
             </div>
         );
     }
@@ -404,18 +403,15 @@ class Borrow extends Component {
 
 Borrow = debounceRender(Borrow, 50, {leading: false});
 
-export default connect(
-    Borrow,
-    {
-        listenTo() {
-            return [AccountStore];
-        },
-        getProps() {
-            return {
-                currentAccount:
-                    AccountStore.getState().currentAccount ||
-                    AccountStore.getState().passwordAccount
-            };
-        }
+export default connect(Borrow, {
+    listenTo() {
+        return [AccountStore];
+    },
+    getProps() {
+        return {
+            currentAccount:
+                AccountStore.getState().currentAccount ||
+                AccountStore.getState().passwordAccount
+        };
     }
-);
+});
