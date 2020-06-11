@@ -47,7 +47,7 @@ $account-primarytext: white;
 $account-dimmed: #afafaf;
 $account-border: #323131;
 $account-background: #000f18; // ioBanker
-$account-tabs-background: #2f2f2f;
+$account-tabs-background: #000f18;
 
 $pulsate-green-start: $account-green;
 $pulsate-green-end: #7ad321; // ioBanker
@@ -56,7 +56,7 @@ $pulsate-red-end: #ef4040;
 
 $modal-bg-color: #000f18;
 
-$mobile-input-bg: #2d2d2d;
+$mobile-input-bg: #000f18;
 
 $slider-thumb-color: #f00;
 
@@ -139,7 +139,7 @@ $selector-text-color: lighten($primary-dark, 35%);
 // Header Menu
 
 $header-menu--active--icon-background: $primary-dark;
-$header-menu--active--box-shadow: 0 4px 9px 0 #00000015;
+$header-menu--active--box-shadow: 0 4px 9px 0 #000f18;
 $header-menu-background-color: lighten($primary-dark, 5%);
 $header-menu-item--hover--background-color: lighten($primary-dark, 10%);
 
