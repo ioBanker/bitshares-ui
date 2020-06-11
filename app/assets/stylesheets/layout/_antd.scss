@@ -5,8 +5,8 @@
 */
 
 /* Exchange Overrides */
-body.darkTheme .ant-table-row:hover::before {
-        background: #000 !important;
+body.darkTheme .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, body.darkTheme .ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, body.darkTheme .ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, body.darkTheme .ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+    background: #000 !important;
 }
 body.darkTheme .ant-table-thead > tr > th .ant-table-header-column .ant-table-column-sorters:hover::before {
     background: #000 !important;
