@@ -5,6 +5,15 @@
 */
 
 /* Exchange Overrides */
+body, .chart-controls-bar, #footer-chart-panel {
+    background-color: #000F18 !important;
+}
+.chart-page {
+    background: #000F18 !important;
+}
+body.chart-page, .loading-indicator {
+    background: #000F18 !important;
+}
 body.darkTheme .ant-input {
     background-color: #000F18 !important;
 }
