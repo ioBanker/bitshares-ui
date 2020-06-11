@@ -2221,8 +2221,8 @@
                 "title": "Setup",
                 "title_within": "How does it work?"
             },
-            "title": "Collateralized Debt Position",
-            "title_long": "Create a Collateralized Debt Position"
+            "title": "Margin Loan",
+            "title_long": "Create a Margin Loan"
         },
         "direct_debit": {
             "amount_to_withdraw": "Amount to collect",
