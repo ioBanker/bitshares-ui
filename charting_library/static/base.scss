@@ -128,7 +128,7 @@ input.symbol-edit,
     height: 42px !important;
     .header-chart-panel-content {
       padding: 5px !important;
-      background: $primary-background;
+      background: #001e34;
 
       .button, .apply-common-tooltip {
         border: 1px solid $layout-top-button-border-color !important;
@@ -137,7 +137,7 @@ input.symbol-edit,
 
       // template button border
       .favored-list-container .submenu {
-        border-color: $primary-background;
+        border-color: #001e34;
       }
 
     }
