@@ -298,6 +298,19 @@ class Borrow extends Component {
                         )}
                     </div>
                     <div className="steps-action">
+                        {current > 0 && (
+                            <Button
+                                style={{marginLeft: 8}}
+                                onClick={() => this.prev()}
+                                ref="previous"
+                                onKeyDown={this.onKeyDown.bind(this)}
+                            >
+                                <Translate
+                                    content={"showcases.borrow.previous"}
+                                />
+                            </Button>
+                        )}
+
                         {current < steps.length && (
                             <Tooltip
                                 title={
@@ -308,6 +321,7 @@ class Borrow extends Component {
                                         : null
                                 }
                             >
+                                {" "}
                                 <Button
                                     type="primary"
                                     onClick={() => this.next()}
@@ -337,18 +351,6 @@ class Borrow extends Component {
                                     )}
                                 </Button>
                             </Tooltip>
-                        )}
-                        {current > 0 && (
-                            <Button
-                                style={{marginLeft: 8}}
-                                onClick={() => this.prev()}
-                                ref="previous"
-                                onKeyDown={this.onKeyDown.bind(this)}
-                            >
-                                <Translate
-                                    content={"showcases.borrow.previous"}
-                                />
-                            </Button>
                         )}
                     </div>
                 </Card>
