@@ -44,7 +44,7 @@ module.exports = {
         tooltipFillColor: "#fff",
         //axis
         axisLabelsColor: "#fff",
-        axisLineColor: "rgba(200, 200, 200, 0.3)",
+        axisLineColor: "#001e34",
         indicatorLineColor: "#FFFFFF",
         bgColor: "#001e34",
         textColor: "#ffffff"
