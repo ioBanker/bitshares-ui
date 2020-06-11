@@ -39,7 +39,7 @@ module.exports = {
         volumeColor: "#848484",
 
         //tooltip
-        tooltipBackgroundColor: "rgba(0, 0, 0, 0.4)",
+        tooltipBackgroundColor: "#001e34",
         tooltipColor: "#fff",
         tooltipFillColor: "#fff",
         //axis
