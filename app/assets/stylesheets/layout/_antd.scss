@@ -5,6 +5,9 @@
 */
 
 /* Exchange Overrides */
+body.darkTheme .ant-input {
+    background-color: #000F18 !important;
+}
 .dropdown-wrapper ul.dropdown {
     border-radius: 5px 5px 5px 5px !important;
 }
@@ -76,7 +79,6 @@ body.darkTheme .ant-popover-inner {
     border-top: 1.02px solid #001E34 !important;
 }
 body.darkTheme .ant-input {
-        background-color: #001E34 !important;
     border: 1px solid #001E34 !important;
     border-top: 1.02px solid #001E34 !important;
 }
