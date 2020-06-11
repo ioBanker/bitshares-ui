@@ -5,6 +5,9 @@
 */
 
 /* Exchange Overrides */
+body.darkTheme .ant-select-dropdown-menu {
+    border: 1px solid #001E34;
+}
 body.darkTheme .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, body.darkTheme .ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, body.darkTheme .ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, body.darkTheme .ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
     background: #000 !important;
 }
