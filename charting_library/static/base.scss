@@ -31,12 +31,12 @@ $icon-light-color-active: $primary-text-color-active !default;
 
 
 body.chart-page, .loading-indicator {
-  background: $primary-background;
+  background: #001e34;
 }
 
 .chart-page .chart-container {
   border: none;
-  background: $primary-background;
+  background: #001e34;
 }
 
 .header-chart-panel .group {
@@ -533,10 +533,10 @@ input.symbol-edit,
 
 .layout__area--left {
   [class|=separator] {
-    background-color: $primary-border-color;
+    background-color: #001e34;
   }
   [class|=inner] {
-    background: $primary-background;
+    background: #001e34;
     [class|=buttonIcon] {
       color: $primary-text-color;
     }
@@ -624,11 +624,11 @@ input.symbol-edit,
 
 [class|=menuWrap] {
   [class|=menu] {
-    background-color: $primary-background !important;
+    background-color: #001e34 !important;
     [class|=item] {
       cursor: pointer;
       color: $primary-text-color;
-      background-color: $primary-background !important;
+      background-color: #001e34 !important;
       [class|=labelRow] {
         color: $primary-text-color !important;
       }
