@@ -283,6 +283,7 @@ class MarginPosition extends React.Component {
                     </Link>
                 </td>
                 <td
+                    className="clickable"
                     onClick={this._onUpdatePosition.bind(this)}
                     style={alignRight}
                 >
@@ -293,6 +294,7 @@ class MarginPosition extends React.Component {
                     />
                 </td>
                 <td
+                    className="clickable"
                     onClick={this._onUpdatePosition.bind(this)}
                     style={alignRight}
                 >
@@ -305,7 +307,7 @@ class MarginPosition extends React.Component {
                 <td
                     onClick={this._onUpdatePosition.bind(this)}
                     style={alignRight}
-                    className="column-hide-medium"
+                    className={"clickable " + "column-hide-medium"}
                 >
                     <FormattedAsset
                         decimalOffset={3}
@@ -315,10 +317,14 @@ class MarginPosition extends React.Component {
                 </td>
                 {has_order ? (
                     <td
+                        className={
+                            "clickable " +
+                            "center-content " +
+                            this._getStatusClass()
+                        }
                         onClick={this._onUpdatePosition.bind(this)}
                         data-place="bottom"
                         data-tip={this._getCRTip()}
-                        className={"center-content " + this._getStatusClass()}
                     >
                         {isPrediction
                             ? "1:1"
@@ -337,6 +343,7 @@ class MarginPosition extends React.Component {
                 </td>
                 */}
                 <td
+                    className="clickable"
                     onClick={this._onUpdatePosition.bind(this)}
                     style={alignRight}
                 >
