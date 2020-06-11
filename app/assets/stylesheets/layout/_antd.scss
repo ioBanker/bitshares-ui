@@ -101,18 +101,16 @@ div.account-creation .additional-account-options {
 .darkTheme div.account-creation {
     border: 1px solid #001E34 !important;
 }
-.darkTheme table.table.dashboard-table > tbody > tr > td {
-    background-color: #000F18 !important;
-    color: white !important;
-    border-color: #000F18 !important;
-}
 .header-container .hamburger svg rect, .header-container .hamburger-x svg rect {
     fill: #049CCE !important;
 }
 .darkTheme table.table.dashboard-table > tbody > tr > td {
-    background-color: #000F18 !important;
+    background-color: #001E34 !important;
     color: white !important;
     border-color: #000F18 !important;
+}
+.darkTheme .table.table-hover > tbody > tr:hover > td, .darkTheme .table .table-hover > tbody > tr:hover > th {
+    background-color: #000F18;
 }
 body.darkTheme .ant-table-footer {
     color: #fff !important;
