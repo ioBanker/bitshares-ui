@@ -11,7 +11,7 @@
  * [Cuentas](accounts/general.md)
  * [Permisos](accounts/permissions.md)
  * [Membresías](accounts/membership.md)
- * [Market Pegged Assets](assets/mpa.md) (HONEST.USD, HONEST.BTC, HONEST.XAU ...)
+ * [HONEST MPAs](assets/mpa.md) (HONEST.USD, HONEST.BTC, HONEST.XAU ...)
  * [Activos Emitidos por Usuarios](assets/uia.md)
  * [Exchange Descentralizado](dex/introduction.md)
  * [Trading](dex/trading.md)
