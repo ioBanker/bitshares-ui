@@ -9,16 +9,10 @@
  * [Proposed Transactions](accounts/proposed.md)
  * [Permissions](accounts/permissions.md)
  * [Memberships](accounts/membership.md)
- * [Market Pegged Assets](assets/mpa.md)
-    * bitUSD
-    * bitEUR
-    * bitGOLD
+ * [HONEST MPAs](assets/mpa.md)
  * [User Issued Assets](assets/uia.md)
- * [Privatized BitAssets](assets/privbitassets.md)
  * [Decentralized Exchange](dex/introduction.md)
  * [Trading](dex/trading.md)
- * [Short Selling BitAssets](dex/shorting.md)
+ * [Short Selling HONEST.Assets](dex/shorting.md)
  * [Gateways](gateways/introduction.md)
-    * [Citadel](gateways/citadel.md)
     * [Rudex](gateways/rudex.md)
-    * [Xbts](gateways/xbtsx.md)

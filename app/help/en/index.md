@@ -1,6 +1,6 @@
 # Graphene Help
 
-BitShares 2.0 is a Financial Smart Contracts platform that is based on the
+BitShares 4.0 is a Financial Smart Contracts platform that is based on the
 [Graphene](https://github.com/cryptonomex/graphene) technology built by
 [Cryptonomex](http://cryptonomex.com). You can see Graphene as a toolkit or
 technology for real-time blockchains.
@@ -8,7 +8,7 @@ technology for real-time blockchains.
 This help section gives a brief overview and describes the most basic concepts
 of this application.
 
-## Introduction 
+## Introduction
  * [BitShares](introduction/bitshares.md)
  * [Wallet](introduction/wallets.md)
  * [Backups](introduction/backups.md)
@@ -23,17 +23,16 @@ of this application.
  * [Memberships](accounts/membership.md)
 
 ## Assets
- * [Market Pegged Assets](assets/mpa.md) (BitUSD, BitEUR, BitGOLD, Bit\*,...)
- * [User Issued Assets](assets/uia.md)
- * [Privatized BitAssets](assets/privbitassets.md)
+ * [HONEST MPAs](assets/mpa.md) (HONEST.USD, HONEST.BTC, HONEST.XAU ...)
+ * [UIA](assets/uia.md)
 
 ## Decentralized Exchange
  * [Introduction](dex/introduction.md)
  * [Trading](dex/trading.md)
- * [Short Selling BitAssets](dex/shorting.md)
+ * [Short Selling HONEST.Assets](dex/shorting.md)
 
 ## Development
- * [Bitshares UI Github](https://github.com/bitshares/bitshares-ui)
+ * [ioBanker UI Github](https://github.com/ioBanker/bitshares-ui)
  * [HackTheDEX](introduction/hackthedex.md)
 
 ----------

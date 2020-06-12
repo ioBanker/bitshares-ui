@@ -1,4 +1,4 @@
-# User Issued Assets
+# User Issued Assets (UIAs)
 
 In addition to the aforementioned *market pegged* assets, BitShares allows
 individuals and companies to create and issue their own tokens for anything
