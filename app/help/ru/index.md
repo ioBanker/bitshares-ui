@@ -22,15 +22,15 @@ BitShares 2.0 - это платформа Финансовых Смарт-Кон
 
 ## Активы
 
-- [Привязанные к рынку активы](assets/mpa.md) (BitUSD, BitEUR, BitGOLD, Bit\*,...)
+- [Привязанные к рынку активы](assets/mpa.md) (HONEST.USD, HONEST.BTC, HONEST.XAU ...)
 - [Эмитированные пользователем активы](assets/uia.md)
-- [Приватизированные BitAssets](assets/privbitassets.md)
+
 
 ## Децентрализованная биржа
 
 - [Введение](dex/introduction.md)
 - [Торговля](dex/trading.md)
-- [Короткая продажа BitAssets](dex/shorting.md)
+- [Короткая продажа HONEST.Assets](dex/shorting.md)
 
 * * *
 
