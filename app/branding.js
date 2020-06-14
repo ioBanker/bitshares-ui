@@ -24,7 +24,7 @@ function _isTestnet() {
  * @returns {string}
  */
 export function getWalletName() {
-    return "ioBanker";
+    return "ioBanker DEX";
 }
 
 /**
