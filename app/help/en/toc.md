@@ -1,6 +1,6 @@
 #### Help
 
- * [BitShares](introduction/bitshares.md)
+ * [ioBanker DEX](introduction/tos.md)
  * [Wallet](introduction/wallets.md)
  * [Backups](introduction/backups.md)
  * [Blockchain](introduction/blockchain.md)
