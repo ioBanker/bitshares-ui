@@ -1,15 +1,10 @@
-# Graphene Help
-
-BitShares 4.0 is a Financial Smart Contracts platform that is based on the
-[Graphene](https://github.com/cryptonomex/graphene) technology built by
-[Cryptonomex](http://cryptonomex.com). You can see Graphene as a toolkit or
-technology for real-time blockchains.
+# Help
 
 This help section gives a brief overview and describes the most basic concepts
 of this application.
 
 ## Introduction
- * [ioBanker DEX](introduction/tos.md)
+ * [Terms Of Use](introduction/tos.md)
  * [Wallet](introduction/wallets.md)
  * [Backups](introduction/backups.md)
  * [Blockchain](introduction/blockchain.md)
