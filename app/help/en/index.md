@@ -4,7 +4,7 @@ This help section gives a brief overview and describes the most basic concepts
 of this application.
 
 ## Introduction
- * [Terms Of Use](introduction/tos.md)
+ * [Terms of Service](introduction/tos.md)
  * [Wallet](introduction/wallets.md)
  * [Backups](introduction/backups.md)
  * [Blockchain](introduction/blockchain.md)
