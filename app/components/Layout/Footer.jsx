@@ -505,6 +505,7 @@ class Footer extends React.Component {
                                         </span>
                                     )}
                                 </span>
+                                <span onclick="window.location.href='https://dex.iobanker.com/help/introduction/tos';">Terms of Service</span>
 
                                 {state.newVersion && (
                                     <Translate
