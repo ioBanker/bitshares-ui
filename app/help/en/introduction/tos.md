@@ -1,6 +1,6 @@
-# ioBanker DEX Terminal Terms of Service
+# ioBanker DEX Site Terms of Service
 
-ioBanker DEX Terminal Terms of Service
+ioBanker DEX Site Terms of Service
 
 Thank you for choosing to visit dex.iobanker.com (the "Site"). The following terms and conditions of service (these "Terms of Service") apply to visitors of the Site. You should read these Terms of Service carefully to determine which provisions apply to you. By using any of the services, functions, or features offered from time to time on the Site (collectively or individually, the "Services"), the user (referred to herein as "you" or "your") agrees to these Terms of Service.
 
