@@ -16,3 +16,4 @@
  * [Short Selling HONEST.Assets](dex/shorting.md)
  * [Gateways](gateways/introduction.md)
     * [Rudex](gateways/rudex.md)
+    * [ioxbank](gateways/ioxbank.md)
