@@ -6,6 +6,7 @@ import utils from "common/utils";
 import Translate from "react-translate-component";
 import ChainTypes from "../Utility/ChainTypes";
 import BindToChainState from "../Utility/BindToChainState";
+import iobankerGateway from "../DepositWithdraw/iobanker/iobankerGateway";
 import OpenledgerGateway from "../DepositWithdraw/OpenledgerGateway";
 import OpenLedgerFiatDepositWithdrawal from "../DepositWithdraw/openledger/OpenLedgerFiatDepositWithdrawal";
 import OpenLedgerFiatTransactionHistory from "../DepositWithdraw/openledger/OpenLedgerFiatTransactionHistory";
@@ -47,6 +48,7 @@ class AccountDepositWithdraw extends React.Component {
                 "gateway"
             ),
             xbtsxService: props.viewSettings.get("xbtsxService", "gateway"),
+            iobankerService: props.viewSettings.get("iobankerService", "gateway"),
             btService: props.viewSettings.get("btService", "bridge"),
             citadelService: props.viewSettings.get("citadelService", "bridge"),
             metaService: props.viewSettings.get("metaService", "bridge"),
@@ -74,6 +76,7 @@ class AccountDepositWithdraw extends React.Component {
             nextState.rudexService !== this.state.rudexService ||
             nextState.bitsparkService !== this.state.bitsparkService ||
             nextState.xbtsxService !== this.state.xbtsxService ||
+            nextState.iobankerService !== this.state.iobankerService ||
             nextState.btService !== this.state.btService ||
             nextState.citadelService !== this.state.citadelService ||
             nextState.metaService !== this.state.metaService ||
@@ -103,6 +106,15 @@ class AccountDepositWithdraw extends React.Component {
         SettingsActions.changeViewSetting({
             rudexService: service
         });
+    }
+toggleiobankerService(service) {
+        this.setState({
+            iobankerService: service
+	});
+
+	SettingsActions.changeViewSetting({
+           iobankerService: service
+	});
     }
 
     toggleXbtsxService(service) {
@@ -168,6 +180,7 @@ class AccountDepositWithdraw extends React.Component {
     renderServices(
         openLedgerGatewayCoins,
         rudexGatewayCoins,
+        iobankerGatewayCoins,
         bitsparkGatewayCoins,
         xbtsxGatewayCoins
     ) {
@@ -180,8 +193,63 @@ class AccountDepositWithdraw extends React.Component {
             rudexService,
             bitsparkService,
             xbtsxService,
+            iobankerService,
             citadelService
         } = this.state;
+                serList.push({
+	    name: "ioxbank (IOB.X)",
+	    template: (
+		    <div className="content-block">
+		        <div
+		    className="service-selector"
+		    style={{marginBottom: "2rem"}}
+		        >
+		    <ul className="button-group segmented no-margin">
+		        <li
+		    onClick={this.toggleiobankerService.bind(
+			        this,
+			        "gateway"
+		    )}
+		    className={
+			        iobankerService === "gateway"
+			    ? "is-active"
+			    : ""
+		    }
+		        >
+		    <a>
+		        <Translate content="gateway.gateway" />
+		    </a>
+		        </li>
+		        <li
+		    onClick={this.toggleiobankerService.bind(
+			        this,
+			        "fiat"
+		    )}
+		    className={
+			        iobankerService === "fiat" ? "is-active" : ""
+
+		    }
+		        >
+		    <a>Fiat</a>
+		        </li>
+		    </ul>
+		        </div>
+
+		        {iobankerService === "gateway" && iobankerGatewayCoins.length ? (
+				<iobankerGateway
+				    account={account}
+				    coins={iobankerGatewayCoins}
+				/>
+				    ) : null}
+
+		        {iobankerService === "fiat" ? (
+				<div>
+				    <Translate content="gateway.iobanker.coming_soon" />
+				</div>
+				    ) : null}
+		    </div>
+		        )
+});
         serList.push({
             name: "Openledger (OPEN.X)",
             identifier: "OPEN",
@@ -517,7 +585,15 @@ class AccountDepositWithdraw extends React.Component {
     render() {
         let {account, servicesDown} = this.props;
         let {activeService} = this.state;
-
+        let iobankerGatewayCoins = this.props.iobankerBackedCoins
+            .map(coin => {
+                return coin;
+            })
+	   .sort((a, b) => {
+                if (a.symbol < b.symbol) return -1;
+                if (a.symbol > b.symbol) return 1;
+                return 0;
+            });
         let openLedgerGatewayCoins = this.props.openLedgerBackedCoins
             .map(coin => {
                 return coin;
@@ -561,6 +637,7 @@ class AccountDepositWithdraw extends React.Component {
         let services = this.renderServices(
             openLedgerGatewayCoins,
             rudexGatewayCoins,
+            iobankerGatewayCoins,
             bitsparkGatewayCoins,
             xbtsxGatewayCoins
         );
@@ -770,6 +847,10 @@ export default connect(
                 ),
                 xbtsxBackedCoins: GatewayStore.getState().backedCoins.get(
                     "XBTSX",
+                    []
+                ),
+                iobankerBackedCoins: GatewayStore.getState().backedCoins.get(
+                    "IOB",
                     []
                 ),
                 servicesDown: GatewayStore.getState().down || {}
