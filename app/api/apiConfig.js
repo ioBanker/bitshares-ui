@@ -1,5 +1,12 @@
 import {getFaucet, getTestFaucet} from "../branding";
 
+export const iobankerAPIs = {
+	    BASE: "https://ioxbank.com",
+	    COINS_LIST: "/coins",
+	    ACTIVE_WALLETS: "/active-wallets",
+	    TRADING_PAIRS: "/trading-pairs"
+};
+
 export const rudexAPIs = {
     BASE: "https://gateway.rudex.org/api/rudex",
     COINS_LIST: "/coins",
