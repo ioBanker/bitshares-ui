@@ -191,7 +191,8 @@ export function getFeaturedMarkets(quotes = []) {
         ["BTS", "RUDEX.WLS"],
         ["BTS", "RUDEX.SMOKE"],
         ["BTS", "SOUNDAC.XSD"],
-
+	    ["IOB.XRP", "BTS"],
+        ["BTS", "IOB.XRP"],
         ["HONEST.BTC", "RUDEX.BTC"],
 
         ["HONEST.BTC", "HONEST.USD"], // HONEST.BTC pairs
@@ -223,7 +224,7 @@ export function getAssetNamespaces() {
     if (_isTestnet()) {
         return [];
     }
-    return ["HONEST.", "RUDEX.", "SOUNDAC."];
+    return ["HONEST.", "RUDEX.", "SOUNDAC.", "IOB."];
 }
 
 /**
@@ -241,7 +242,7 @@ export function getAssetHideNamespaces() {
  * @returns {boolean}
  */
 export function allowedGateway(gateway) {
-    const allowedGateways = ["RUDEX"];
+    const allowedGateways = ["RUDEX", "IOB"];
     if (!gateway) {
         // answers the question: are any allowed?
         return allowedGateways.length > 0;
