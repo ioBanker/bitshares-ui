@@ -152,6 +152,7 @@ export function getMyMarketsQuotes() {
             "RUDEX.XAU"
 */
         ],
+        iobankerTokens: ["IOB.XRP"],
         otherTokens: ["SOUNDAC.XSD"]
     };
 
