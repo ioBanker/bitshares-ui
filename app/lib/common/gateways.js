@@ -91,7 +91,7 @@ export const availableGateways = {
 	id: "IOB",
 	name: "ioxbank",
 	baseAPI: iobankerAPIs,
-	isEnabled: allowedGateway("IOB"),
+	isEnabled: _isEnabled("IOB"),
 	isSimple: true,
 	selected: false,
 	simpleAssetGateway: false,
