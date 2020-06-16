@@ -46,7 +46,7 @@ class CryptoLinkFormatter extends React.Component {
                 ]
             },
             LTC: {
-                template: "litecoin:{address}",
+                template: "{address}",
                 params: [
                     {
                         // &amount=<amount>
@@ -59,7 +59,7 @@ class CryptoLinkFormatter extends React.Component {
                 ]
             },
             ETH: {
-                template: "ethereum:{address}",
+                template: "{address}",
                 params: [
                     {
                         // &value=<amount>
@@ -73,7 +73,7 @@ class CryptoLinkFormatter extends React.Component {
                 ]
             },
             XRP: {
-                template: "xrp:{address}",
+                template: "{address}",
                 params: [
                     {
                         // &value=<amount>
@@ -87,7 +87,7 @@ class CryptoLinkFormatter extends React.Component {
                 ]
             },
             BCH: {
-                template: "bitcoincash:{address}",
+                template: "{address}",
                 params: [
                     {
                         bind: "amount"
