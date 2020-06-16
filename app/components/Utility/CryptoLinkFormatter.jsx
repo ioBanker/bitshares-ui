@@ -72,6 +72,20 @@ class CryptoLinkFormatter extends React.Component {
                     }
                 ]
             },
+            XRP: {
+                template: "xrp:{address}",
+                params: [
+                    {
+                        // &value=<amount>
+                        name: "value", // name of the parameter. if not provided - bind param name would be set as name
+                        bind: "amount" // actual param value got from components props
+                    },
+                    {
+                        // &message=<message>
+                        bind: "message"
+                    }
+                ]
+            },
             BCH: {
                 template: "bitcoincash:{address}",
                 params: [
