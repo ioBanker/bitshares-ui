@@ -616,6 +616,20 @@
         &:active {
             background-color: lighten($button-bg-color, 4%) !important;
         }
+
+        span {
+            color: $bg-color;
+        }
+
+        &.hollow {
+            span {
+                color: $primary-text-color;
+            }
+            :hover {
+                color: $bg-color;
+            }
+        }
+
         &.outline {
             span {
                 color: $primary-text-color !important;
