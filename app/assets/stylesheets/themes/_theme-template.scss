@@ -2207,7 +2207,7 @@
         font-size: 18px;
         line-height: 1.8;
         transition: background-color 0.2s ease;
-        color: #fff;
+        color: $bg-color;
         &:hover {
             cursor: pointer;
             background-color: darken($bs-blue, 10%);
