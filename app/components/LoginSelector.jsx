@@ -164,9 +164,9 @@ class LoginSelector extends React.Component {
                             <Link
                                 id="account_login_button"
                                 to={
-                                    getAllowedLogins().includes("password")
-                                        ? "/create-account/password"
-                                        : "/create-account/wallet"
+                                    getAllowedLogins().includes("wallet")
+                                        ? "/create-account/wallet"
+                                        : "/create-account/password"
                                 }
                                 className="button primary"
                                 data-intro={translator.translate(
