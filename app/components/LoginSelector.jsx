@@ -164,9 +164,9 @@ class LoginSelector extends React.Component {
                             <Link
                                 id="account_login_button"
                                 to={
-                                    getAllowedLogins().includes("wallet")
-                                        ? "/create-account/wallet"
-                                        : "/create-account/password"
+                                    getAllowedLogins().includes("password")
+                                        ? "/create-account/password"
+                                        : "/create-account/wallet"
                                 }
                                 className="button primary"
                                 data-intro={translator.translate(
@@ -210,8 +210,7 @@ class LoginSelector extends React.Component {
                                             },
                                             {
                                                 type: "link",
-                                                value:
-                                                    "/create-account/password",
+                                                value: "/create-account/wallet",
                                                 translation:
                                                     "account.optional.restore_form",
                                                 dataIntro: translator.translate(
@@ -245,15 +244,18 @@ class LoginSelector extends React.Component {
     }
 }
 
-export default connect(LoginSelector, {
-    listenTo() {
-        return [AccountStore];
-    },
-    getProps() {
-        return {
-            currentAccount:
-                AccountStore.getState().currentAccount ||
-                AccountStore.getState().passwordAccount
-        };
+export default connect(
+    LoginSelector,
+    {
+        listenTo() {
+            return [AccountStore];
+        },
+        getProps() {
+            return {
+                currentAccount:
+                    AccountStore.getState().currentAccount ||
+                    AccountStore.getState().passwordAccount
+            };
+        }
     }
-});
+);
