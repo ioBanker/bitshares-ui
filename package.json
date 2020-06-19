@@ -165,7 +165,7 @@
         "js-sha256": "^0.2.3",
         "jsonschema": "^1.2.6",
         "jspdf": "^1.5.3",
-        "jspdf-autotable": "^3.5.3",
+        "jspdf-autotable": "^3.5.4",
         "lodash-es": "^4.17.15",
         "lzma": "2.1.6",
         "moment": "^2.26.0",
@@ -179,7 +179,7 @@
         "prop-types": "^15.7.2",
         "qrcode": "^1.4.4",
         "qrcode.react": "^0.7.1",
-        "query-string": "^6.12.1",
+        "query-string": "^6.13.1",
         "react": "^16.13.1",
         "react-autocomplete": "^1.7.2",
         "react-clipboard.js": "^1.0.1",
@@ -206,7 +206,7 @@
         "string-similarity": "^2.0.0",
         "tcomb": "2.5.2",
         "whatwg-fetch": "^2.0.1",
-        "xss": "^1.0.6",
+        "xss": "^1.0.7",
         "zxcvbn-async": "0.0.5"
     },
     "devDependencies": {
@@ -274,7 +274,7 @@
         "uglifyjs-webpack-plugin": "^2.2.0",
         "url-loader": "^1.1.2",
         "webpack": "^4.43.0",
-        "webpack-cli": "^3.3.11",
+        "webpack-cli": "^3.3.12",
         "webpack-dev-middleware": "^3.7.2",
         "webpack-hot-middleware": "^2.25.0",
         "worker-loader": "^1.1.1"
