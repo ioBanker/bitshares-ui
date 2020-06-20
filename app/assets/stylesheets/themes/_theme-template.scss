@@ -535,8 +535,15 @@
         }
     }
     .icon > svg > path {
-        fill: $bg-color;
+        fill: $primary-text-color;
     }
+
+    .button {
+        .icon > svg > path {
+            fill: $bg-color;
+        }
+    }
+
     .footer {
         @include color($secondary-text-color, $panel-bg-color);
         svg > path {
