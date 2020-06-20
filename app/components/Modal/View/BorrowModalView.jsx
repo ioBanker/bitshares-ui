@@ -98,10 +98,10 @@ export function BorrowModalView({
                 ) : null}
                 <Translate
                     component="span"
-                    class="nontitle"
+                    className="nontitle"
                     content="transfer.available"
                 />
-                <span class="nontitle">
+                <span className="nontitle">
                     :{" "}
                     {debtBalanceObj.id ? (
                         <FormattedAsset
@@ -158,10 +158,10 @@ export function BorrowModalView({
 
                 <Translate
                     component="span"
-                    class="nontitle"
+                    className="nontitle"
                     content="transfer.available"
                 />
-                <span class="nontitle">
+                <span className="nontitle">
                     :{" "}
                     {collateralBalanceObj.id ? (
                         <FormattedAsset
