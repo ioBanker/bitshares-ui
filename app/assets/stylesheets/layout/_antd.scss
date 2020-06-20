@@ -5,6 +5,9 @@
 */
 
 /* Exchange Overrides */
+.button {
+    font-family: "Roboto-Medium", arial, sans-serif !important;
+} 
 .darkTheme div.grid-content.app-tables {border: 1px solid #001E34 !important;}
 body.darkTheme .ant-input {
     background-color: #000F18 !important;
