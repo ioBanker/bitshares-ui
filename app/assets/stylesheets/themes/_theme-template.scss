@@ -535,7 +535,7 @@
         }
     }
     .icon > svg > path {
-        fill: $primary-text-color;
+        fill: $bg-color;
     }
     .footer {
         @include color($secondary-text-color, $panel-bg-color);
@@ -645,6 +645,7 @@
     .button:disabled {
         opacity: 0.2 !important;
         cursor: not-allowed !important;
+        color: $light-text-color !important;
     }
     .button.secondary {
         @include color($dark-text-color, $secondary-button-bg-color);
