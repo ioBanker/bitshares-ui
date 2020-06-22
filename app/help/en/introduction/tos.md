@@ -5,7 +5,7 @@
 >If you have an issue related to a Gateway provider, please be sure to contact them directly. See Gateways in the left menu.
 
 ### Telegram Chat
-You can chat with other member of the Bitshares community in real time at:
+You can chat with other member of the community in real time at:
 
 - [BitSharesGroup](https://t.me/BitSharesGroup)
 - [ioBanker](https://t.me/ioBanker)
