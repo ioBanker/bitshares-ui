@@ -51,7 +51,7 @@ the reader and customer to leverage those features in full or only partially.
 * **Collateralized Smartcoins**:
   One of the biggest features of BitShares are its *smartcoins* such as HONEST.USD,
   HONEST.BTC, HONEST.XAU, and others. For the sake of convenience, these assets are
-  denotes simply as USD, BTC, XAU, etc. in the wallet. These digital tokens
+  denote simply as USD, BTC, XAU, etc. in the wallet. These digital tokens
   represent the same value as their underlaying physical asset. Hence 1 USD in
   this wallet is worth at least $1 and can be redeemed as such. Any of these tokens is
   backed by BitShares' company shares (BTS) being locked up as collateral and
