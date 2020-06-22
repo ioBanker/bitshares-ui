@@ -8,7 +8,7 @@ from a backup you will also need to provide the passphrase (password) because **
 are encrypted**. Hence, if you either lose your wallet or your passphrase you
 will be unable to access any of your funds again!
 
-You can create a backup from [Settings -> Backup](/settings).
+You can create a backup from [Settings -> Backup](/settings/backup).
 
 - Store this backup in at least two secure locations only accessible by you
 - The backup is encrypted with your passphrase/password so do not store your passwrod in the same location

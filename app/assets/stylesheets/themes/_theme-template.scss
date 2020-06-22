@@ -189,7 +189,7 @@
         line-height: 1.5rem;
     }
     .exchange--chart-control {
-        background: $panel-bg-color;
+        background: none;
     }
     @media (max-width: 1150px) {
         .showcases-grid--wrapper {
@@ -537,6 +537,13 @@
     .icon > svg > path {
         fill: $primary-text-color;
     }
+
+    .button {
+        .icon > svg > path {
+            fill: $bg-color;
+        }
+    }
+
     .footer {
         @include color($secondary-text-color, $panel-bg-color);
         svg > path {
@@ -645,6 +652,7 @@
     .button:disabled {
         opacity: 0.2 !important;
         cursor: not-allowed !important;
+        color: $light-text-color !important;
     }
     .button.secondary {
         @include color($dark-text-color, $secondary-button-bg-color);

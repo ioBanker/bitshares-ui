@@ -1,61 +1,45 @@
 # Short Selling HONEST.Assets
 
-In order to increase your exposure to BTS and offer liquidity to HONEST.Assets, such
-as USD, EUR, GOLD, etc., you can go *borrow* this HONEST.Asset from the network and
+In order to increase your exposure to BTS and offer liquidity for HONEST.Assets, such
+as USD, BTC, XAU, etc., you can *borrow* HONEST.Asset from the network and
 *sell it short*. We will here briefly describe the procedure.
 
 ## Borrowing
 
-The BitShares network is capable of issuing any amount of any HONEST.Asset and lend
-it out to participants given enough collateral.
+The BitShares network is capable of issuing HONEST.Asset, without any interest rate, to participants providing enough collateral.
 
- * *settlement price*: The price for 1 BTS as it is traded on external exchanges.
- * *maintenance collateral ratio* (MCR): A ratio defined by the witnesses as minimum required collateral ratio
- * *maximum short squeeze ratio* (MSQR): A ratio defined by the witnesses as to how far shorts are protected against short squeezes
- * *short squeeze protection* (SQP): Defines the most that a margin position will ever be forced to pay to cover
+ * *feed price*: The price for 1 BTS, as it is traded on exchanges
+ * *maintenance collateral ratio* (MCR): Defined by the price feeds, as the minimum required collateral ratio
  * *call price* (CP): The price at which short/borrow positions are margin called
-
-### Margin Call
-
-The BitShares network is capable of margin calling those positions that do not
-have enough collateral to back their borrowed HONEST.Assets. A margin call will
-occur any time the highest bid is less than the *call price* and greater than
-*SQP*.
-The margin position will be forced to sell its collateral anytime the highest
-offer to buy the collateral is less than the call price (x/BTS).
-
-```
-SQP = settlement price / MSQR
-call price = DEBT / COLLATERAL * MCR
-```
-
-The margin call will take the collateral, buy shares of borrowed HONEST.Asset at
-market rates up to the SQP and close the position. The remaining BTS of the
-collateral are returned to the customer.
-
-### Settlement
-
-Holders of any HONEST.Asset can request a settlement at a *fair price* at any time.
-The settlement closes the borrow/short positions with lowest collateral ratio
-and sells the collateral for the settlement.
+ * *maximum short squeeze ratio* (MSSR): Max. market discount for collateral sell
+ * *short squeeze protection* (SSP): Min. price for collateral sell, during a margin call
+ * *force settlement offset* (FSO): Fee for HONEST.Asset settlement to asset borrower
 
 ## Selling
 
-After borrowing HONEST.Assets, they can be sold free at any of the corresponding
-markets at any price a buyer is willing to pay. With this step, the
-short-selling is now complete and you are short that particular HONEST.Asset.
+ After borrowing HONEST.Assets, they can be sold free at any of the corresponding
+ markets at any price a buyer is willing to pay. With this step, the
+ short-selling is now complete and you are short that particular HONEST.Asset.
 
-## Updating Collateral Ratio
+## Margin Call
 
-At any time, the holder of a borrow/short position can modify the collateral
-ratio in order to flexibly adjust to market behavior. If the collateral ratio is
-increase, an additional amount of BTS is locked as collateral, while reducing
-the collateral ratio will require an amount of the corresponding HONEST.Asset to be
-payed back to the network.
+The borrower needs to add extra collateral or reduce the amount of debt, before the collateral value drops under the maintenance ratio, to not get margin called.
+
+A margin call will occur, when the *CR* is lower than the *MCR* and a bid is equal or greater than the *SSP*.
+
+```
+SSP = settlement price / MSSR
+call price = DEBT / COLLATERAL * MCR
+```
+
+The margin call sells collateral, to buy shares of the borrowed HONEST.Asset back and reduce the amount of debt. The remaining BTS are used as collateral, to cover the outstanding debt.
+
+## Settlement
+
+Holders of any HONEST.Asset can request a settlement at *feed price + FSO* at any time.
+The settlement closes the borrow/short positions with lowest collateral ratio and sells the collateral to the asset settler.
 
 ## Covering
 
-To close a borrow/short position, one must hold the borrowed amount of that
-particular HONEST.Asset to hand it over to the BitShares network. After that, the
-HONEST.Assets are reduced from the corresponding supply and the collateral is
-released and given back to its owner.
+To close a borrow/short position, one must hold the same amount of that
+particular HONEST.Asset. When the particular debt is payed back to the network, the corresponding supply is reduced and the collateral is released.

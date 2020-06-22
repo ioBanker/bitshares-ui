@@ -33,4 +33,6 @@
 * Under no circumstance should monetary policy induce an MPA to become frozen by the chain - "supergao".
 
 ## More information
-[bitsharestalk.org](https://bitsharestalk.org/index.php?topic=32035)
+* [bitsharestalk.org](https://bitsharestalk.org/index.php?topic=32035) 
+* [github.com](https://github.com/litepresence/Honest-MPA-Price-Feeds)
+* [Whitepaper](https://github.com/litepresence/Honest-MPA-Price-Feeds/blob/master/docs/whitepaper.md)

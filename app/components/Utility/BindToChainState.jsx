@@ -629,16 +629,16 @@ function BindToChainState(Component, options = {}) {
                         typeof options !== "undefined" &&
                         options.show_loader
                     ) {
-                        console.error(
-                            "Required prop " +
-                                prop +
-                                " isn't given, but still loading, this indicates that the rendering transitions are not well defined"
-                        );
+                        //console.error(
+                        //    "Required prop " +
+                        //        prop +
+                        //        " isn't given, but still loading, this indicates that the rendering transitions are not well defined"
+                        //);
                         return (
                             <React.Fragment>
                                 <LoadingIndicator />
                                 <span className="text-center">
-                                    Component re-rendering ...
+                                    Loading ...
                                 </span>
                             </React.Fragment>
                         );

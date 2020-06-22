@@ -1,6 +1,16 @@
-# ioBanker DEX Site Terms of Service
+# ioBanker DEX Site
 
-ioBanker DEX Site Terms of Service
+## Support
+
+>If you have an issue related to a Gateway provider, please be sure to contact them directly. See Gateways in the left menu.
+
+### Telegram Chat
+You can get help from other members of the community in real time at:
+
+- [BitSharesGroup](https://t.me/BitSharesGroup)
+- [ioBanker](https://t.me/ioBanker)
+
+# Terms of Service
 
 Thank you for choosing to visit dex.iobanker.com (the "Site"). The following terms and conditions of service (these "Terms of Service") apply to visitors of the Site. You should read these Terms of Service carefully to determine which provisions apply to you. By using any of the services, functions, or features offered from time to time on the Site (collectively or individually, the "Services"), the user (referred to herein as "you" or "your") agrees to these Terms of Service.
 
@@ -417,23 +427,7 @@ Welcome to dex.iobanker.com (“the Site”). This cookies policy should be read
 4.3. Analytical - these record your visit to our Site, the pages you have visited and the links you have followed. We will use this information to make the Site and the advertising displayed on it (if any) more relevant to your interests. We may also share this information with third parties for this purpose.
 
 
-5. We may share information that we collect through cookies, in aggregated form, with carefully selected third parties for the purposes set out above, unless you disable or block cookies. 
-
-## Support
-
->If you have an issue related to a Gateway provider, please be sure to contact them directly. See Gateways in the left menu.
-
-### Bitshares Chat
-You can chat with other member of the Bitshares community in real time at:
-
-- [Telegram](https://t.me/BitSharesDEX)
-- [Discord](https://discord.gg/GsjQfAJ)
-
-### Developers
-If you are a software developer, you may contribute via a bounty system at:
-
-- [Github UI](https://github.com/bitshares/bitshares-ui)
-- [Github Core](https://github.com/bitshares/bitshares-core) 
+5. We may share information that we collect through cookies, in aggregated form, with carefully selected third parties for the purposes set out above, unless you disable or block cookies.
 
 ## Introduction
 Welcome to the worlds fastest decentralized exchange (The DEX).
@@ -449,13 +443,6 @@ rules. These rules are encoded in publicly auditable open source software
 distributed across the computers of the companies’ shareholders, who
 effortlessly secure the company from arbitrary control.
 
-BitShares does for business what bitcoin did for money by utilizing distributed
+BitShares does for business what Bitcoin did for money by utilizing distributed
 consensus technology to create companies that are inherently global,
 transparent, trustworthy, efficient and most importantly profitable.
-
-## Wallet
-This wallet allows access most features of the BitShares network including
-
-- [BitAssets](/help/assets/mpa)
-- [User-Issued Assets](/help/assets/uia)
-- [The DEX](/help/dex/introduction)
