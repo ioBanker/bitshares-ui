@@ -10,9 +10,9 @@ The BitShares network is capable of issuing HONEST.Asset, without any interest r
 
  * *feed price*: The price for 1 BTS, as it is traded on exchanges
  * *maintenance collateral ratio* (MCR): A ratio defined by the price feeds, as minimum required collateral ratio
- * *maximum short squeeze ratio* (MSSR): A ratio defined by the price feeds, as market discount for collateral sell
- * *short squeeze protection* (SSP): Defines the current min. price for collateral sell during a margin call
- * *call price* (CP): The price at which short/borrow positions are margin called
+  * *call price* (CP): The price at which short/borrow positions are margin called
+ * *maximum short squeeze ratio* (MSSR): A ratio defined by the price feeds, as max. market discount for collateral sell
+ * *short squeeze protection* (SSP): Defines the min. price for collateral sell during a margin call
  * *force settlement offset* (FSO): Fee for HONEST.Asset settlement to asset borrower
 
 ### Selling
