@@ -5,7 +5,7 @@
 >If you have an issue related to a Gateway provider, please be sure to contact them directly. See Gateways in the left menu.
 
 ### Telegram Chat
-You can chat with other member of the community in real time at:
+You can get help from other members of the community in real time at:
 
 - [BitSharesGroup](https://t.me/BitSharesGroup)
 - [ioBanker](https://t.me/ioBanker)
@@ -443,19 +443,6 @@ rules. These rules are encoded in publicly auditable open source software
 distributed across the computers of the companies’ shareholders, who
 effortlessly secure the company from arbitrary control.
 
-BitShares does for business what bitcoin did for money by utilizing distributed
+BitShares does for business what Bitcoin did for money by utilizing distributed
 consensus technology to create companies that are inherently global,
 transparent, trustworthy, efficient and most importantly profitable.
-
-### Wallet
-This wallet allows access most features of the BitShares network including
-
-- [The DEX](/help/dex/introduction)
-- [HONEST.Assets](/help/assets/mpa)
-- [User-Issued Assets](/help/assets/uia)
-
-### Developers
-If you are a software developer, you may contribute at:
-
-- [Github UI](https://github.com/ioBanker/bitshares-ui)
-- [Github Core](https://github.com/bitshares/bitshares-core)
