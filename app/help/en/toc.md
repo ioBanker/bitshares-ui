@@ -3,6 +3,7 @@
  * [ioBanker DEX](introduction/tos.md)
     * [Decentralized Exchange](dex/introduction.md)
     * [Trading](dex/trading.md)
+    * [DEXbot](dex/dexbot.md)
 
 * [HONEST MPAs](assets/mpa.md)
     * [Short Selling](dex/shorting.md)

@@ -22,6 +22,7 @@ of this application.
 ## [Decentralized Exchange](dex/introduction.md)
  * [Trading](dex/trading.md)
  * [Short Selling](dex/shorting.md)
+ * [DEXbot](dex/dexbot.md)
 
 ## Development
  * [ioBanker UI Github](https://github.com/ioBanker/bitshares-ui)
