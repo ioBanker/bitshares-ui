@@ -446,3 +446,7 @@ effortlessly secure the company from arbitrary control.
 BitShares does for business what Bitcoin did for money by utilizing distributed
 consensus technology to create companies that are inherently global,
 transparent, trustworthy, efficient and most importantly profitable.
+
+## Development
+ * [ioBanker UI Github](https://github.com/ioBanker/bitshares-ui)
+ * [BitShares Core Github](https://github.com/bitshares/bitshares-core)
