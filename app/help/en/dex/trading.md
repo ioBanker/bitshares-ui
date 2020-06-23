@@ -48,4 +48,4 @@ Unfilled orders can be canceled at any time.
 
 ### Scaled orders
 
-Limit Order can be switched to scaled orders. It allows to place multiple orders with the same distance in a certain price range.
+Limit order can be switched to scaled orders. It allows to place multiple orders with the same distance in a certain price range.
