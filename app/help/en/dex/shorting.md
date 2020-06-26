@@ -8,12 +8,12 @@ as USD, BTC, XAU, etc., you can *borrow* HONEST.Asset from the network and
 
 The BitShares network is capable of issuing HONEST.Asset, without any interest rate, to participants providing enough collateral.
 
- * *feed price*: The price for 1 BTS, as it is traded on exchanges
- * *maintenance collateral ratio* (MCR): Defined by the price feeds, as the minimum required collateral ratio
- * *call price* (CP): The price at which short/borrow positions are margin called
- * *maximum short squeeze ratio* (MSSR): Max. market discount for collateral sell
- * *short squeeze protection* (SSP): Min. price for collateral sell, during a margin call
- * *force settlement offset* (FSO): Fee for HONEST.Asset settlement to asset borrower
+ * *feed price*: The price for 1 BTS, as it is traded on exchanges.
+ * *maintenance collateral ratio* (MCR): Minimum required collateral ratio.
+ * *call price* (CP): The price at which short/borrow positions are margin called.
+ * *maximum short squeeze ratio* (MSSR): Max. liquidation penalty. Real penalty is dependent on market liquidity.
+ * *short squeeze protection* (SSP): Min. price for collateral sell.
+ * *force settlement offset* (FSO): Fee for HONEST.Asset settlement to debt holder.
 
 ## Selling
 
@@ -28,8 +28,9 @@ The borrower needs to add extra collateral or reduce the amount of debt, before 
 A margin call will occur, when the *CR* is lower than the *MCR* and a bid is equal or greater than the *SSP*.
 
 ```
-SSP = settlement price / MSSR
 call price = DEBT / COLLATERAL * MCR
+
+SSP = settlement price / MSSR
 ```
 
 The margin call sells collateral, to buy shares of the borrowed HONEST.Asset back and reduce the amount of debt. The remaining BTS are used as collateral, to cover the outstanding debt.
