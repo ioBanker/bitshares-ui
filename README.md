@@ -30,7 +30,6 @@ cd bitshares-ui
 Before launching the GUI you will need to install the npm packages:
 
 ```
-npm install -g n install
 npm install
 ```
 
@@ -71,9 +70,6 @@ On Linux you will need to install the following packages to handle icon generati
 `sudo apt-get install --no-install-recommends -y icnsutils graphicsmagick xz-utils`
 
 For building, each architecture has it's own script that you can use to build your native binary:
-
-__Install Packages__
-`npm install wine perfect-scrollbar react-foundation-apps jdenticon` 
 
 __For Linux__
 `npm run package-deb`  
