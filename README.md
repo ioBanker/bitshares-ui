@@ -72,11 +72,14 @@ On Linux you will need to install the following packages to handle icon generati
 
 For building, each architecture has it's own script that you can use to build your native binary:
 
-__Linux__
+__Install Packages__
+`npm install wine perfect-scrollbar react-foundation-apps jdenticon` 
+
+__For Linux__
 `npm run package-deb`  
-__Windows__
+__For Windows__
 `npm run package-win`  
-__Mac__
+__For Mac__
 `npm run package-mac`  
 
 This will compile the UI with some special modifications for use with Electron, generate installable binaries with Electron and copy the result to the root `build/binaries` folder.
