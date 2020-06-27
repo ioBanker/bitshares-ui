@@ -1,11 +1,11 @@
 # HONEST Market Pegged Assets (MPAs)
-* **[HONEST.USD](/asset/HONEST.USD)** UNITED STATES DOLLAR FIAT - **1.3.5649**
-* **[HONEST.CNY](/asset/HONEST.CNY)** CHINESE YUAN FIAT - **1.3.5641**
-* **[HONEST.BTC](/asset/HONEST.BTC)** BITCOIN - **1.3.5650**
-* **[HONEST.ETH](/asset/HONEST.ETH)** ETHEREUM - **1.3.5659**
-* **[HONEST.XRP](/asset/HONEST.XRP)** XRP - **1.3.5660**
-* **[HONEST.XAU](/asset/HONEST.XAU)** GOLD TROY OUNCE - **1.3.5651**
-* **[HONEST.XAG](/asset/HONEST.XAG)** SILVER TROY OUNCE - **1.3.5652**
+* **[HONEST.USD](/asset/HONEST.USD)** UNITED STATES DOLLAR FIAT - *Asset ID 1.3.5649*
+* **[HONEST.CNY](/asset/HONEST.CNY)** CHINESE YUAN FIAT - *Asset ID 1.3.5641*
+* **[HONEST.BTC](/asset/HONEST.BTC)** BITCOIN - *Asset ID 1.3.5650*
+* **[HONEST.ETH](/asset/HONEST.ETH)** ETHEREUM - *Asset ID 1.3.5659*
+* **[HONEST.XRP](/asset/HONEST.XRP)** XRP - *Asset ID 1.3.5660*
+* **[HONEST.XAU](/asset/HONEST.XAU)** GOLD TROY OUNCE - *Asset ID 1.3.5651*
+* **[HONEST.XAG](/asset/HONEST.XAG)** SILVER TROY OUNCE - *Asset ID 1.3.5652*
 
 ## Price Feed
 - **Collateral Ratio**: 1.6
