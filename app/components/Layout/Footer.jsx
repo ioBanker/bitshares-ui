@@ -492,7 +492,7 @@ class Footer extends React.Component {
                                     />
                                     {__GIT_BRANCH__ === "staging" ? (
                                         <a
-                                            href={`https://github.com/bitshares/bitshares-ui/commit/${version.trim()}`}
+                                            href={`https://github.com/ioBanker/bitshares-ui/commit/${version.trim()}`}
                                             className="version external-link"
                                             target="_blank"
                                             rel="noopener noreferrer"
@@ -505,7 +505,7 @@ class Footer extends React.Component {
                                         </span>
                                     )}
                                 </span>
-                                <span> - <a href='/help/introduction/tos'>Terms of Service</a></span>
+                                <span> - <a href='help/introduction/tos'>Terms of Service</a></span>
 
                                 {state.newVersion && (
                                     <Translate
