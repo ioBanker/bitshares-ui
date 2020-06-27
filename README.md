@@ -67,13 +67,15 @@ We use Electron to provide installable wallets, available for Windows, OSX and L
 
 On Linux you will need to install the following packages to handle icon generation:
 
-`sudo apt-get install --no-install-recommends -y icnsutils graphicsmagick xz-utils wine-stable gcc-multilib g++-multilib`
+`sudo apt-get install --no-install-recommends -y icnsutils graphicsmagick xz-utils wine-stable wine32 gcc-multilib g++-multilib`
 
 For building, each architecture has it's own script that you can use to build your native binary:
 
 __For Linux__
 `npm run package-deb`  
 __For Windows__
+`apt-get install wine32`
+`dpkg --add-architecture i386`
 `npm run package-win`  
 __For Mac__
 `npm run package-mac`  
