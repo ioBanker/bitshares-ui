@@ -21,8 +21,8 @@ the reader and customer to leverage those features in full or only partially.
 
 * **Trade Almost Anything**:
   The BitShares DEX is asset agnostic. Hence you can trade at **any** pair.
-  While some pairs may end up with low liquidity, such as SILVER:GOLD, other
-  pairs such as USD:EUR for FOREX trading will see huge volume.
+  While some pairs may end up with low liquidity, such as XAU:XAG, other
+  pairs such as BTS:USD, will see huge volume.
 
 * **No Limits**:
   The BitShares protocol is unable to limit your trading experience.
@@ -52,7 +52,7 @@ the reader and customer to leverage those features in full or only partially.
   One of the biggest features of BitShares are its *smartcoins* such as HONEST.USD,
   HONEST.BTC, HONEST.XAU, and others. For the sake of convenience, these assets are
   denote simply as USD, BTC, XAU, etc. in the wallet. These digital tokens
-  represent the same value as their underlaying physical asset. Hence 1 USD in
+  represent the same value as their underlying physical asset. Hence 1 USD in
   this wallet is worth at least $1 and can be redeemed as such. Any of these tokens is
   backed by BitShares' company shares (BTS) being locked up as collateral and
   being available for settlement at its current price.

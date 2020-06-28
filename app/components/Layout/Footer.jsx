@@ -508,9 +508,10 @@ class Footer extends React.Component {
                                 <span>
                                     {" "}
                                     -{" "}
-                                    <a href="help/introduction/tos">
-                                        Terms of Service & HELP
+                                    <a href="/help/introduction/tos">
+                                        Terms of Service
                                     </a>
+                                    <a href="/help"> & Doc</a>
                                 </span>
 
                                 {state.newVersion && (
@@ -663,7 +664,7 @@ class Footer extends React.Component {
                                 </Tooltip>
 
                                 <div className="grid-block">
-                                    <Tooltip
+                                    {/*  <Tooltip
                                         title={counterpart.translate(
                                             "tooltip.debug_report"
                                         )}
@@ -678,7 +679,7 @@ class Footer extends React.Component {
                                         >
                                             <Translate content="modal.report.button" />
                                         </div>
-                                    </Tooltip>
+                                    </Tooltip> */}
                                     <Tooltip
                                         title={counterpart.translate(
                                             "tooltip.self_help"
