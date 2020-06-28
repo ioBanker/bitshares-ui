@@ -505,7 +505,14 @@ class Footer extends React.Component {
                                         </span>
                                     )}
                                 </span>
-                                <span> - <a href='help/introduction/tos'>Terms of Service</a></span>
+                                <span>
+                                    {" "}
+                                    -{" "}
+                                    <a href="/help/introduction/tos">
+                                        Terms of Service
+                                    </a>
+                                    <a href="/help"> & Doc</a>
+                                </span>
 
                                 {state.newVersion && (
                                     <Translate
@@ -617,12 +624,11 @@ class Footer extends React.Component {
                                         }}
                                     >
                                         <div className="footer-status">
-                                            {connected &&
-                                                activeNode.testNet && (
-                                                    <span className="testnet">
-                                                        <Translate content="settings.testnet_nodes" />{" "}
-                                                    </span>
-                                                )}
+                                            {connected && activeNode.testNet && (
+                                                <span className="testnet">
+                                                    <Translate content="settings.testnet_nodes" />{" "}
+                                                </span>
+                                            )}
                                             {!connected ? (
                                                 <span className="warning">
                                                     <Translate content="footer.disconnected" />
@@ -642,10 +648,10 @@ class Footer extends React.Component {
                                                 {!connected
                                                     ? "-"
                                                     : !activeNode.ping
-                                                        ? "-"
-                                                        : parseInt(
-                                                              activeNode.ping
-                                                          ) + "ms"}
+                                                    ? "-"
+                                                    : parseInt(
+                                                          activeNode.ping
+                                                      ) + "ms"}
                                                 &nbsp;/&nbsp;
                                                 <span className="footer-block-title">
                                                     <Translate content="footer.block" />
@@ -658,7 +664,7 @@ class Footer extends React.Component {
                                 </Tooltip>
 
                                 <div className="grid-block">
-                                    <Tooltip
+                                    {/*  <Tooltip
                                         title={counterpart.translate(
                                             "tooltip.debug_report"
                                         )}
@@ -673,7 +679,7 @@ class Footer extends React.Component {
                                         >
                                             <Translate content="modal.report.button" />
                                         </div>
-                                    </Tooltip>
+                                    </Tooltip> */}
                                     <Tooltip
                                         title={counterpart.translate(
                                             "tooltip.self_help"

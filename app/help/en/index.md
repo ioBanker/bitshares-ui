@@ -1,6 +1,6 @@
-# Help
+# Overview
 
-This help section gives a brief overview and describes the most basic concepts
+This section gives a brief overview and describes the most basic concepts
 of this application.
 
 ## Introduction
