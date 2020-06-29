@@ -508,10 +508,8 @@ class Footer extends React.Component {
                                 <span>
                                     {" "}
                                     -{" "}
-                                    <a href="/help/introduction/tos">
-                                        Terms of Service
-                                    </a>
-                                    <a href="/help"> & Doc</a>
+                                    <Link to="/help/introduction/tos">Terms of Service</Link>
+                                    <Link to="/help">Guide</Link>
                                 </span>
 
                                 {state.newVersion && (
