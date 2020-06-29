@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Link} from "react-router-dom";
 import AltContainer from "alt-container";
 import Translate from "react-translate-component";
 import BindToChainState from "../Utility/BindToChainState";
@@ -508,10 +509,10 @@ class Footer extends React.Component {
                                 <span>
                                     {" "}
                                     -{" "}
-                                    <a href="/help/introduction/tos">
-                                        Terms of Service
-                                    </a>
-                                    <a href="/help"> & Doc</a>
+                                    <Link to="/help/introduction/tos">Terms of Service</Link>
+                                    {" "}
+                                    -{" "}
+                                    <Link to="/help">User Guide</Link>
                                 </span>
 
                                 {state.newVersion && (
