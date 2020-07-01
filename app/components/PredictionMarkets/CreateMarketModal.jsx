@@ -421,9 +421,8 @@ export default class CreateMarketModal extends Modal {
                                 <AssetSelect
                                     assets={[
                                         "1.3.0",
-                                        "1.3.113",
-                                        "1.3.120",
-                                        "1.3.121"
+                                        "1.3.5649", // HONEST.USD
+                                        "1.3.5650" // HONEST.BTC
                                     ]}
                                     value={
                                         this.state.bitasset_opts
