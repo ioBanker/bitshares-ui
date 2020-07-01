@@ -136,8 +136,15 @@ var Utils = {
         let baseID = base.toJS ? base.get("id") : base.id;
         let basePrecision = base.toJS ? base.get("precision") : base.precision;
         let fixedPrecisionAssets = {
-            "1.3.113": 5, // bitCNY
-            "1.3.121": 5 // bitUSD
+            "1.3.5641": 4, // HONEST.CNY
+            "1.3.5649": 4, // HONEST.USD
+            "1.3.5650": 8, // HONEST.BTC
+            "1.3.5651": 8, // HONEST.XAU
+            "1.3.5652": 8, // HONEST.XAG
+            "1.3.5659": 6, // HONEST.ETH
+            "1.3.5660": 6, // HONEST.XRP
+            "1.3.5661": 6, // HONEST.ETH1
+            "1.3.5662": 6 // HONEST.XRP1
         };
         if (quoteID === "1.3.0") {
             priceText = this.format_number(price, quotePrecision);
