@@ -1,5 +1,5 @@
 import React from "react";
-import iobankerGatewayDepositRequest from "./iobankerGatewayDepositRequest";
+import ioBankerGatewayDepositRequest from "./ioBankerGatewayDepositRequest";
 import Translate from "react-translate-component";
 import {connect} from "alt-react";
 import SettingsStore from "stores/SettingsStore";
@@ -12,7 +12,7 @@ import Immutable from "immutable";
 import cnames from "classnames";
 import LoadingIndicator from "../../LoadingIndicator";
 
-class iobankerGateway extends React.Component {
+class ioBankerGateway extends React.Component {
     constructor(props) {
         super();
 
@@ -111,7 +111,7 @@ class iobankerGateway extends React.Component {
 
         let isDeposit = this.state.action === "deposit";
 
-        let supportUrl = "https://voffice.iobanker.com";
+        let supportUrl = "https://support.ioxbank.com";
 
         return (
             <div style={this.props.style}>
@@ -182,7 +182,7 @@ class iobankerGateway extends React.Component {
                 {!coin ? null : (
                     <div>
                         <div style={{marginBottom: 15}}>
-                            <iobankerGatewayDepositRequest
+                            <ioBankerGatewayDepositRequest
                                 key={`${coin.symbol}`}
                                 gateway={coin.gatewayWallet}
                                 issuer_account={coin.issuer}
@@ -194,9 +194,15 @@ class iobankerGateway extends React.Component {
                                 deposit_wallet_type={coin.walletType}
                                 receive_asset={coin.symbol}
                                 receive_coin_type={coin.symbol.toLowerCase()}
-                                supports_output_memos={coin.memoSupport}
+                                supports_output_memos={coin.supportsMemos}
+                                supportsPublicKey={
+                                    coin.supportsPublicKey || false
+                                }
+                                memoType={coin.memoType}
                                 min_amount={coin.minAmount}
+                                gateFee={coin.gateFee}
                                 asset_precision={coin.precision}
+                                confirmations={coin.confirmations}
                                 action={this.state.action}
                             />
                             <label className="left-label">Support</label>
@@ -272,7 +278,7 @@ class iobankerGateway extends React.Component {
 }
 
 export default connect(
-    iobankerGateway,
+    ioBankerGateway,
     {
         listenTo() {
             return [SettingsStore];
