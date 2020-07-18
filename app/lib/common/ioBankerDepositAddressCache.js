@@ -1,6 +1,6 @@
 import WalletDb from "stores/WalletDb";
 
-class iobankerDepositAddressCache {
+class ioBankerDepositAddressCache {
     constructor() {
         // increment this to force generating new addresses for all mappings
         this.current_iobanker_address_cache_version_string = "1";
@@ -78,4 +78,4 @@ class iobankerDepositAddressCache {
     }
 } // iobankerDepositAddressCache
 
-export default iobankerDepositAddressCache;
+export default ioBankerDepositAddressCache;
