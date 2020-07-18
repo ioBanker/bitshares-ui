@@ -46,7 +46,6 @@ export function requestDepositAddress({
                         let address = {
                             address: json.inputAddress || "unknown",
                             memo: json.inputMemo,
-			    tag: json.inputTag,
                             error: json.error || null
                         };
                         if (stateCallback) stateCallback(address);
@@ -55,7 +54,6 @@ export function requestDepositAddress({
                         // console.log( "error: ",error  );
                         if (stateCallback)
                             stateCallback({address: "unknown", memo: null});
-			    stateCallback({address: "unknown", Tag: null});
                     }
                 );
             },
@@ -63,7 +61,6 @@ export function requestDepositAddress({
                 // console.log( "error: ",error  );
                 if (stateCallback)
                     stateCallback({address: "unknown", memo: null});
-		    stateCallback({address: "unknown", Tag: null});
             }
         )
         .catch(err => {
