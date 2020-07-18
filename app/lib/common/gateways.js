@@ -95,12 +95,17 @@ export const availableGateways = {
 	isSimple: true,
 	selected: false,
 	simpleAssetGateway: false,
+	            fixedMemo: {
+            prepend_default: "dex:",
+            prepend_btsid: "Tag: ",
+            append: ""
+        },
 	addressValidatorMethod: "POST",
 	options: {
 		enabled: false,
 		selected: false
 	},
-    landing: "https://ioxbank.com",
+    landing: "https://support.ioxbank.com",
     wallet: "https://dex.iobanker.com/"
 },
     OPEN: {
