@@ -1,23 +1,23 @@
 import React from "react";
 import Translate from "react-translate-component";
-import {ChainStore} from "bitsharesjs/es";
+import {ChainStore} from "bitsharesjs";
 import ChainTypes from "components/Utility/ChainTypes";
 import BindToChainState from "components/Utility/BindToChainState";
-import iobankerWithdrawModal from "./iobankerWithdrawModal";
+import DisableCopyText from "../DisableCopyText";
+import ioBankerWithdrawModal from "./ioBankerWithdrawModal";
 import AccountBalance from "../../Account/AccountBalance";
-import iobankerDepositAddressCache from "lib/common/iobankerDepositAddressCache";
-import {requestDepositAddress} from "lib/common/iobankerMethods";
+import ioBankerDepositAddressCache from "common/ioBankerDepositAddressCache";
+import {requestDepositAddress} from "lib/common/ioBankerMethods";
 import AssetName from "components/Utility/AssetName";
 import LinkToAccountById from "components/Utility/LinkToAccountById";
-import utils from "lib/common/utils";
-import DisableCopyText from "../DisableCopyText";
+import utils from "common/utils";
 import counterpart from "counterpart";
-import QRCode from "qrcode.react";
 import PropTypes from "prop-types";
 import CopyToClipboard from "react-copy-to-clipboard";
 import {Modal} from "bitshares-ui-style-guide";
+import {availableGateways} from "lib/common/gateways";
 
-class iobankerGatewayDepositRequest extends React.Component {
+class ioBankerGatewayDepositRequest extends React.Component {
     static propTypes = {
         gateway: PropTypes.string,
         deposit_coin_type: PropTypes.string,
@@ -33,24 +33,24 @@ class iobankerGatewayDepositRequest extends React.Component {
         deprecated_message: PropTypes.string,
         action: PropTypes.string,
         supports_output_memos: PropTypes.bool.isRequired,
+        supportsPublicKey: PropTypes.bool.isRequired,
+        memoType: PropTypes.string,
         min_amount: PropTypes.number,
-        deposit_fee: PropTypes.number,
-        withdraw_fee: PropTypes.number,
+        gateFee: PropTypes.number,
+        confirmations: PropTypes.object,
         asset_precision: PropTypes.number
     };
 
     constructor(props) {
         super(props);
-        this.deposit_address_cache = new iobankerDepositAddressCache();
+        this.deposit_address_cache = new ioBankerDepositAddressCache();
 
         this.state = {
             isModalVisible: false,
-            account_name: null,
             receive_address: null
         };
 
         this.addDepositAddress = this.addDepositAddress.bind(this);
-
         this.showModal = this.showModal.bind(this);
         this.hideModal = this.hideModal.bind(this);
     }
@@ -69,7 +69,6 @@ class iobankerGatewayDepositRequest extends React.Component {
 
     _getDepositObject() {
         return {
-            walletType: this.props.deposit_wallet_type,
             inputCoinType: this.props.deposit_coin_type,
             outputCoinType: this.props.receive_coin_type,
             outputAddress: this.props.account.get("name"),
@@ -79,20 +78,19 @@ class iobankerGatewayDepositRequest extends React.Component {
 
     // componentWillMount() {
     //     let account_name = this.props.account.get("name");
-    //
-    //     // let receive_address = this.deposit_address_cache.getCachedInputAddress(this.props.gateway, account_name, this.props.deposit_coin_type, this.props.receive_coin_type);
+    //     let receive_address = this.deposit_address_cache.getCachedInputAddress(this.props.gateway, account_name, this.props.deposit_coin_type, this.props.receive_coin_type);
     // }
 
     addDepositAddress(receive_address) {
         let account_name = this.props.account.get("name");
-        // this.deposit_address_cache.cacheInputAddress(
-        //     this.props.gateway,
-        //     account_name,
-        //     this.props.deposit_coin_type,
-        //     this.props.receive_coin_type,
-        //     receive_address.address,
-        //     receive_address.memo
-        // );
+        this.deposit_address_cache.cacheInputAddress(
+            this.props.gateway,
+            account_name,
+            this.props.deposit_coin_type,
+            this.props.receive_coin_type,
+            receive_address.address,
+            receive_address.memo
+        );
         this.setState({account_name});
         this.setState({receive_address});
     }
@@ -139,24 +137,44 @@ class iobankerGatewayDepositRequest extends React.Component {
             if (!has_nonzero_balance) return emptyRow;
         }
 
-        let receive_address = null;
-        let prev_account_name = this.state.account_name;
-        if (prev_account_name === this.props.account.get("name"))
-            receive_address = this.state.receive_address;
+        // let account_balances = account_balances_object.toJS();
+        // let asset_types = Object.keys(account_balances);
+        // if (asset_types.length > 0) {
+        //     let current_asset_id = this.props.receive_asset.get("id");
+        //     if( current_asset_id )
+        //     {
+        //         balance = (<span><Translate component="span" content="transfer.available"/>: <BalanceComponent balance={account_balances[current_asset_id]}/></span>);
+        //     }
+        // }
 
+        let receive_address = this.state.receive_address;
         if (!receive_address) {
             let account_name = this.props.account.get("name");
-            // receive_address = this.deposit_address_cache.getCachedInputAddress(
-            //     this.props.gateway,
-            //     account_name,
-            //     this.props.deposit_coin_type,
-            //     this.props.receive_coin_type
-            // );
+            receive_address = this.deposit_address_cache.getCachedInputAddress(
+                this.props.gateway,
+                account_name,
+                this.props.deposit_coin_type,
+                this.props.receive_coin_type
+            );
         }
 
-        if (!receive_address) {
-            requestDepositAddress(this._getDepositObject());
-            return emptyRow;
+        let depositConfirmation = null;
+        if (this.props.confirmations && this.props.confirmations.type) {
+            if (this.props.confirmations.type === "irreversible") {
+                depositConfirmation = (
+                    <Translate content="gateway.gateway_deposit.confirmations.last_irreversible" />
+                );
+            } else if (
+                this.props.confirmations.type === "blocks" &&
+                this.props.confirmations.value
+            ) {
+                depositConfirmation = (
+                    <Translate
+                        content="gateway.gateway_deposit.confirmations.n_blocks"
+                        blocks={this.props.confirmations.value}
+                    />
+                );
+            }
         }
 
         let withdraw_modal_id = this.getWithdrawModalId();
@@ -169,26 +187,39 @@ class iobankerGatewayDepositRequest extends React.Component {
         // else
         // {
         let clipboardText = "";
-        let payFromWallet =
-            "sth:" +
-            receive_address.address +
-            "?vendorField=" +
-            this.props.account.get("name");
-        var showPayFromWallet = false;
-        if (this.props.deposit_asset === "STH") {
-            showPayFromWallet = true;
-        }
-
         let memoText;
-        if (this.props.deposit_account) {
+        let withdraw_memo_prefix;
+        let currentGateway = "ioxbank";
+        if (
+            !!availableGateways[currentGateway].simpleAssetGateway &&
+            this.props.deposit_account
+        ) {
             deposit_address_fragment = (
                 <span>{this.props.deposit_account}</span>
             );
             clipboardText = this.props.deposit_account;
-            memoText = "dex:" + this.props.account.get("name");
+            if (!!this.props.memoType && this.props.memoType === "btsid") {
+                memoText =
+                    availableGateways[currentGateway].fixedMemo[
+                        "prepend_btsid"
+                    ] +
+                    this.props.account.get("id").replace("1.2.", "") +
+                    availableGateways[currentGateway].fixedMemo["append"];
+            } else {
+                memoText =
+                    availableGateways[currentGateway].fixedMemo[
+                        "prepend_default"
+                    ] +
+                    this.props.account.get("name") +
+                    availableGateways[currentGateway].fixedMemo["append"];
+            }
             deposit_memo = <span>{memoText}</span>;
-            var withdraw_memo_prefix = this.props.deposit_coin_type + ":";
+            withdraw_memo_prefix = this.props.deposit_coin_type + ":";
         } else {
+            if (!receive_address && !this.props.supportsMemos) {
+                requestDepositAddress(this._getDepositObject());
+                return emptyRow;
+            }
             if (receive_address.memo) {
                 // This is a client that uses a deposit memo (like ethereum), we need to display both the address and the memo they need to send
                 memoText = receive_address.memo;
@@ -204,15 +235,8 @@ class iobankerGatewayDepositRequest extends React.Component {
                     <span>{receive_address.address}</span>
                 );
             }
-            var withdraw_memo_prefix = "";
+            withdraw_memo_prefix = "";
         }
-
-        let minDeposit = utils.format_number(
-            this.props.min_amount /
-                utils.get_asset_precision(this.props.asset_precision),
-            this.props.asset_precision,
-            false
-        );
 
         if (this.props.action === "deposit") {
             return (
@@ -240,7 +264,6 @@ class iobankerGatewayDepositRequest extends React.Component {
                                             {this.props.deposit_asset}
                                         </td>
                                     </tr>
-
                                     <tr>
                                         <Translate
                                             component="td"
@@ -325,11 +348,6 @@ class iobankerGatewayDepositRequest extends React.Component {
                                 </tbody>
                             </table>
                         </div>
-                        {!memoText ? (
-                            <div className="QR">
-                                <QRCode size={128} value={clipboardText} />
-                            </div>
-                        ) : null}
                     </div>
                     <div className="small-12 medium-7">
                         <Translate
@@ -346,52 +364,50 @@ class iobankerGatewayDepositRequest extends React.Component {
                         <label className="left-label">
                             <b>
                                 <Translate
-                                    content="gateway.iobanker.min_amount"
-                                    minAmount={minDeposit}
+                                    content="gateway.rudex.min_amount"
+                                    minAmount={utils.format_number(
+                                        this.props.min_amount /
+                                            utils.get_asset_precision(
+                                                this.props.asset_precision
+                                            ),
+                                        this.props.asset_precision,
+                                        false
+                                    )}
                                     symbol={this.props.deposit_coin_type}
                                 />
                             </b>
                         </label>
+                        {depositConfirmation ? (
+                            <span>
+                                (<i>{depositConfirmation}</i>)
+                            </span>
+                        ) : null}
                         <div style={{padding: "10px 0", fontSize: "1.1rem"}}>
                             <table className="table">
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <Translate
-                                                style={{
-                                                    textTransform: "uppercase"
-                                                }}
-                                                content="gateway.address"
-                                            />
-                                            :{" "}
-                                            <DisableCopyText
-                                                replaceCopyText={counterpart.translate(
-                                                    "gateway.use_copy_button"
-                                                )}
-                                            >
-                                                <b>
-                                                    {deposit_address_fragment}
-                                                </b>
-                                            </DisableCopyText>
-                                        </td>
-                                    </tr>
-                                    {deposit_memo ? (
-                                        <tr>
-                                            <td>
-                                                <Translate
-                                                    style={{
-                                                        textTransform:
-                                                            "uppercase"
-                                                    }}
-                                                    content="gateway.memo"
-                                                />
-                                                :{" "}
+                                            ADDRESS:{" "}
+                                            <b>
                                                 <DisableCopyText
                                                     replaceCopyText={counterpart.translate(
                                                         "gateway.use_copy_button"
                                                     )}
                                                 >
-                                                    <b> {deposit_memo} </b>
+                                                    {deposit_address_fragment}
+                                                </DisableCopyText>
+                                            </b>
+                                        </td>
+                                    </tr>
+                                    {deposit_memo ? (
+                                        <tr>
+                                            <td>
+                                                <DisableCopyText
+                                                    replaceCopyText={counterpart.translate(
+                                                        "gateway.use_copy_button"
+                                                    )}
+                                                >
+                                                    MEMO: <b>{deposit_memo}</b>
                                                 </DisableCopyText>
                                             </td>
                                         </tr>
@@ -405,38 +421,16 @@ class iobankerGatewayDepositRequest extends React.Component {
                                 {deposit_address_fragment ? (
                                     <CopyToClipboard text={clipboardText}>
                                         <div className="button">
-                                            <Translate content="gateway.copy_address" />
+                                            Copy address
                                         </div>
                                     </CopyToClipboard>
                                 ) : null}
                                 {memoText ? (
                                     <CopyToClipboard text={memoText}>
-                                        <div className="button">
-                                            <Translate content="gateway.copy_memo" />
-                                        </div>
+                                        <div className="button">Copy memo</div>
                                     </CopyToClipboard>
                                 ) : null}
-                                {showPayFromWallet ? (
-                                    <a className="button" href={payFromWallet}>
-                                        <Translate content="gateway.deposit_from_wallet" />{" "}
-                                        {this.props.deposit_asset}
-                                    </a>
-                                ) : null}
                             </div>
-                            <Translate
-                                className="has-error fz_14"
-                                component="p"
-                                content="gateway.min_deposit_warning_amount"
-                                minDeposit={minDeposit}
-                                coin={this.props.deposit_asset}
-                            />
-                            <Translate
-                                className="has-error fz_14"
-                                component="p"
-                                content="gateway.min_deposit_warning_asset"
-                                minDeposit={minDeposit}
-                                coin={this.props.deposit_asset}
-                            />
                         </div>
                     </div>
                 </div>
@@ -565,10 +559,8 @@ class iobankerGatewayDepositRequest extends React.Component {
                         })}
                         footer={null}
                         visible={this.state.isModalVisible}
-                        id={withdraw_modal_id}
-                        overlay={true}
                     >
-                        <iobankerWithdrawModal
+                        <ioBankerWithdrawModal
                             hideModal={this.hideModal}
                             showModal={this.showModal}
                             account={this.props.account.get("name")}
@@ -581,10 +573,13 @@ class iobankerGatewayDepositRequest extends React.Component {
                             output_supports_memos={
                                 this.props.supports_output_memos
                             }
+                            output_supportsPublicKey={
+                                this.props.supportsPublicKey
+                            }
                             memo_prefix={withdraw_memo_prefix}
                             modal_id={withdraw_modal_id}
                             min_amount={this.props.min_amount}
-                            withdraw_fee={this.props.withdraw_fee}
+                            gateFee={this.props.gateFee}
                             asset_precision={this.props.asset_precision}
                             balance={
                                 this.props.account.get("balances").toJS()[
@@ -599,6 +594,4 @@ class iobankerGatewayDepositRequest extends React.Component {
     }
 }
 
-export default BindToChainState(iobankerGatewayDepositRequest, {
-    keep_updating: true
-});
+export default BindToChainState(ioBankerGatewayDepositRequest);
