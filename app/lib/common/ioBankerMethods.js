@@ -15,7 +15,6 @@ export function fetchCoinList(url = iobankerAPIs.BASE + iobankerAPIs.COINS_LIST)
 }
 
 export function requestDepositAddress({
-    walletType,
     inputCoinType,
     outputCoinType,
     outputAddress,
@@ -30,7 +29,7 @@ export function requestDepositAddress({
 
     let body_string = JSON.stringify(body);
 
-    fetch(url + `/wallets/${walletType}/new-deposit-address`, {
+    fetch(url + iobankerAPIs.NEW_DEPOSIT_ADDRESS, {
         method: "post",
         headers: new Headers({
             Accept: "application/json",
@@ -82,7 +81,7 @@ export function validateAddress({
         }),
         body: JSON.stringify({address: newAddress})
     })
-        .then(reply => reply.json().then(json => json.isValid))
+        .then(reply => reply.json().then(json => json))
         .catch(err => {
             console.log("validate error:", err);
         });
