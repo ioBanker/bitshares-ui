@@ -195,7 +195,6 @@ class iobankerGateway extends React.Component {
                                 receive_asset={coin.symbol}
                                 receive_coin_type={coin.symbol.toLowerCase()}
                                 supports_output_memos={coin.memoSupport}
-			        supports_output_tags={coin.tagSupport}
                                 min_amount={coin.minAmount}
                                 asset_precision={coin.precision}
                                 action={this.state.action}
