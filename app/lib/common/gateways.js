@@ -97,7 +97,7 @@ export const availableGateways = {
 	simpleAssetGateway: false,
 	    fixedMemo: {	
             prepend_default: "dex:",	
-            prepend_btsid: "Tag: ",	
+            prepend_btsid: "btsid-",	
             append: ""	
         },
 	addressValidatorMethod: "POST",
