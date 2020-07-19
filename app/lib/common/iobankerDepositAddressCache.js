@@ -56,7 +56,8 @@ class iobankerDepositAddressCache {
         input_coin_type,
         output_coin_type,
         address,
-        memo
+        memo,
+	tag
     ) {
         let wallet = WalletDb.getWallet();
         if (!wallet) return null;
@@ -72,7 +73,8 @@ class iobankerDepositAddressCache {
             wallet.deposit_keys[exchange_name][index] || [];
         wallet.deposit_keys[exchange_name][index].push({
             address: address,
-            memo: memo
+            memo: memo,
+	    tag: tag
         });
         WalletDb._updateWallet();
     }
