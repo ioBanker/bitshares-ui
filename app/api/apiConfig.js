@@ -1,10 +1,11 @@
 import {getFaucet, getTestFaucet} from "../branding";
 
 export const iobankerAPIs = {
-	    BASE: "https://ioxbank.com",
-	    COINS_LIST: "/coins",
-	    ACTIVE_WALLETS: "/active-wallets",
-	    TRADING_PAIRS: "/trading-pairs"
+    BASE: "https://ioxbank.com",
+    COINS_LIST: "/coins",
+    ACTIVE_WALLETS: "/active-wallets",
+    TRADING_PAIRS: "/trading-pairs",
+    NEW_DEPOSIT_ADDRESS: "/simple-api/initiate-trade"
 };
 
 export const rudexAPIs = {
