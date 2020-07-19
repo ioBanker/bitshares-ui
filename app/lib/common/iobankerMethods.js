@@ -10,12 +10,11 @@ export function fetchCoinList(url = iobankerAPIs.BASE + iobankerAPIs.COINS_LIST)
             })
         )
         .catch(err => {
-            console.log("error fetching iobanker list of coins", err, url);
+            console.log("error fetching ioxbank list of coins", err, url);
         });
 }
 
 export function requestDepositAddress({
-    walletType,
     inputCoinType,
     outputCoinType,
     outputAddress,
@@ -30,7 +29,7 @@ export function requestDepositAddress({
 
     let body_string = JSON.stringify(body);
 
-    fetch(url + `/wallets/${walletType}/new-deposit-address`, {
+    fetch(url + iobankerAPIs.NEW_DEPOSIT_ADDRESS, {
         method: "post",
         headers: new Headers({
             Accept: "application/json",
@@ -46,7 +45,6 @@ export function requestDepositAddress({
                         let address = {
                             address: json.inputAddress || "unknown",
                             memo: json.inputMemo,
-			    tag: json.inputTag,
                             error: json.error || null
                         };
                         if (stateCallback) stateCallback(address);
@@ -55,7 +53,6 @@ export function requestDepositAddress({
                         // console.log( "error: ",error  );
                         if (stateCallback)
                             stateCallback({address: "unknown", memo: null});
-			    stateCallback({address: "unknown", Tag: null});
                     }
                 );
             },
@@ -63,7 +60,6 @@ export function requestDepositAddress({
                 // console.log( "error: ",error  );
                 if (stateCallback)
                     stateCallback({address: "unknown", memo: null});
-		    stateCallback({address: "unknown", Tag: null});
             }
         )
         .catch(err => {
@@ -85,7 +81,7 @@ export function validateAddress({
         }),
         body: JSON.stringify({address: newAddress})
     })
-        .then(reply => reply.json().then(json => json.isValid))
+        .then(reply => reply.json().then(json => json))
         .catch(err => {
             console.log("validate error:", err);
         });
