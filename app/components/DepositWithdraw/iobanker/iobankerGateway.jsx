@@ -1,5 +1,5 @@
 import React from "react";
-import ioBankerGatewayDepositRequest from "./ioBankerGatewayDepositRequest";
+import iobankerGatewayDepositRequest from "./iobankerGatewayDepositRequest";
 import Translate from "react-translate-component";
 import {connect} from "alt-react";
 import SettingsStore from "stores/SettingsStore";
@@ -12,7 +12,7 @@ import Immutable from "immutable";
 import cnames from "classnames";
 import LoadingIndicator from "../../LoadingIndicator";
 
-class ioBankerGateway extends React.Component {
+class iobankerGateway extends React.Component {
     constructor(props) {
         super();
 
@@ -182,7 +182,7 @@ class ioBankerGateway extends React.Component {
                 {!coin ? null : (
                     <div>
                         <div style={{marginBottom: 15}}>
-                            <ioBankerGatewayDepositRequest
+                            <iobankerGatewayDepositRequest
                                 key={`${coin.symbol}`}
                                 gateway={coin.gatewayWallet}
                                 issuer_account={coin.issuer}
@@ -278,7 +278,7 @@ class ioBankerGateway extends React.Component {
 }
 
 export default connect(
-    ioBankerGateway,
+    iobankerGateway,
     {
         listenTo() {
             return [SettingsStore];
