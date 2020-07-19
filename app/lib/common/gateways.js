@@ -94,7 +94,7 @@ export const availableGateways = {
         isEnabled: _isEnabled("IOB"),
 	isSimple: true,
 	selected: false,
-	simpleAssetGateway: false,
+	simpleAssetGateway: true,
 	    fixedMemo: {	
             prepend_default: "dex:",	
             prepend_btsid: "btsid-",	
