@@ -111,7 +111,7 @@ class iobankerGateway extends React.Component {
 
         let isDeposit = this.state.action === "deposit";
 
-        let supportUrl = "https://support.ioxbank.com";
+        let supportUrl = "https://voffice.iobanker.com";
 
         return (
             <div style={this.props.style}>
@@ -194,15 +194,10 @@ class iobankerGateway extends React.Component {
                                 deposit_wallet_type={coin.walletType}
                                 receive_asset={coin.symbol}
                                 receive_coin_type={coin.symbol.toLowerCase()}
-                                supports_output_memos={coin.supportsMemos}
-                                supportsPublicKey={
-                                    coin.supportsPublicKey || false
-                                }
-                                memoType={coin.memoType}
+                                supports_output_memos={coin.memoSupport}
+			        supports_output_tags={coin.tagSupport}
                                 min_amount={coin.minAmount}
-                                gateFee={coin.gateFee}
                                 asset_precision={coin.precision}
-                                confirmations={coin.confirmations}
                                 action={this.state.action}
                             />
                             <label className="left-label">Support</label>
