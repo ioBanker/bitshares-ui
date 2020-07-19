@@ -4,10 +4,10 @@ import {ChainStore} from "bitsharesjs";
 import ChainTypes from "components/Utility/ChainTypes";
 import BindToChainState from "components/Utility/BindToChainState";
 import DisableCopyText from "../DisableCopyText";
-import ioBankerWithdrawModal from "./ioBankerWithdrawModal";
+import iobankerWithdrawModal from "./iobankerWithdrawModal";
 import AccountBalance from "../../Account/AccountBalance";
-import ioBankerDepositAddressCache from "common/ioBankerDepositAddressCache";
-import {requestDepositAddress} from "lib/common/ioBankerMethods";
+import iobankerDepositAddressCache from "common/iobankerDepositAddressCache";
+import {requestDepositAddress} from "lib/common/iobankerMethods";
 import AssetName from "components/Utility/AssetName";
 import LinkToAccountById from "components/Utility/LinkToAccountById";
 import utils from "common/utils";
@@ -17,7 +17,7 @@ import CopyToClipboard from "react-copy-to-clipboard";
 import {Modal} from "bitshares-ui-style-guide";
 import {availableGateways} from "lib/common/gateways";
 
-class ioBankerGatewayDepositRequest extends React.Component {
+class iobankerGatewayDepositRequest extends React.Component {
     static propTypes = {
         gateway: PropTypes.string,
         deposit_coin_type: PropTypes.string,
@@ -43,7 +43,7 @@ class ioBankerGatewayDepositRequest extends React.Component {
 
     constructor(props) {
         super(props);
-        this.deposit_address_cache = new ioBankerDepositAddressCache();
+        this.deposit_address_cache = new iobankerDepositAddressCache();
 
         this.state = {
             isModalVisible: false,
