@@ -15,6 +15,7 @@ export function fetchCoinList(url = iobankerAPIs.BASE + iobankerAPIs.COINS_LIST)
 }
 
 export function requestDepositAddress({
+    walletType,
     inputCoinType,
     outputCoinType,
     outputAddress,
@@ -29,7 +30,7 @@ export function requestDepositAddress({
 
     let body_string = JSON.stringify(body);
 
-    fetch(url + iobankerAPIs.NEW_DEPOSIT_ADDRESS, {
+    fetch(url + `/wallets/${walletType}/new-deposit-address`, {
         method: "post",
         headers: new Headers({
             Accept: "application/json",
@@ -45,6 +46,7 @@ export function requestDepositAddress({
                         let address = {
                             address: json.inputAddress || "unknown",
                             memo: json.inputMemo,
+			    tag: json.inputTag,
                             error: json.error || null
                         };
                         if (stateCallback) stateCallback(address);
@@ -53,6 +55,7 @@ export function requestDepositAddress({
                         // console.log( "error: ",error  );
                         if (stateCallback)
                             stateCallback({address: "unknown", memo: null});
+			    stateCallback({address: "unknown", Tag: null});
                     }
                 );
             },
@@ -60,6 +63,7 @@ export function requestDepositAddress({
                 // console.log( "error: ",error  );
                 if (stateCallback)
                     stateCallback({address: "unknown", memo: null});
+		    stateCallback({address: "unknown", Tag: null});
             }
         )
         .catch(err => {
@@ -81,7 +85,7 @@ export function validateAddress({
         }),
         body: JSON.stringify({address: newAddress})
     })
-        .then(reply => reply.json().then(json => json))
+        .then(reply => reply.json().then(json => json.isValid))
         .catch(err => {
             console.log("validate error:", err);
         });
