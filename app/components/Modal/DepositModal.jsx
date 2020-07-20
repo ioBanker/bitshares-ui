@@ -201,11 +201,21 @@ class DepositModalContent extends DecimalChecker {
         ) {
             let memoText;
             if (!!backingAsset.memoType && backingAsset.memoType === "btsid") {
-                let accountMap = ChainStore.getAccount(account, false);
+                let KeyAuth = function(auth) {
+    this.id = auth.toJS ? auth.get(0) : auth[0];
+    this.weight = auth.toJS ? auth.get(1) : auth[1];
+
+    this.isAvailable = auths => {
+        return auths.includes
+            ? auths.includes(this.id)
+            : auths.indexOf(this) !== -1;
+    };
+};
+                this.id = account.get("id");
+                let accountMap = account.get("id");
                 memoText =
                     gatewayStatus[selectedGateway].fixedMemo["prepend_btsid"] +
-                    //accountMap.get("id").replace("1.2.", "") +
-                    ChainStore.getAccount(id).replace("1.2.", "") +
+                    accountMap.get("id").replace("1.2.", "") +
                     gatewayStatus[selectedGateway].fixedMemo["append"];
             } else {
                 memoText =
