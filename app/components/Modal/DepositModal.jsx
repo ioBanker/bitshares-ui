@@ -20,6 +20,7 @@ import {getGatewayStatusByAsset} from "common/gatewayUtils";
 import CryptoLinkFormatter from "../Utility/CryptoLinkFormatter";
 import counterpart from "counterpart";
 import {Modal, Button} from "bitshares-ui-style-guide";
+import Immutable from "immutable";
 
 class DepositModalContent extends DecimalChecker {
     constructor() {
