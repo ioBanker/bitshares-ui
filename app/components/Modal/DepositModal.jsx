@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Component, Children} from "react";
 import Translate from "react-translate-component";
 import utils from "common/utils";
 import {requestDepositAddress} from "common/gatewayMethods";
@@ -20,7 +20,6 @@ import {getGatewayStatusByAsset} from "common/gatewayUtils";
 import CryptoLinkFormatter from "../Utility/CryptoLinkFormatter";
 import counterpart from "counterpart";
 import {Modal, Button} from "bitshares-ui-style-guide";
-import React, {Component, Children} from "react";
 import {connect} from "alt-react";
 import ChainTypes from "components/Utility/ChainTypes";
 import BindToChainState from "components/Utility/BindToChainState";
