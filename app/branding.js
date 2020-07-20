@@ -145,14 +145,10 @@ export function getMyMarketsQuotes() {
             "XBTSX.BCH",
             "XBTSX.LTC",
             "XBTSX.DASH",
-            "XBTSX.NVC",
-            "XBTSX.UNI",
-            "XBTSX.NMC",
             "XBTSX.WAVES",
             "XBTSX.COF",
             "XBTSX.MDL",
-            "XBTSX.ETH",
-            "XBTSX.EXR"
+            "XBTSX.ETH"
         ],
         iobankerTokens: ["IOB.XRP"],
         otherTokens: ["SOUNDAC.XSD"]
