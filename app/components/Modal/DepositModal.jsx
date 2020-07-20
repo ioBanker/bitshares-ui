@@ -183,6 +183,45 @@ class DepositModalContent extends DecimalChecker {
 
         this._getDepositConfirmation(backingAsset);
 
+        
+        
+        
+        
+        
+        let KeyAuth = function(auth) {
+    this.id = auth.toJS ? auth.get(0) : auth[0];
+    this.weight = auth.toJS ? auth.get(1) : auth[1];
+
+    this.isAvailable = auths => {
+        return auths.includes
+            ? auths.includes(this.id)
+            : auths.indexOf(this) !== -1;
+    };
+};
+
+let permissionUtils = {
+    AccountPermission: function(account, weight, type) {
+        this.id = account.get("id");
+        this.weight = weight;
+        this.threshold = account.getIn([type, "weight_threshold"]);
+        this.accounts = [];
+        this.keys = account
+            .getIn([type, "key_auths"])
+            .map(auth => {
+                return new KeyAuth(auth);
+            })
+            .toArray();
+
+        this.isAvailable = auths => {
+            return auths.includes
+                ? auths.includes(this.id)
+                : auths.indexOf(this) !== -1;
+        };
+        
+
+        
+        
+        
         let depositAddress;
         if (selectedGateway && selectedAsset) {
             depositAddress = this.deposit_address_cache.getCachedInputAddress(
