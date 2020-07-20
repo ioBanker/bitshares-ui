@@ -204,7 +204,8 @@ class DepositModalContent extends DecimalChecker {
                 let accountMap = ChainStore.getAccount(account, false);
                 memoText =
                     gatewayStatus[selectedGateway].fixedMemo["prepend_btsid"] +
-                    accountMap.get("id").replace("1.2.", "") +
+                    //accountMap.get("id").replace("1.2.", "") +
+                    account.get("id").replace("1.2.", "") +
                     gatewayStatus[selectedGateway].fixedMemo["append"];
             } else {
                 memoText =
