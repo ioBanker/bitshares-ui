@@ -11,7 +11,7 @@
 * [Blockchain](introduction/blockchain.md)
 
 * [Gateways](gateways/introduction.md)
-    * [Rudex](gateways/rudex.md)
+    * [xbtsx](gateways/xbtsx.md)
     * [ioxbank](gateways/ioxbank.md)
 
 
