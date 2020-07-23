@@ -7,4 +7,4 @@ A Bridge service is responsible for moving cryptocurrencies to and from the Bits
 
 ## Support
 - [Telegram](https://t.me/ioxbank)
-- [Open a Ticket](https://ioxbank.com/ticket)
+- [Open a Ticket](https://support.ioxbank.com)
