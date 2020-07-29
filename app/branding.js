@@ -136,17 +136,22 @@ export function getMyMarketsQuotes() {
             "HONEST.XAG"
         ],
 
+        rudexTokens: [
+            "RUDEX.BTC",
+            "RUDEX.ETH",
+            "RUDEX.EOS",
+            "RUDEX.USDT",
+            "RUDEX.WLS",
+            "RUDEX.SMOKE"
+        ],
+
         xbtsxTokens: [
             "XBTSX.STH",
-            "XBTSX.POST",
             "XBTSX.DOGE",
             "XBTSX.BTC",
-            "XBTSX.BTG",
             "XBTSX.BCH",
             "XBTSX.LTC",
             "XBTSX.DASH",
-            "XBTSX.COF",
-            "XBTSX.MDL",
             "XBTSX.ETH"
         ],
         iobankerTokens: ["IOB.XRP"],
@@ -177,20 +182,21 @@ export function getFeaturedMarkets(quotes = []) {
         ["BTS", "HONEST.XAU"],
         ["BTS", "HONEST.XAG"],
         ["BTS", "HONEST.BTC"],
-        ["BTS", "SOUNDAC.XSD"],
-	["IOB.XRP", "BTS"],
-        ["BTS", "IOB.XRP"],
+
         ["HONEST.BTC", "HONEST.USD"], // HONEST.BTC pairs
         ["HONEST.BTC", "HONEST.CNY"],
         ["HONEST.BTC", "HONEST.ETH"],
         ["HONEST.BTC", "HONEST.XRP"],
         ["HONEST.BTC", "HONEST.XAU"],
         ["HONEST.BTC", "HONEST.XAG"],
+        ["HONEST.BTC", "RUDEX.BTC"],
+
         ["HONEST.USD", "HONEST.CNY"], // HONEST.USD pairs
         ["HONEST.USD", "HONEST.ETH"],
         ["HONEST.USD", "HONEST.XRP"],
         ["HONEST.USD", "HONEST.XAU"],
-        ["HONEST.USD", "HONEST.XAG"]
+        ["HONEST.USD", "HONEST.XAG"],
+        ["HONEST.USD", "RUDEX.USDT"]
     ].filter(a => {
         if (!quotes.length) return true;
         return quotes.indexOf(a[0]) !== -1;
@@ -206,7 +212,7 @@ export function getAssetNamespaces() {
     if (_isTestnet()) {
         return [];
     }
-    return ["HONEST.", "XBTSX.", "SOUNDAC.", "IOB."];
+    return ["HONEST.", "XBTSX.", "RUDEX.", "SOUNDAC.", "IOB."];
 }
 
 /**
@@ -224,7 +230,7 @@ export function getAssetHideNamespaces() {
  * @returns {boolean}
  */
 export function allowedGateway(gateway) {
-    const allowedGateways = ["XBTSX", "IOB"];
+    const allowedGateways = ["XBTSX", "RUDEX", "IOB"];
     if (!gateway) {
         // answers the question: are any allowed?
         return allowedGateways.length > 0;
