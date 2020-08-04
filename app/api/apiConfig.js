@@ -91,14 +91,6 @@ export const settingsAPIs = {
             contact: "email:admin@iobanker.com"
         },
         {
-            url: "wss://bit.btsabc.org/ws",
-            region: "Eastern Asia",
-            country: "China",
-            location: "Hong Kong",
-            operator: "Witness: abc123",
-            contact: "QQ:58291;email:58291@qq.com"
-        },
-        {
             url: "wss://ws.gdex.top",
             region: "Eastern Asia",
             country: "China",
@@ -115,40 +107,9 @@ export const settingsAPIs = {
             contact: "telegram:btsplusplus"
         },
         {
-            url: "wss://kc-us-dex.xeldal.com/ws", // check
-            region: "Northern America",
-            country: "U.S.A.",
-            location: "Kansas City",
-            operator: "Witness: xeldal",
-            contact: "telegram:xeldal"
-        },
-        {
-            url: "wss://api-ru.bts.blckchnd.com",
-            region: "Eastern Europe",
-            country: "Russia",
-            location: "Moscow",
-            operator: "Witness: blckchnd",
-            contact:
-                "email:admin@blckchnd.com;telegram:ruslansalikhov;github:blckchnd"
-        },
-        {
             url: "wss://eu.nodes.bitshares.ws",
             region: "Western Europe",
             country: "Germany",
-            operator: "Infrastructure Worker",
-            contact: "email:info@blockchainprojectsbv.com"
-        },
-        {
-            url: "wss://us.nodes.bitshares.ws",
-            region: "Northern America",
-            country: "U.S.A.",
-            operator: "Infrastructure Worker",
-            contact: "email:info@blockchainprojectsbv.com"
-        },
-        {
-            url: "wss://hk.nodes.bitshares.ws",
-            region: "Eastern Asia",
-            country: "Hong Kong",
             operator: "Infrastructure Worker",
             contact: "email:info@blockchainprojectsbv.com"
         },
@@ -160,14 +121,6 @@ export const settingsAPIs = {
             operator: "Witness: in.abit",
             contact: "telegram:abitmore"
         },
-        // {
-        //     url: "wss://api.bts.network/", // check
-        //     region: "Northern America",
-        //     country: "U.S.A.",
-        //     location: "Virginia",
-        //     operator: "Witness: fox",
-        //     contact: "telegram:ryanRfox"
-        // },
         {
             url: "wss://btsws.roelandp.nl/ws",
             region: "Northern Europe",
@@ -189,30 +142,6 @@ export const settingsAPIs = {
             location: "Singapore",
             operator: "Witness: xn-delegate",
             contact: "wechat:Necklace"
-        },
-        {
-            url: "wss://freedom.bts123.cc:15138/",
-            region: "Eastern Asia",
-            country: "China",
-            location: "Changsha",
-            operator: "Witness: delegate.freedom",
-            contact: "telegram:eggplant"
-        },
-        {
-            url: "wss://bitshares.bts123.cc:15138/",
-            region: "Eastern Asia",
-            country: "China",
-            location: "Hangzhou",
-            operator: "Witness: delegate.freedom",
-            contact: "telegram:eggplant"
-        },
-        {
-            url: "wss://api.bts.ai",
-            region: "Eastern Asia",
-            country: "China",
-            location: "Beijing",
-            operator: "Witness: witness.hiblockchain",
-            contact: "telegram:vianull;wechat:strugglingl"
         },
         {
             url: "wss://bts-seoul.clockwork.gr",
@@ -283,28 +212,7 @@ export const settingsAPIs = {
     ],
     ES_WRAPPER_LIST: [
         {
-            url: "https://eu.wrapper.elasticsearch.bitshares.ws",
-            region: "Western Europe",
-            country: "Germany",
-            operator: "Infrastructure Worker",
-            contact: "email:info@blockchainprojectsbv.com"
-        },
-        {
-            url: "https://us.wrapper.elasticsearch.bitshares.ws",
-            region: "Northern America",
-            country: "U.S.A.",
-            operator: "Infrastructure Worker",
-            contact: "email:info@blockchainprojectsbv.com"
-        },
-        {
-            url: "https://hk.wrapper.elasticsearch.bitshares.ws",
-            region: "Hong Kong",
-            country: "China",
-            operator: "Infrastructure Worker",
-            contact: "email:info@blockchainprojectsbv.com"
-        },
-        {
-            url: "https://explorer.bitshares-kibana.info",
+            url: "https://kibana.bts.mobi",
             region: "N/A",
             country: "N/A",
             operator: "N/A",
