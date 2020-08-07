@@ -143,7 +143,7 @@
         "alt-container": "git+https://github.com/bitshares/alt-container.git#cf4e2c690a54e49fc9fe2dc99ab8816e6c3e5a86",
         "alt-react": "git+https://github.com/bitshares/alt-react.git#d91addef51f58e41e9857ebb0dd9177cfbd3b583",
         "bignumber.js": "^4.0.0",
-        "bitshares-report": "git+https://github.com/bitshares/bitshares-report.git#bba397fc7b4eb903d1ca109ac33301e9d2e2d753",
+        "bitshares-report": "git+https://github.com/iobanker/bitshares-report.git#1fa97c6f361e585a5de8b08a87b6108fc41d7397",
         "bitshares-ui-style-guide": "git+https://github.com/bitshares/bitshares-ui-style-guide.git#23ca108d47442dc70634797fb113d1e751e9b1cb",
         "bitsharesjs": "git+https://github.com/iobanker/bitsharesjs.git#9df4664f3452c9dbe96f9a2123d7d217e48e10ce",
         "browser-locale": "^1.0.3",
