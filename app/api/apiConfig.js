@@ -144,14 +144,6 @@ export const settingsAPIs = {
             contact: "wechat:Necklace"
         },
         {
-            url: "wss://bts-seoul.clockwork.gr",
-            region: "Southeastern Asia",
-            country: "Korea",
-            location: "Seoul",
-            operator: "Witness: clockwork",
-            contact: "telegram:clockworkgr"
-        },
-        {
             url: "wss://btsfullnode.bangzi.info/ws",
             region: "Western Europe",
             country: "Germany",
@@ -166,14 +158,6 @@ export const settingsAPIs = {
             location: "Paris",
             operator: "Witness: zapata42-witness",
             contact: "telegram:Zapata_42"
-        },
-        {
-            url: "wss://citadel.li/node",
-            region: "Western Europe",
-            country: "Iceland",
-            location: "Reykjavik",
-            operator: "CITADEL",
-            contact: "email:citadel.li;support"
         },
 
         // Testnet
