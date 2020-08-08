@@ -48,7 +48,8 @@ The dev server uses Express in combination with Webpack.
 Once all the packages have been installed you can start the development server by running:
 
 ```
-npm start
+echo fs.inotify.max_user_watches=582222 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+npm run start
 ```
 
 Once the compilation is done the GUI will be available in your browser at: `localhost:8080` or `127.0.0.1:8080`. Hot Reloading is enabled so the browser will live update as you edit the source files.
