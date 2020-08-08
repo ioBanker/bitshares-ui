@@ -267,7 +267,7 @@ class ScaledOrderForm extends Component {
         )
             return 0;
 
-        const step = ((priceUpper - priceLower) / (orderCount - 1)).toFixed(6);
+        const step = ((priceUpper - priceLower) / (orderCount - 1)).toFixed(8);
 
         const amountPerOrder = amount / orderCount;
 
@@ -275,11 +275,11 @@ class ScaledOrderForm extends Component {
 
         for (let i = 0; i < orderCount; i += 1) {
             total += Number(
-                (amountPerOrder * (priceLower + step * i)).toFixed(6)
+                (amountPerOrder * (priceLower + step * i)).toFixed(8)
             );
         }
 
-        return total.toFixed(6);
+        return total.toFixed(8);
     }
 
     _getPreviewDataSource() {
@@ -305,15 +305,15 @@ class ScaledOrderForm extends Component {
         )
             return [];
 
-        const step = ((priceUpper - priceLower) / (orderCount - 1)).toFixed(6);
+        const step = ((priceUpper - priceLower) / (orderCount - 1)).toFixed(8);
 
         const amountPerOrder = amount / orderCount;
 
         for (let i = 0; i < orderCount; i += 1) {
             dataSource.push({
-                quote: amountPerOrder.toFixed(6),
-                base: (amountPerOrder * (priceLower + step * i)).toFixed(6),
-                price: (priceLower + step * i).toFixed(6)
+                quote: amountPerOrder.toFixed(8),
+                base: (amountPerOrder * (priceLower + step * i)).toFixed(8),
+                price: (priceLower + step * i).toFixed(8)
             });
         }
 
@@ -691,7 +691,7 @@ class ScaledOrderModal extends Component {
         )
             return [];
 
-        const step = ((priceUpper - priceLower) / (orderCount - 1)).toFixed(6);
+        const step = ((priceUpper - priceLower) / (orderCount - 1)).toFixed(8);
 
         const amountPerOrder = amount / orderCount;
 
@@ -707,17 +707,17 @@ class ScaledOrderModal extends Component {
         const sellAmount = i =>
             values.action === SCALED_ORDER_ACTION_TYPES.BUY
                 ? Number(
-                      (amountPerOrder / (priceLower + step * i)).toFixed(6)
+                      (amountPerOrder / (priceLower + step * i)).toFixed(8)
                   ) * Math.pow(10, sellAsset.get("precision"))
-                : Number(amountPerOrder.toFixed(6)) *
+                : Number(amountPerOrder.toFixed(8)) *
                   Math.pow(10, sellAsset.get("precision"));
 
         const buyAmount = i =>
             values.action === SCALED_ORDER_ACTION_TYPES.SELL
                 ? Number(
-                      (amountPerOrder / (priceLower + step * i)).toFixed(6)
+                      (amountPerOrder / (priceLower + step * i)).toFixed(8)
                   ) * Math.pow(10, buyAsset.get("precision"))
-                : Number(amountPerOrder.toFixed(6)) *
+                : Number(amountPerOrder.toFixed(8)) *
                   Math.pow(10, buyAsset.get("precision"));
 
         for (let i = 0; i < orderCount; i += 1) {
