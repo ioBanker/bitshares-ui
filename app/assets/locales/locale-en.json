@@ -2588,13 +2588,6 @@
             "witness_create": "Create witness",
             "witness_update": "Update witness",
             "witness_withdraw_pay": "Witness pay withdrawal",
-            "ticket_types": {
-            "liquid": "Liquid",
-            "lock_180_days": "Locked for 180 days",
-            "lock_360_days": "Locked for 360 days",
-            "lock_720_days": "Locked for 720 days",
-            "lock_forever": "Locked forever"
-        },
             "worker_create": "Create worker",
             "ticket_create": "Create ticket"
         },
