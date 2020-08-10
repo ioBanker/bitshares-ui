@@ -31,6 +31,7 @@ Before launching the GUI you will need to compile the packages:
 ```
 cd bitshares-ui
 npm install
+npm run install-charting-library
 cd bitshares-ui/node_modules/bitsharesjs
 npm install
 npm run build-es
