@@ -6,7 +6,7 @@ import counterpart from "counterpart";
 import {ChainTypes} from "bitsharesjs";
 
 const {operations} = ChainTypes;
-let ops = Object.keys(operations);
+let op = Object.keys(operations);
 
 export const TicketCreate = ({op, linkToAccount, fromComponent}) => {
     const ticket_type = Object.keys(ChainTypes.ticket_type).find(
