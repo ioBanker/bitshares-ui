@@ -3,17 +3,9 @@ import Translate from "react-translate-component";
 import FormattedAsset from "../../Utility/FormattedAsset";
 import TranslateWithLinks from "../../Utility/TranslateWithLinks";
 import counterpart from "counterpart";
-import {ChainTypes as grapheneChainTypes} from "bitsharesjs";
+import {ChainTypes} from "bitsharesjs";
 
 export const TicketCreate = ({op, linkToAccount, fromComponent}) => {
-   const {operations} = grapheneChainTypes;
-   const ticket_type = Object.keys(
-                    grapheneChainTypes.ticket_type
-                ).find(
-                    key =>
-                        grapheneChainTypes.ticket_type[key] ===
-                        op[1].target_type
-                );
                 return (
                     <span>
                         <TranslateWithLinks
@@ -33,7 +25,7 @@ export const TicketCreate = ({op, linkToAccount, fromComponent}) => {
                         />
                         &nbsp; (
                         {counterpart.translate(
-                            "operation.ticket_types." + ticket_type
+                            "operation.ticket_types." + op[1].target_type
                         )}
                         )
                     </span>
