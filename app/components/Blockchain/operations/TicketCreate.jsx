@@ -5,6 +5,9 @@ import TranslateWithLinks from "../../Utility/TranslateWithLinks";
 import counterpart from "counterpart";
 import {ChainTypes} from "bitsharesjs";
 
+const {operations} = ChainTypes;
+let ops = Object.keys(operations);
+
 export const TicketCreate = ({op, linkToAccount, fromComponent}) => {
     const ticket_type = Object.keys(ChainTypes.ticket_type).find(
         key => ChainTypes.ticket_type[key] === op[1].target_type
