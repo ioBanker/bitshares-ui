@@ -143,14 +143,16 @@ export function getMyMarketsQuotes() {
             "RUDEX.USDT",
             "RUDEX.WLS",
             "RUDEX.SMOKE"
+        ],
 
-            /*
-            "RUDEX.XBS", // RUDEX.MPAs
-            "RUDEX.XBT",
-            "RUDEX.RUB",
-            "RUDEX.OIL",
-            "RUDEX.XAU"
-*/
+        xbtsxTokens: [
+            "XBTSX.STH",
+            "XBTSX.DOGE",
+            "XBTSX.BTC",
+            "XBTSX.BCH",
+            "XBTSX.LTC",
+            "XBTSX.DASH",
+            "XBTSX.ETH"
         ],
         iobankerTokens: ["IOB.XRP"],
         otherTokens: ["SOUNDAC.XSD"]
@@ -180,20 +182,6 @@ export function getFeaturedMarkets(quotes = []) {
         ["BTS", "HONEST.XAU"],
         ["BTS", "HONEST.XAG"],
         ["BTS", "HONEST.BTC"],
-        /*
-        ["BTS", "RUDEX.XBS"], // RUDEX MPAs
-        ["BTS", "RUDEX.XBT"],
-        ["BTS", "RUDEX.OIL"],
-        ["BTS", "RUDEX.XAU"],
-        ["BTS", "RUDEX.RUB"],
-*/
-        ["BTS", "RUDEX.EOS"], // Gateways
-        ["BTS", "RUDEX.WLS"],
-        ["BTS", "RUDEX.SMOKE"],
-        ["BTS", "SOUNDAC.XSD"],
-	    ["IOB.XRP", "BTS"],
-        ["BTS", "IOB.XRP"],
-        ["HONEST.BTC", "RUDEX.BTC"],
 
         ["HONEST.BTC", "HONEST.USD"], // HONEST.BTC pairs
         ["HONEST.BTC", "HONEST.CNY"],
@@ -201,14 +189,14 @@ export function getFeaturedMarkets(quotes = []) {
         ["HONEST.BTC", "HONEST.XRP"],
         ["HONEST.BTC", "HONEST.XAU"],
         ["HONEST.BTC", "HONEST.XAG"],
-
-        ["HONEST.USD", "RUDEX.USDT"],
+        ["HONEST.BTC", "RUDEX.BTC"],
 
         ["HONEST.USD", "HONEST.CNY"], // HONEST.USD pairs
         ["HONEST.USD", "HONEST.ETH"],
         ["HONEST.USD", "HONEST.XRP"],
         ["HONEST.USD", "HONEST.XAU"],
-        ["HONEST.USD", "HONEST.XAG"]
+        ["HONEST.USD", "HONEST.XAG"],
+        ["HONEST.USD", "RUDEX.USDT"]
     ].filter(a => {
         if (!quotes.length) return true;
         return quotes.indexOf(a[0]) !== -1;
@@ -224,7 +212,7 @@ export function getAssetNamespaces() {
     if (_isTestnet()) {
         return [];
     }
-    return ["HONEST.", "RUDEX.", "SOUNDAC.", "IOB."];
+    return ["HONEST.", "XBTSX.", "RUDEX.", "SOUNDAC.", "IOB."];
 }
 
 /**
@@ -242,7 +230,7 @@ export function getAssetHideNamespaces() {
  * @returns {boolean}
  */
 export function allowedGateway(gateway) {
-    const allowedGateways = ["RUDEX", "IOB"];
+    const allowedGateways = ["XBTSX", "RUDEX", "IOB"];
     if (!gateway) {
         // answers the question: are any allowed?
         return allowedGateways.length > 0;

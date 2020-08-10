@@ -69,7 +69,7 @@
         "intro_text_2": "<b>The DEX</b> is inherently decentralized, enabling you to trade the BitShares core token (BTS) and a range of trustless price-stable, market-pegged assets such as bitUSD, bitCNY, bitBTC, bitGold and more. These assets can all be traded with <b>zero</b> counter-party risk, putting you in total control of your funds.",
         "intro_text_3": "<b>The DEX</b> also enables creation of user-issued assets (UIAs), which can be traded against any other UIAs or trustless assets on the platform.  One well-known asset owner on The DEX is <b>OpenLedger</b>, offering a host of assets including BTC, ETH, STEEM, DASH, LTC, DOGE, and many more",
         "intro_text_4": "This gives cryptocurrency traders a unique blend of traditional and decentralized trading, all in a familiar exchange interface. Happy trading!",
-        "intro_text_title": "Welcome to BitShares",
+        "intro_text_title": "Welcome to ioBanker DEX",
         "login_with": "Login with",
         "market_actions": "Market actions",
         "market_orders": "Market orders",
@@ -110,7 +110,7 @@
             "referal_fees": "Referral Fee Distribution",
             "referral_info": "As a lifetime member (LTM) you are eligable for a %(feesCashback)s% cashback on all your fees. You will also recieve cashback from markets with a referral reward. The referral reward is based on your own and your referred members market orders.",
             "referral_link": "Your referral link",
-            "referral_text": "Give this to link to people you want to refer to BitShares",
+            "referral_text": "Give this to link to people you want to refer to ioBanker DEX",
             "referrals": "Recrutements",
             "referrer": "Affiliate Referrer",
             "registrar": "Registrar",
@@ -428,7 +428,7 @@
             "workers_short": "Workers"
         },
         "voting": "Votes",
-        "welcome": "Welcome to BitShares",
+        "welcome": "Welcome to ioBanker DEX",
         "whitelist": {
             "add": "Add to whitelist",
             "add_black": "Add to blacklist",
@@ -458,7 +458,7 @@
     },
     "app_init": {
         "browser": "Unsupported browser",
-        "browser_text": "The Browser you are using has not been fully tested to support the BitShares Wallet. We highly recommend that you backup your local wallet and import it using the Chrome Browser until we have had more time to fully test your browser of choice. Use at your own risk.",
+        "browser_text": "The Browser you are using has not been fully tested to support the ioBanker DEX. We highly recommend that you backup your local wallet and import it using the Chrome Browser until we have had more time to fully test your browser of choice. Use at your own risk.",
         "check_latency": "Running latency checks...",
         "check_latency_feedback": "Running latency checks (%(pinged)s/%(totalToPing)s nodes) ...",
         "check_latency_feedback_country": "Latency check in best country (%(pinged)s/%(totalToPing)s nodes)",
@@ -1097,7 +1097,7 @@
             "wallet": "Wallet"
         },
         "welcome": {
-            "explanation_dex": "BitShares offers a native decentralized exchange, the BitShares DEX. It is running completely on the blockchain with no need for centralized services, even the order matching is transparently on-chain.",
+            "explanation_dex": "BitShares offers a native decentralized exchange, the ioBanker DEX. It is running completely on the blockchain with no need for centralized services, even the order matching is transparently on-chain.",
             "explanation_later": "If you want to adjust this later on, you can also choose the external service providers in the Settings.",
             "explanation_service_providers": "You can trade anything against everything, as long as the asset (token) is available on the BitShares Blockchain. For tokens that are not native to it there exist external service providers (so called Gateways and Bridges), that allow you to trade tokens like BTC on the BitShares DEX by providing you their own IOU ('I owe you') of it.",
             "explanation_what_to_do": "You may choose which of those service providers you want to see readily available in the BitShares UI. To do so, click 'Choose Services'. If you want to keep using the BitShares UI just like before, lick 'Not now'.",
@@ -1120,7 +1120,7 @@
         "loading": "Loading...",
         "nosync": "Your active node is out of sync",
         "synced": "Synced",
-        "title": "BitShares",
+        "title": "ioBanker",
         "unsynced": "Out of sync",
         "update_available": "UPDATE AVAILABLE"
     },
@@ -1326,7 +1326,7 @@
         "payments_legacy": "Send (legacy)",
         "settings": "Options",
         "showcases": "Spotlight",
-        "title": "BitShares",
+        "title": "ioBanker",
         "unlock": "Dévérouiller",
         "unlock_password": "Log in using a password",
         "unlock_short": "Login",
@@ -1980,7 +1980,7 @@
         "walletDescription": "A bin-file will be automatically created. Please download it and keep in a safe place. You’ll need to upload this file to login to your account in the future.",
         "walletLoginByValue": "Bin-file + Password",
         "walletModelTitle": "By bin-file",
-        "walletNote": "Please keep in mind, that BitShares doesn't store users passwords and couldn't recover users accounts after password loss.",
+        "walletNote": "Please keep in mind, that ioBanker DEX doesn't store users passwords and couldn't recover users accounts after password loss.",
         "whyBinFile": "Why do I need a .bin file?"
     },
     "scaled_orders": {

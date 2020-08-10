@@ -902,14 +902,11 @@ class Operation {
                     buy / sell USD
                     isBid = amount_to_sell.asset_symbol = OPEN.ETH
                     amount =
-
                     const {marketName, first, second} = marketUtils.getMarketName(base, quote);
                     const inverted = this.props.marketDirections.get(marketName);
                     // const paySymbol = base.get("symbol");
                     // const receiveSymbol = quote.get("symbol");
-
                     const isBid = o.amount_to_sell.asset_id === (inverted ? first.get("id") : second.get("id"));
-
                     let priceBase = (isBid) ? o.amount_to_sell : o.min_to_receive;
                     let priceQuote = (isBid) ? o.min_to_receive : o.amount_to_sell;
                     const amount = isBid ? op[1].min_to_receive : op[1].amount_to_sell;
@@ -1541,6 +1538,40 @@ class Operation {
                                 }
                             ]}
                         />
+                    </span>
+                );
+
+                break;
+            case "ticket_create":
+                const ticket_type = Object.keys(
+                    grapheneChainTypes.ticket_type
+                ).find(
+                    key =>
+                        grapheneChainTypes.ticket_type[key] ===
+                        op[1].target_type
+                );
+                column = (
+                    <span>
+                        <TranslateWithLinks
+                            string="operation.ticket_create"
+                            keys={[
+                                {
+                                    type: "account",
+                                    value: op[1].account,
+                                    arg: "account"
+                                },
+                                {
+                                    type: "amount",
+                                    value: op[1].amount,
+                                    arg: "amount"
+                                }
+                            ]}
+                        />
+                        &nbsp; (
+                        {counterpart.translate(
+                            "operation.ticket_types." + ticket_type
+                        )}
+                        )
                     </span>
                 );
 

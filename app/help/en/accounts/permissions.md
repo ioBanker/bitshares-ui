@@ -1,9 +1,9 @@
 # Permissions
 
-In BitShares, each account is separated into
+On BitShares Blockchain, each account is separated into
 
-* **Active Permission**: control over its funds and
-* **Owner Permission**: control over the account.
+* **Active Permission**: control over the account funds only.
+* **Owner Permission**: control over the account overall.
 
 Both can be defined in the `Permissions` tab of your account using so called
 *authorities* (see below) together with a so called *threshold* that has to be
@@ -11,7 +11,7 @@ exceeded in order for a transaction to be valid.
 
 ## Authorities
 
-In BitShares an *authority* consists of one or many entities that authorize an
+On BitShares Blockchain an *authority* consists of one or many entities that authorize an
 action, such as transfers or trades.
 
 An authority consists of one or several pairs of an account name with a
@@ -22,16 +22,16 @@ the parties has to exceed the threshold as defined in the permissions.
 
 # Examples
 
-Let's discuss some examples to shed some light on the used terminology and the
-use-cases. We assume that a new account is created with it's active permissions
+We assume that a new account is created with it's active permissions
 set as described below. Note that the same scheme also works for the owner
 permissions!
 
 ## (Flat) Multi-Signature
 
 A flat multi-signature scheme is composed of `M` entities of which `N` entities
-must sign in order for the transaction to be valid. Now, in BitShares, we have
-*weights* and a *threshold* instead of `M` and `N`. Still we can achieve the
+must sign in order for the transaction to be valid. 
+
+Now, *weights* and a *threshold* instead of `M` and `N`. Still we can achieve the
 very same thing with even more flexibility as we will see now.
 
 Let's assume, Alice, Bob, Charlie and Dennis have common funds. We want to be

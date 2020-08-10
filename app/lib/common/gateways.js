@@ -91,10 +91,15 @@ export const availableGateways = {
 	id: "IOB",
 	name: "ioxbank",
 	baseAPI: iobankerAPIs,
-	isEnabled: _isEnabled("IOB"),
+        isEnabled: _isEnabled("IOB"),
 	isSimple: true,
 	selected: false,
-	simpleAssetGateway: false,
+	simpleAssetGateway: true,
+	    fixedMemo: {	
+            prepend_default: "dex:",	
+            prepend_btsid: "Tag: ",	
+            append: ""	
+        },
 	addressValidatorMethod: "POST",
 	options: {
 		enabled: false,
