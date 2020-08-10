@@ -1805,8 +1805,7 @@
             "lock_180_days": "Locked for 180 days",	
             "lock_360_days": "Locked for 360 days",	
             "lock_720_days": "Locked for 720 days",	
-            "lock_forever": "Locked forever"	
-        },
+            "lock_forever": "Locked forever"
         }
     },
     "page404": {
