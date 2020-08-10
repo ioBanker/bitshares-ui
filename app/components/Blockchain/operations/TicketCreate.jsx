@@ -3,7 +3,7 @@ import Translate from "react-translate-component";
 import FormattedAsset from "../../Utility/FormattedAsset";
 import TranslateWithLinks from "../../Utility/TranslateWithLinks";
 import counterpart from "counterpart";
-import {ChainTypes} from "bitsharesjs";
+import {ChainTypes as grapheneChainTypes, ChainStore} from "bitsharesjs";
 
 export const TicketCreate = ({op, linkToAccount, fromComponent}) => {
     const ticket_type = Object.keys(ChainTypes.ticket_type).find(
