@@ -3,12 +3,11 @@ import Translate from "react-translate-component";
 import FormattedAsset from "../../Utility/FormattedAsset";
 import TranslateWithLinks from "../../Utility/TranslateWithLinks";
 import counterpart from "counterpart";
-import {ChainTypes} from "bitsharesjs";
-
-const {operations} = ChainTypes;
-let op = Object.keys(operations);
+import {ChainTypes, ChainStore} from "bitsharesjs";
 
 export const TicketCreate = ({op, linkToAccount, fromComponent}) => {
+    const {operations} = ChainTypes;
+    let op = Object.keys(operations);
     const ticket_type = Object.keys(ChainTypes.ticket_type).find(
         key => ChainTypes.ticket_type[key] === op[1].target_type
     );
