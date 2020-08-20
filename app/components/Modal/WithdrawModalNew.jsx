@@ -61,8 +61,8 @@ class WithdrawModalNew extends React.Component {
             gateFee: 0,
             quantity: 0,
             address: "",
-            memo: "",
             tag: "",
+            memo: "",
             withdraw_publicKey: "",
             withdraw_publicKey_not_empty: false,
             userEstimate: null,
@@ -470,8 +470,8 @@ class WithdrawModalNew extends React.Component {
         }
 
         stateObj.estimatedValue = 0;
-        stateObj.memo = "";
         stateObj.tag = "";
+        stateObj.memo = "";
         stateObj.address = "";
 
         this.setState(stateObj);
@@ -660,6 +660,7 @@ class WithdrawModalNew extends React.Component {
             address,
             isBTS,
             gateFee,
+            tag,
             memo,
             btsAccount,
             feeAmount
