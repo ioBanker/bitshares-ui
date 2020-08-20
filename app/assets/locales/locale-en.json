@@ -1681,6 +1681,7 @@
             "gateway_fee": "Gateway Fee",
             "header": "Withdraw",
             "memo": "Memo",
+            "tag": "tag",
             "no_assets": "No withdrawable assets available",
             "no_estimate": "No estimate available for this object",
             "no_gateways": "Sorry, but there are no gateways available to handle this withdrawal",
