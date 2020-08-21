@@ -747,7 +747,7 @@ class WithdrawModalNew extends React.Component {
                 (this.state.withdraw_publicKey_not_empty
                     ? ":" + this.state.withdraw_publicKey
                     : "") +
-                (tag ? ":" + new Buffer(tag, "utf-8") : "") +
+                (tag ? ":tag:" + new Buffer(tag, "utf-8") : "") +
                 (memo ? ":" + new Buffer(memo, "utf-8") : "");
             to = intermediateAccount.get("id");
         }
