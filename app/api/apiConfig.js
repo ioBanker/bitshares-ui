@@ -137,13 +137,6 @@ export const settingsAPIs = {
             contact: "telegram:bhuzor"
         },
         {
-            url: "wss://api.btsgo.net/ws",
-            region: "Southeastern Asia",
-            location: "Singapore",
-            operator: "Witness: xn-delegate",
-            contact: "wechat:Necklace"
-        },
-        {
             url: "wss://btsfullnode.bangzi.info/ws",
             region: "Western Europe",
             country: "Germany",
