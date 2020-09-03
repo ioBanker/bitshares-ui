@@ -8,7 +8,7 @@
 * **[HONEST.XAG](/asset/HONEST.XAG)** SILVER TROY OUNCE - *Asset ID 1.3.5652*
 
 ## Price Feed
-- **Collateral Ratio**: 1.6
+- **Collateral Ratio**: 1.5
 - **Liquidation Penalty**: 0-25%
 - **Interest Rate**: 0%
 - [CEX](https://github.com/litepresence/Honest-MPA-Price-Feeds/blob/master/honest/pricefeed_cex.py#L39)

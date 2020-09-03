@@ -93,14 +93,14 @@ export function getUnits() {
     if (_isTestnet()) {
         return ["TEST"];
     }
-    return ["BTS", "HONEST.BTC", "HONEST.USD", "HONEST.CNY"];
+    return ["BTS", "HONEST.BTC", "HONEST.USD", "HONEST.ETH"];
 }
 
 export function getDefaultMarket() {
     if (_isTestnet()) {
         return "BTS_TEST";
     }
-    return "HONEST.BTC_BTS";
+    return "HONEST.USD_BTS";
 }
 
 /**
@@ -112,7 +112,7 @@ export function getMyMarketsBases() {
     if (_isTestnet()) {
         return ["TEST"];
     }
-    return ["BTS", "HONEST.BTC", "HONEST.USD"];
+    return ["BTS", "HONEST.USD", "HONEST.BTC", "HONEST.ETH"];
 }
 
 /**
@@ -133,7 +133,9 @@ export function getMyMarketsQuotes() {
             "HONEST.USD",
             "HONEST.CNY",
             "HONEST.XAU",
-            "HONEST.XAG"
+            "HONEST.XAG",
+            "TWENTIX",
+            "WEYOUME"
         ],
 
         rudexTokens: [
@@ -182,6 +184,8 @@ export function getFeaturedMarkets(quotes = []) {
         ["BTS", "HONEST.XAU"],
         ["BTS", "HONEST.XAG"],
         ["BTS", "HONEST.BTC"],
+        ["BTS", "TWENTIX"], // TWENTIX
+        ["BTS", "IOB.XRP"], // IOB.XRP pairs
 
         ["HONEST.BTC", "HONEST.USD"], // HONEST.BTC pairs
         ["HONEST.BTC", "HONEST.CNY"],
@@ -196,7 +200,14 @@ export function getFeaturedMarkets(quotes = []) {
         ["HONEST.USD", "HONEST.XRP"],
         ["HONEST.USD", "HONEST.XAU"],
         ["HONEST.USD", "HONEST.XAG"],
-        ["HONEST.USD", "RUDEX.USDT"]
+        ["HONEST.USD", "RUDEX.USDT"],
+
+        ["HONEST.ETH", "HONEST.CNY"], // HONEST.ETH pairs
+        ["HONEST.ETH", "HONEST.USD"],
+        ["HONEST.ETH", "HONEST.XRP"],
+        ["HONEST.ETH", "HONEST.XAU"],
+        ["HONEST.ETH", "HONEST.XAG"],
+        ["HONEST.ETH", "RUDEX.ETH"]
     ].filter(a => {
         if (!quotes.length) return true;
         return quotes.indexOf(a[0]) !== -1;
