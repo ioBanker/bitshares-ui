@@ -151,6 +151,7 @@ export function getMyMarketsQuotes() {
             "XBTSX.STH",
             "XBTSX.DOGE",
             "XBTSX.BTC",
+            "XBTSX.BCH",
             "XBTSX.LTC",
             "XBTSX.DASH",
             "XBTSX.ETH"
