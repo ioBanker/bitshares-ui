@@ -10,6 +10,11 @@ A Bridge service is responsible for moving cryptocurrencies to and from the BitS
 - [Open a Ticket](https://support.ioxbank.com)
 
 ## IOB.XRP
+- no KYC
+- no limits
+- low market fees
+- cheap withdraw fee
+- instant swap
 
 ### Trancperancy
 - [XRP Wallet](https://bithomp.com/explorer/rDce39TBzszQJx2sshLy5jPXV3F9nEaQ9Y)
