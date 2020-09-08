@@ -13,7 +13,7 @@ A Bridge service is responsible for moving cryptocurrencies to and from the BitS
 - No KYC
 - No limits
 - Low market fees
-- Cheap withdraw fee
+- Low withdraw fee
 - Instant swap
 
 ### Trancperancy
