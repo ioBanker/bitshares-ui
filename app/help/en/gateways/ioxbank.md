@@ -16,7 +16,7 @@ A Bridge service is responsible for moving cryptocurrencies to and from the BitS
 - Instant swap
 - Min. amount: 25 XRP
 
-### Trancperancy Information
+### Transparency Information
 - [XRP Balance](https://livenet.xrpl.org/accounts/rDce39TBzszQJx2sshLy5jPXV3F9nEaQ9Y)
 - [IOB.XRP Current supply](/asset/IOB.XRP)
 
