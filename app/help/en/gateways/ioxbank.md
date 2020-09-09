@@ -1,5 +1,5 @@
 # ioxbank Instant Swap Service
-A Bridge service is responsible for moving cryptocurrencies to and from the BitShares Blockchain. You can easily identify those supported by ioxbank, because they are prefixed with the word **IOB.**.
+A Bridge service is responsible for moving cryptocurrencies to and from the BitShares Blockchain. You can easily identify those supported by ioxbank, because they are prefixed with **IOB.**.
 
 ## Website
 [https://ioxbank.com](https://support.ioxbank.com/docs)
