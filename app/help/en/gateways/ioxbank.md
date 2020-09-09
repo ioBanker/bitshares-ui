@@ -15,6 +15,7 @@ A Bridge service is responsible for moving cryptocurrencies to and from the BitS
 - Low market fees
 - Low withdraw fee
 - Instant swap
+- Min. amount: 25 XRP
 
 ### Trancperancy
 - [XRP Wallet](https://bithomp.com/explorer/rDce39TBzszQJx2sshLy5jPXV3F9nEaQ9Y)
