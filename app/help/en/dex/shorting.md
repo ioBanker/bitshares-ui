@@ -10,7 +10,7 @@ In order to provide liquidity for HONEST.Assets, you can *borrow* HONEST.Assets 
 * *Target Collateral Ratio* (TCR): Sell only enough collateral to reach TCR again.
 * *Call Price* (CP): The price at which short/borrowed positions are getting margin called.
 * *Maximum Short Squeeze Ratio* (MSSR): Max. liquidation penalty. Real penalty is dependent on market liquidity.
-* *Short Squeeze Protection* (SSP): Min. price for collateral sell. Real price is dependent on the market liquidity.
+* *Short Squeeze Protection* (SSP): ` = Call Price / MSSR` or min. price for collateral sell. Real price is dependent on the market liquidity.
 * *Force Settlement Offset* (FSO): Fee for HONEST.Asset settlement, from the HONEST.Asset holder.
 
 ## Borrowing
@@ -31,8 +31,6 @@ The borrower needs to add extra collateral or reduce the debt, before the collat
 A margin call will occur, when the *CR* is lower than the *MCR* and a bid is equal or greater than the *SSP*.
 
 `Call Price = DEBT / COLLATERAL * MCR`
-
-`SSP = Call Price / MSSR`
 
 The margin call sells collateral, to buy shares of the borrowed HONEST.Asset back and reduce the amount of debt. The remaining BTS are used as collateral, to cover the outstanding debt.
 
