@@ -60,5 +60,5 @@ particular HONEST.Asset. When the particular debt is payed back to the network, 
 
 
 - Use max. 50% of your funds as collateral
-- Keep enough HONEST.Assets for liquidity or CR adjustmens
+- Keep enough HONEST.Assets for liquidity or *CR* adjustmens
 - Keep your CR over 1.75
