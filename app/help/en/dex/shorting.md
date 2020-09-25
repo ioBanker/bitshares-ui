@@ -5,7 +5,7 @@ In order to provide liquidity for HONEST.Assets, you can *borrow* HONEST.Assets 
 ## Terms
 
 * *Feed Price*: The collateral price in the borrowed asset.
-* *Collateral Ratio* (CR) : `= Collateral/Debt`
+* *Collateral Ratio* (CR) : `= (value collateral)/(value debt)`
 * *Maintenance Collateral Ratio* (MCR): The minimum required CR.
 * *Target Collateral Ratio* (TCR): Sell only enough collateral to reach TCR again.
 * *Call Price* (CP): The price at which short/borrowed positions are getting margin called.
