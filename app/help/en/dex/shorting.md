@@ -51,8 +51,8 @@ particular HONEST.Asset. When the particular debt is payed back to the network, 
 - Buy an asset, which will increase in value or has a discount
 
 
-- Maximise total debt when collateral value is low
-- Minimise total debt when collateral value is high
+- Maximise total debt, when collateral value is low
+- Minimise total debt, when collateral value is high
 
 
 - When collateral value decreases, debt needs to be reduced
