@@ -38,7 +38,7 @@ The margin call sells collateral, to buy shares of the borrowed HONEST.Asset bac
 
 ## Settlement
 
-Holders of any HONEST.Asset can request a settlement at *feed price + FSO* at any time.
+Holders of any HONEST.Asset can request a settlement at *Feed Price + FSO* at any time.
 The settlement closes the borrow/short positions with lowest collateral ratio and sells the collateral to the asset settler.
 
 ## Covering
