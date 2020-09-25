@@ -20,7 +20,7 @@ The BitShares network is capable of minting HONEST.Asset, without any interest r
 - `Portfolio` → `Margin Position` → *click on 0.000...* → *Update Position*
 - `Exchange` → `HONEST.Asset/BTS` → `BUY BTS` → `BORROW` → *Update Position*
 
-## Selling
+## Short Selling
 
 The borrowed HONEST.Assets, can be sold for any asset on the Exchange, which provides a BTS-market pair. After buying the other asset, you are now short that particular HONEST.Asset.
 
