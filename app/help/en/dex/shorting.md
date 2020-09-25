@@ -26,7 +26,7 @@ The borrowed HONEST.Assets, can be sold for any asset, which provides a BTS-mark
 
 ## Margin Call
 
-The borrower needs to add extra collateral or reduce the debt, before the collateral value drops under the MCR, to not get margin called.
+The borrower needs to add extra collateral or reduce the debt, before the collateral value drops under the *MCR*, to not get margin called.
 
 A margin call will occur, when the *CR* is lower than the *MCR* and a bid is equal or greater than the *SSP*.
 
