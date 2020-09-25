@@ -22,7 +22,7 @@ The BitShares network is capable of minting HONEST.Asset, without any interest r
 
 ## Selling
 
-The borrowed HONEST.Assets, can be sold for any asset, which provides a BTS-market pair. After buying the other asset, you are now short that particular HONEST.Asset.
+The borrowed HONEST.Assets, can be sold for any asset on the Exchange, which provides a BTS-market pair. After buying the other asset, you are now short that particular HONEST.Asset.
 
 ## Margin Call
 
@@ -61,4 +61,4 @@ particular HONEST.Asset. When the particular debt is payed back to the network, 
 
 - Use max. 50% of your funds as collateral
 - Keep enough HONEST.Assets for liquidity or *CR* adjustmens
-- Keep your *CR* value over 1.75
+- Keep your *CR* over 1.75
