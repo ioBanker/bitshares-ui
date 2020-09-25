@@ -6,8 +6,8 @@ In order to provide liquidity for HONEST.Assets, you can *borrow* HONEST.Assets 
 
 * *Feed Price*: The collateral price in the borrowed asset.
 * *Collateral Ratio* (CR) : `= DEBT / COLLATERAL`
-* *Maintenance Collateral Ratio* (MCR): The minimum required CR.
-* *Target Collateral Ratio* (TCR): Sell only enough collateral to reach TCR again.
+* *Maintenance Collateral Ratio* (MCR): The minimum required *CR*.
+* *Target Collateral Ratio* (TCR): Sell only enough collateral to reach *TCR* again.
 * *Call Price* (CP): The price at which short/borrowed positions are getting margin called.
 * *Maximum Short Squeeze Ratio* (MSSR): Max. liquidation penalty. Real penalty is dependent on market liquidity.
 * *Short Squeeze Protection* (SSP): ` = Call Price / MSSR` or min. price for collateral sell. Real price is dependent on market liquidity.
