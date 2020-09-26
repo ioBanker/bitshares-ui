@@ -8,7 +8,7 @@ In order to provide liquidity for HONEST.Assets, you can *borrow* HONEST.Assets 
 * *Collateral Ratio* (CR) : `= DEBT / COLLATERAL`
 * *Maintenance Collateral Ratio* (MCR): The minimum required *CR*.
 * *Target Collateral Ratio* (TCR): Sell only enough collateral to reach *TCR* again.
-* *Call Price* (CP): The price at which short/borrowed positions are getting margin called.
+* *Call Price* (CP): `= DEBT / COLLATERAL * MCR` The price at which short/borrowed positions are getting margin called.
 * *Maximum Short Squeeze Ratio* (MSSR): Max. liquidation penalty. Real penalty is dependent on market liquidity.
 * *Short Squeeze Protection* (SSP): ` = Call Price / MSSR` or min. price for collateral sell. Real price is dependent on market liquidity.
 * *Force Settlement Offset* (FSO): Fee for HONEST.Asset settlement, from the HONEST.Asset holder.
@@ -30,8 +30,6 @@ The borrower needs to add extra collateral or reduce the debt, before the collat
 
 A margin call will occur, when the *CR* is lower than the *MCR* and a bid is equal or greater than the *SSP*.
 
-`Call Price = DEBT / COLLATERAL * MCR`
-
 The margin call sells collateral, to buy shares of the borrowed HONEST.Asset back and reduce the amount of debt. The remaining BTS are used as collateral, to cover the outstanding debt.
 
 ## Settlement
@@ -51,8 +49,8 @@ particular HONEST.Asset. When the particular debt is payed back to the network, 
 - Buy an asset, which will increase in value or has a discount
 
 
-- Maximise total debt, when collateral value is low
-- Minimise total debt, when collateral value is high
+- Maximize total debt, when collateral value is low
+- Minimize total debt, when collateral value is high
 
 
 - When collateral value decreases, debt needs to be reduced
@@ -60,5 +58,5 @@ particular HONEST.Asset. When the particular debt is payed back to the network, 
 
 
 - Use max. 50% of your funds as collateral
-- Keep enough HONEST.Assets for liquidity or *CR* adjustmens
+- Keep enough HONEST.Assets for liquidity or *CR* adjustments
 - Keep your *CR* over 1.75

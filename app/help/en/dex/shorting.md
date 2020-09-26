@@ -49,8 +49,8 @@ particular HONEST.Asset. When the particular debt is payed back to the network, 
 - Buy an asset, which will increase in value or has a discount
 
 
-- Maximise total debt, when collateral value is low
-- Minimise total debt, when collateral value is high
+- Maximize total debt, when collateral value is low
+- Minimize total debt, when collateral value is high
 
 
 - When collateral value decreases, debt needs to be reduced
@@ -58,5 +58,5 @@ particular HONEST.Asset. When the particular debt is payed back to the network, 
 
 
 - Use max. 50% of your funds as collateral
-- Keep enough HONEST.Assets for liquidity or *CR* adjustmens
+- Keep enough HONEST.Assets for liquidity or *CR* adjustments
 - Keep your *CR* over 1.75
