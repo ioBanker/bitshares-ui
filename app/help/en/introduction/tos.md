@@ -1,8 +1,8 @@
-# ioBanker DEX Site
+# ioBanker DEX Browser Based Software
 
 ## Support
 
->If you have an issue related to a Gateway provider, please be sure to contact them directly. See Gateways in the left menu.
+>If you have an issue related to BitShares Blockchain Assets or Gateway, please be sure to contact them directly. See Gateways in the left menu.
 
 ### Telegram Chat
 You can get help from other members of the community in real time at:
@@ -12,17 +12,17 @@ You can get help from other members of the community in real time at:
 
 # Terms of Service
 
-Thank you for choosing to visit dex.iobanker.com (the "Site"). The following terms and conditions of service (these "Terms of Service") apply to visitors of the Site. You should read these Terms of Service carefully to determine which provisions apply to you. By using any of the services, functions, or features offered from time to time on the Site (collectively or individually, the "Services"), the user (referred to herein as "you" or "your") agrees to these Terms of Service.
+Thank you for choosing ioBanker DEX Browser Based Software hosted on dex.iobanker.com (the "Site"). The following terms and conditions of service (these "Terms of Service") apply to visitors of the Site and Users of ioBanker DEX Browser Based Software. You should read these Terms of Service carefully to determine which provisions apply to you. By using any of ioBanker DEX Browser Based Software services, functions, or features offered from time to time on the Site (collectively or individually, the "Services"), the user (referred to herein as "you" or "your") agrees to these Terms of Service.
 
-By using the Site, you understand and agree that the Site is only a terminal that is interfacing with a community managed BitShares Blockchain, where decisions are not made by a single entity, but by the BitShares Blockchain Community (the “Community”).
+By using the Site, you understand and agree that the Site is only a terminal that is interfacing with a Community Managed BitShares Blockchain as is, where Blockchain contents are NOT made by a ioBanker DEX Browser Based Software, but by the BitShares Blockchain Community (the “Community”).
 
-These Terms of Service constitute the agreement and understanding with respect to the use of any or all of the Services, and any manner of accessing them, between you and ioBanker OÜ. For the avoidance of doubt, these Terms of Service have two parties: you and ioBanker OÜ. Any and all terms, conditions, licences, limitations, and obligations contained within and on the Site are incorporated into these Terms by reference, including, without limiting the generality of the foregoing, the following Site policies and pages: the Privacy Policy and the Risk Disclosure Statement. In particular, please note that all transactions of Digital Tokens on or off the Site may be subject to fees levied by BitShares Blockchain as set out and updated in the Fee Schedule from time to time. In the event of any inconsistency between these Terms of Service and any other pages or policies on the Site, these Terms of Service shall prevail.
+These Terms of Service constitute the agreement and understanding with respect to the use of any or all of the ioBanker DEX Browser Based Software Services, and any manner of accessing them, between you and ioBanker OÜ. For the avoidance of doubt, these Terms of Service have two parties: you and ioBanker OÜ. Any and all terms, conditions, licences, limitations, and obligations contained within and on the Site Software are incorporated into these Terms by reference, including, without limiting the generality of the foregoing, the following Site policies and pages: the Privacy Policy and the Risk Disclosure Statement. In particular, please note that all transactions of Blockchain Digital Tokens on or off the Site may be subject to fees levied by BitShares Blockchain as set out and updated in the Blockchain Fee Schedule from time to time by the Blockchain Community. In the event of any inconsistency between these Terms of Service and any other pages or policies on the Site, these Terms of Service shall prevail.
 
-By creating a wallet on the Site or by using any of the Services, you acknowledge that you have read, understand, and completely agree to these Terms of Service in effect from time to time. If you disagree with these Terms of Service or with any subsequent amendments, changes, or updates, you may not use any of the Services; your only recourse in the case of disagreement is to stop using all of the Services.
+By creating a wallet on the Site or by using any of ioBanker DEX Browser Based Software Services, you acknowledge that you have read, understand, and completely agree to these Terms of Service in effect from time to time. If you disagree with these Terms of Service or with any subsequent amendments, changes, or updates, you may not use any of the Software Services; your only recourse in the case of disagreement is to stop using all of the Software Services.
 
-These Terms of Service may be amended, changed, or updated by ioBanker OÜ at any time and without prior notice to you. You should check back often to confirm that your copy and understanding of these Terms of Service is current and correct. Your non-termination or continued use of any Services after the effective date of any amendments, changes, or updates constitutes your acceptance of these Terms of Service, as modified by such amendments, changes, or updates.
+These Terms of Service may be amended, changed, or updated by ioBanker OÜ at any time and without prior notice to you. You should check back often to confirm that your copy and understanding of these Terms of Service is current and correct. Your non-termination or continued use of any Software Services after the effective date of any amendments, changes, or updates constitutes your acceptance of these Terms of Service, as modified by such amendments, changes, or updates.
 
-The use of the Site and any Services is void where prohibited by applicable law.
+The use of the Site and any Software Services is void where prohibited by applicable law.
 
 
 1. Interpretation:
@@ -32,7 +32,7 @@ The use of the Site and any Services is void where prohibited by applicable law.
 1.1.1. "AML" means anti-money laundering;
 1.1.2. "Associates" means ioBanker OÜ, and each and every one of their respective shareholders, subsidiaries, employees, contractors, agents, directors, officers, partners, affiliates, insurers, and attorneys;
 1.1.3. "CTF" means counter-terrorist financing;
-1.1.4. "Digital Tokens" means Blockchain-based assets or rights, or other similar digital representations of rights or assets;
+1.1.4. "Digital Tokens" means BitShares Blockchain based assets or rights, or other similar digital representations of rights or assets issued by it's respective owners on Blockchain;
 1.1.5. “ioBanker” means ioBanker OÜ;
 
 1.1.6. “BitShares Blockchain” means the BitShares Blockchain hosted by Validator, Accelerator and Witness nodes described in the documentation here: https://github.com/bitshares/bitshares-core/wiki
@@ -44,7 +44,7 @@ The use of the Site and any Services is void where prohibited by applicable law.
 1.1.9. "Personal Information" means information about an identifiable individual, business, organization, or other entity, but does not include the name, title, business address, or telephone number of an employee of a business, organization, or other entity;
 1.1.10. "Prohibited Jurisdictions" means USA, Belarus, Central African Republic, Democratic Republic of Congo, Democratic People’s Republic of Korea, the Crimea region of Ukraine, Croatia, Cuba, Iran, Iraq, Kosovo, Lebanon, Libya, Moldova, Somalia, Sudan, South Sudan, Syria, Venezuela, Yemen, and Zimbabwe.
 1.1.11. "Prohibited Use" has the meaning set out in paragraph 6 of these Terms of Service;
-1.1.12. "Service" means any of the services, functions, or features offered on or through the Site;
+1.1.12. "Service" means any of the broswer based software services, functions, or features offered on or through the Site;
 1.1.13. "Site" means the Internet website dex.iobanker.com;
 1.1.14. "Terms of Service" means these terms and conditions of service, as they may be changed, amended, or updated from time to time without prior notice to you, including the following Site policies and pages: the Privacy Policy and the Risk Disclosure Statement.
 1.1.15. "Trading Order Book" has the meaning set out in paragraph 3 of these Terms of Service;
@@ -58,7 +58,7 @@ The use of the Site and any Services is void where prohibited by applicable law.
 1.1.16.2.1. a Person resident in the United States; or,
 1.1.16.2.2. a Person owned 10% or more by one or more Persons resident in the United States or by one or more corporations or entities incorporated in or formed in the United States; and,
 
-1.1.17 “Wallet” means a combination of a user’s public address and corresponding private key (or mnemonic phrase or brain-key file with password) that holds any Digital Tokens that are created and/or received on BitShares Blockchain, which may associate with corresponding transactions related to this address.
+1.1.17 “Wallet” means a combination of a user’s public address and corresponding private key (or mnemonic phrase or brain-key file with password) that holds any Digital Tokens that are created and/or received on BitShares Blockchain, which may associate with corresponding transactions related to this address on the Blockchain.
 
 1.1.18. "you" or "your" means the user.
 
@@ -67,7 +67,7 @@ The use of the Site and any Services is void where prohibited by applicable law.
 1.3. Extended Meanings: Unless otherwise specified in these Terms of Service, words importing the singular include the plural and vice versa and words importing gender include all genders.
 
 
-2. Licence to Use the Site: If you comply with these Terms of Service, ioBanker grants you the limited right to use the Site and the Services. The right to use the Site and the Services is a non-exclusive, non-transferable, revocable, limited licence, and it is subject to the limitations and obligations in these Terms of Service. Nothing in these Terms of Service gives you any licence (other than as set out in this paragraph), right, title, or ownership of, in, or to the Site or any of the Services.
+2. Licence to Use the Site: If you comply with these Terms of Service, ioBanker grants you the limited right to use the Site and the Software Services. The right to use the Site and the Software Services is a non-exclusive, non-transferable, revocable, limited licence, and it is subject to the limitations and obligations in these Terms of Service. Nothing in these Terms of Service gives you any licence (other than as set out in this paragraph), right, title, or ownership of, in, or to the Site or any of the Software Services.
 
 3. Trading Activities: The Site is a trading, discussion, and information environment for the purchase and sale of Digital Tokens. The Site permits only unfinanced transactions. Unfinanced purchases are fully funded by trading participants through funds owned by you. For example, if you have $100.00 worth of Digital Tokens in your wallet on the Site, you may then trade or sell those Digital Tokens for other Digital Tokens. Purchases and sales of Digital Tokens through the Site are settled by delivery of the full amount of the Digital Tokens by the seller to the purchaser’s wallet against payment in full by the purchaser to the seller’s wallet, with fees deducted.
 
@@ -78,38 +78,38 @@ Important: The following persons are prohibited from depositing into, withdrawin
 3.2. U.S. Persons.
 
 
-Risks and Limitation of Liability: Important: This paragraph is in addition to the the Risk Disclosure Statement. Trading markets are volatile and shift quickly in terms of liquidity, market depth, and trading dynamics. You are solely responsible and liable: for any and all trading and non-trading activity on or through the Site and for your wallet on the Site; and, for knowing the true status of any position or contract with any other party on the Site, even if presented incorrectly by the Site at any time. You acknowledge and agree: to be fully responsible and liable for your trading and non-trading actions and inactions on or through the Site and all gains and losses sustained from your use of the Site and any of the Services; to be responsible for any negative balance in your wallet(s) on the Site; to be fully responsible and liable for all of your obligations with respect to any financing activities on the Site; and, to be fully responsible for safeguarding access to, and any information provided through, the Site and any of the Services, including, but not limited to, private keys, public keys, key seeds and address details. There is no guarantee against losses on or through the Site.
+Risks and Limitation of Liability: Important: This paragraph is in addition to the the Risk Disclosure Statement. Trading markets are volatile and shift quickly in terms of liquidity, market depth, and trading dynamics. You are solely responsible and liable: for any and all trading and non-trading activity on or through the Site and for your wallet on the Site; and, for knowing the true status of any position or contract with any other party on the Site, even if presented incorrectly by the Site at any time. You acknowledge and agree: to be fully responsible and liable for your trading and non-trading actions and inactions on or through the Site and all gains and losses sustained from your use of the Site and any of the Software Services; to be responsible for any negative balance in your wallet(s) on the Site; to be fully responsible and liable for all of your obligations with respect to any financing activities on the Site; and, to be fully responsible for safeguarding access to, and any information provided through, the Site and any of the Software Services, including, but not limited to, private keys, public keys, key seeds and address details. There is no guarantee against losses on or through the Site.
 
 
-4. Wallet: In order to use ioBanker DEX. you have to create your own brain-key files, passwords, mnemonic phrases and/or private keys. PLEASE KEEP ALL OF THEM SAFE. YOU ARE SOLELY RESPONSIBLE FOR ANY LOSS TO YOUR WALLET. YOUR WALLET IS NOT ACCESSIBLE BY ioBanker, AND ioBanker WILL NOT KEEP YOUR brain-key FILES, PASSWORDS, MNEMONIC PHRASES AND/OR PRIVATE KEYS.
+4. Wallet: In order to use ioBanker DEX Browser Based Software. you have to create your own brain-key files, passwords, mnemonic phrases and/or private keys on BitShares Blockchain. PLEASE KEEP ALL OF THEM SAFE. YOU ARE SOLELY RESPONSIBLE FOR ANY LOSS TO YOUR WALLET. YOUR WALLET IS NOT ACCESSIBLE BY ioBanker, AND ioBanker WILL NOT KEEP YOUR brain-key FILES, PASSWORDS, MNEMONIC PHRASES AND/OR PRIVATE KEYS.
 
 
 5. No Class Proceedings: You and ioBanker agree that any party hereto may bring claims against the others only on an individual basis and not as a plaintiff or class member in any purported class or representative action or proceeding. No adjudicator may consolidate or join more than one person’s or party’s claims and may not otherwise preside over any form of a consolidated, representative, or class proceeding. Any relief awarded to any one ioBanker user cannot and may not affect any other ioBanker users.
 
 6. Prohibited Uses: You may not:
 
-6.1. use the Site or any Services in order to disguise the proceeds of, or to further, any breach of applicable laws or regulations, or to deal in any contraband Digital Tokens, funds, or proceeds;
+6.1. use the Site or any Browser Based Software Services in order to disguise the proceeds of, or to further, any breach of applicable laws or regulations, or to deal in any contraband Blockchain Digital Tokens, funds, or proceeds;
 
-6.2. trade or obtain financing on or through the Site, or use any Services, with anything other than funds, keys, or Digital Tokens that have been legally obtained by you and that belong to you;
+6.2. trade or obtain financing on or through the Site, or use any Software Services, with anything other than Blockchain funds, keys, or Digital Tokens that have been legally obtained by you and that belong to you;
 
-6.3. use the Site or any Services to interfere with or subvert the rights or obligations of ioBanker or the rights or obligations of any other Site user or any other third party;
+6.3. use the Site or any Software Services to interfere with or subvert the rights or obligations of ioBanker or the rights or obligations of any other Site user or any other third party;
 
 6.4. trade using inaccurate information presented by the Site or by ioBanker or take advantage of any technical glitch, malfunction, failure, delay, default, or security breach;
 
-6.5. use the Site or any Services to engage in conduct that is detrimental to ioBanker or to any other Site user or any other third party;
+6.5. use the Site or any Software Services to engage in conduct that is detrimental to ioBanker or to any other Site user or any other third party;
 
 6.6. reverse-engineer, decompile, or disassemble any close-sourced or proprietary software running on the Site;
 
-6.7. attempt to harm ioBanker or any third party through your access to the Site or any Services, except that nothing in this sub-paragraph shall be construed as limiting your free speech rights under applicable law;
+6.7. attempt to harm ioBanker or any third party through your access to the Site or any Software Services, except that nothing in this sub-paragraph shall be construed as limiting your free speech rights under applicable law;
 
-6.8. where you are a resident or national of a Prohibited Jurisdiction or a U.S. Person, access the Site or any Services using any virtual private network, proxy service, or any other third party service, network, or product with the intent of disguising your IP address or location; or,
+6.8. where you are a resident or national of a Prohibited Jurisdiction or a U.S. Person, access the Site or any Software Services using any virtual private network, proxy service, or any other third party service, network, or product with the intent of disguising your IP address or location; or,
 
 6.9. violate these Terms of Service.
 
 Any use as described in this paragraph shall constitute a "Prohibited Use". If ioBanker determines that you have engaged in any Prohibited Use, ioBanker may address such Prohibited Use at its discretion.
 
 
-7. Anti-Money Laundering and Counter-Terrorist Financing: ioBanker is committed to providing you with safe, compliant, and reputable Services. Accordingly, ioBanker insists on a comprehensive and thorough user due diligence process and implementation and ongoing analysis and reporting. This includes monitoring of and for suspicious transactions and mandatory reporting to international regulators. ioBanker needs to keep certain information and documentation on file pursuant to applicable law and its contractual relationships, and ioBanker hereby expressly reserves the right to keep such information and documentation. This will apply even when you terminate your relationship with ioBanker or abandon your wallet and related applications.
+7. Anti-Money Laundering and Counter-Terrorist Financing: ioBanker is committed to providing you with safe, compliant, and reputable Software Services. Accordingly, ioBanker insists on a comprehensive and thorough user due diligence process and implementation and ongoing analysis and reporting. This includes monitoring of and for suspicious transactions and mandatory reporting to international regulators. ioBanker needs to keep certain information and documentation on file pursuant to applicable law and its contractual relationships, and ioBanker hereby expressly reserves the right to keep such information and documentation. This will apply even when you terminate your relationship with ioBanker or abandon your wallet and related applications.
 
 
 ioBanker and BitShares Blockchain community reserves the right to refuse service of the Site, or to bar transactions from or to, or terminate any relationship with, any user for any reason (or for no reason) at any time. Without limiting the generality of the foregoing, this includes, but is not limited to, anyone from or in jurisdictions that do not meet international AML/CTF standards as set out by the FATF; anyone that is a Politically Exposed Person within the meaning of the FATF’s 40 Recommendations; or, anyone that fails to meet any user due diligence standards, requests, or requirements of ioBanker and BitShares Blockchain community. At all times, you may be subject to enhanced user due diligence procedures in your use of the Site and any Service.
@@ -119,12 +119,12 @@ ioBanker and BitShares Blockchain community reserves the right to refuse service
 8.1. that, if you are an individual user, you are 18 years of age or older and that you have the capacity to contract under applicable law;
 8.2. that, if you are not an individual user, you have the requisite power and authority to sign and enter into binding agreements for and on behalf of the user;
 8.3. that you understand the risks associated with using the Site, that you are not barred from using the Site by paragraph 3 of these Terms, and that you are not otherwise prohibited by applicable law from using the Site;
-8.4. that you will not use the Site or any Services in order to disguise the proceeds of, or to further, any breach of applicable laws or regulations, or to deal in any contraband Digital Tokens or proceeds;
-8.5. that you will not trade or obtain financing on or through the Site or use any Services with anything other than funds or Digital Tokens that have been legally obtained by you and that belong to you;
+8.4. that you will not use the Site or any Software Services in order to disguise the proceeds of, or to further, any breach of applicable laws or regulations, or to deal in any contraband Digital Tokens or proceeds;
+8.5. that you will not trade or obtain financing on or through the Site or use any Software Services with anything other than funds or Digital Tokens that have been legally obtained by you and that belong to you;
 8.6. that any trading or other instructions received or undertaken through your signature credentials are deemed to be valid, binding, and conclusive, and that ioBanker may act upon those instructions without any liability or responsibility attaching to it; and,
 8.7. that you will fairly and promptly report all income associated with your activity on the Site pursuant to applicable law and pay any and all taxes exigible thereon.
 
-9. No Representations & Warranties by ioBanker: ioBanker makes no representations, warranties, or guarantees to you of any kind. The Site and the Services are offered strictly on an as-is, where-is basis and, without limiting the generality of the foregoing, are offered without any representation as to merchantability or fitness for any particular purpose.
+9. No Representations & Warranties by ioBanker: ioBanker makes no representations, warranties, or guarantees to you of any kind. The Site and the Software Services are offered strictly on an as-is, where-is basis and, without limiting the generality of the foregoing, are offered without any representation as to merchantability or fitness for any particular purpose.
 
 10. No Advice: ioBanker does not provide any investment advice or advice on trading techniques, models, algorithms, or any other schemes.
 
@@ -134,7 +134,7 @@ ioBanker and BitShares Blockchain community reserves the right to refuse service
 
 11.2. the Site, and your use of it;
 
-11.3. the Services, and your use of any of them;
+11.3. the Software Services, and your use of any of them;
 
 11.4. the real or perceived value of any currencies or Digital Tokens traded on the BitShares Blockchain, or the price of any Digital Token displayed on the Site at any time;
 
@@ -159,14 +159,14 @@ You hereby agree to release the Associates from liability for any and all Losses
 
 Site Websocket or API Terms of Service [wss://dex.iobanker.com:9090]:
 
-The following terms and conditions (the “Site Websocket or API Terms of Service”) govern your access to, and use, of our proprietary application programming interface, including our ‘Site API’ or ‘Site Websocket’ (collectively, the “Site API”) and the related documentation, the current version of which is located at  https://github.com/bitshares/bitshares-core/wiki/API (the “BitShares API Documentation”), all of which are designed to facilitate your access to, and use of, our Services (as defined in the Terms of Service).
+The following terms and conditions (the “Site Websocket or API Terms of Service”) govern your access to, and use, of our proprietary application programming interface, including our ‘Site API’ or ‘Site Websocket’ (collectively, the “Site API”) and the related documentation, the current version of which is located at  https://github.com/bitshares/bitshares-core/wiki/API (the “BitShares API Documentation”), all of which are designed to facilitate your access to, and use of, our Software Services (as defined in the Terms of Service).
 
 
 1. Use of the Site API and BitShares API Documentation:
 
 1.1. Use of the Site API. Subject to your compliance with the terms and conditions hereunder, you may use the Site API solely in accordance with these API Terms of Service and the BitShares API Documentation.
 
-1.2. License to Site API Documentation. We hereby grant to you a revocable, non-exclusive, non-sublicensable, non-transferrable license to access and use the Site API Documentation solely to facilitate your development of applications that interface with the Services in accordance with these API Terms of Service and the Site API Documentation (each such application, an “Application”).
+1.2. License to Site API Documentation. We hereby grant to you a revocable, non-exclusive, non-sublicensable, non-transferrable license to access and use the Site API Documentation solely to facilitate your development of applications that interface with the Software Services in accordance with these API Terms of Service and the Site API Documentation (each such application, an “Application”).
 
 1.3. Open Source Site API. by using the source code you acknowledge and understand that it is your responsibility to review such licenses carefully and to comply with the terms and conditions contained therein.
 
@@ -197,15 +197,15 @@ The following terms and conditions (the “Site Websocket or API Terms of Servic
 
 2.2.4. contain any viruses or other computer programming routines that may damage, detrimentally interfere with, surreptitiously intercept, or expropriate any system or data
 
-2.2.5. replicate or attempt to replace the essential user experience of the Services or any of our other products or services
+2.2.5. replicate or attempt to replace the essential user experience of the Software Services or any of our other products or services
 
 2.2.6. otherwise violate any applicable Law
 
 2.2. modify, decompile, reverse engineer, or otherwise alter the Site API
 
-2.3. use the Site API in any manner that may threaten the security or functionality of the Site API or our Services
+2.3. use the Site API in any manner that may threaten the security or functionality of the Site API or our Software Services
 
-2.4. use the Site API to circumvent the intended features, functionality or limitations of the Services
+2.4. use the Site API to circumvent the intended features, functionality or limitations of the Software Services
 
 2.5. perform any vulnerability, penetration or similar testing on the Site API
 
@@ -218,7 +218,7 @@ The following terms and conditions (the “Site Websocket or API Terms of Servic
 
 3.1.2. that we collect from your usage of the Site API, to:
 
-3.1.2.1. develop, enhance and make available the Site API and the Services
+3.1.2.1. develop, enhance and make available the Site API and the Software Services
 
 3.1.2.2. to produce data, information or other materials that are not identified as relating to you or any particular individual or company (such data, information and materials, the “Aggregated Statistical Information”).
 
@@ -256,7 +256,7 @@ All rights (including intellectual property rights), title and interest in and t
 
 8. Interpretation
 
-In the event of any conflict or inconsistency between the API Terms of Service or the Terms of Service, these API Terms of Service will prevail to the extent of such conflict or inconsistency, except that for the purposes of these API Terms of Service, the term “Services” will, for greater clarity, include making available the Site API and BitShares API Documentation to you.
+In the event of any conflict or inconsistency between the API Terms of Service or the Terms of Service, these API Terms of Service will prevail to the extent of such conflict or inconsistency, except that for the purposes of these API Terms of Service, the term “Software Services” will, for greater clarity, include making available the Site API and BitShares API Documentation to you.
 
 
 9. Change to API Terms of Service
@@ -301,7 +301,7 @@ The data controller of your Personal Information is ioBanker OÜ.
 
 1.1. Information you give us. This is information about you that you give us by: Creating a BitShares Blockchain wallet; Trading on Site.
 
-1.2. Information we collect about you. Each time you use the Services, we may automatically collect the following information, which may be considered to be Personal Information when combined with other information about you: technical information, including the Internet protocol (IP) address used to connect your computer or other device to the Internet, browser type and version, time zone setting, browser plug-in types and versions, operating system and platform; and information about your visit, including the dates and times you use the Site length of visits to certain pages, page interaction information (such as scrolling, clicks, and mouse-overs), methods used to browse away from the page. Special categories of data:
+1.2. Information we collect about you. Each time you use the Software Services, we may automatically collect the following information, which may be considered to be Personal Information when combined with other information about you: technical information, including the Internet protocol (IP) address used to connect your computer or other device to the Internet, browser type and version, time zone setting, browser plug-in types and versions, operating system and platform; and information about your visit, including the dates and times you use the Site length of visits to certain pages, page interaction information (such as scrolling, clicks, and mouse-overs), methods used to browse away from the page. Special categories of data:
 
 1.2.1. We do not collect any special categories of Personal Information about you (this includes details about your race or ethnicity, religious or philosophical beliefs, sex life, sexual orientation, political opinions, trade union membership, information about your health and genetic and biometric data).
 
@@ -310,7 +310,7 @@ The data controller of your Personal Information is ioBanker OÜ.
 
 2. Purposes for which we collect your Personal Information.
 
-If you wish to transact on and use the Site or use the Services, ioBanker will collect information about you for the purposes set out below. Information you provide to us may be used to:
+If you wish to transact on and use the Site or use the Software Services, ioBanker will collect information about you for the purposes set out below. Information you provide to us may be used to:
 
 2.1. establish and maintain a responsible commercial relationship with you;
 
@@ -362,11 +362,11 @@ ioBanker uses IP addresses to analyse trends, administer the Site, track user mo
 
 5.1.1. Any member of our group, which means our subsidiaries, our ultimate holding company and its subsidiaries including their respective contractors, affiliates, employees or representatives
 
-5.1.2. Our service providers, to the extent necessary to supply the Services to you;
+5.1.2. Our service providers, to the extent necessary to supply the Software Services to you;
 
 Token issuers in the event you elect to contribute to their token
 
-5.1.3. Selected third parties, including identity verification sites and analytic and search engine providers that assist us in the improvement and optimization of the Services. Authorities and law enforcement agencies worldwide either when ordered to do so or on a voluntary basis if this appears reasonable and necessary to us.
+5.1.3. Selected third parties, including identity verification sites and analytic and search engine providers that assist us in the improvement and optimization of the Software Services. Authorities and law enforcement agencies worldwide either when ordered to do so or on a voluntary basis if this appears reasonable and necessary to us.
 
 5.2. We will also disclose your Personal Information to third parties:
 
