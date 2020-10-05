@@ -1,8 +1,28 @@
-# ioBanker DEX Browser Based Software
+# ioBanker DEX Platform
 
-## Support
 
->If you have an issue related to BitShares Blockchain Assets or Gateway, please be sure to contact them directly. See Gateways in the left menu.
+## About ioBanker DEX Platform
+
+ioBanker DEX Platform is a browser based decentralized exchange client module developed on top of the BitShares blockchain.
+
+The main focuses for the design of ioBanker DEX and BitShares Blockchain are:
+
+    No custody of funds: traders maintain control of their private keys and funds.
+    High performance: low latency, high throughput for a large user base, and high liquidity trading.
+    Low cost: in both fees and liquidity cost.
+    Easy user experience.
+    Fair trading: minimize front-running, to the extent possible.
+    Evolvable: able to develop with forever-improving technology stack, architecture, and ideas.
+
+What can you do with ioBanker DEX terminal on BitShares Blockchain?
+
+You can:
+
+    Login with your private keys on the blockchain directly to Send and receive BTS
+    Issue new tokens
+    Send, receive, burn/issue and freeze/unfreeze tokens
+    Propose to create trading pairs between two different tokens
+    Send orders to buy or sell assets through trading pairs created on the chain
 
 ### Telegram Chat
 You can get help from other members of the community in real time at:
