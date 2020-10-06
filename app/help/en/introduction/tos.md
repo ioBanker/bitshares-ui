@@ -3,7 +3,7 @@
 
 ## About ioBanker DEX Platform
 
-ioBanker DEX Platform is a browser based decentralized client module developed on top of the BitShares blockchain.
+ioBanker DEX Platform is a browser based decentralized blockchain client module developed on top of the BitShares blockchain.
 
 The main focuses for the design of ioBanker DEX platform and BitShares Blockchain are:
 
