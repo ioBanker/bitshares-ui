@@ -39,7 +39,7 @@ You can get help from other members of the community in real time at:
 
 # Terms of Service
 
-Thank you for choosing ioBanker DEX Browser Based Software hosted on dex.iobanker.com (the "Site"). The following terms and conditions of service (these "Terms of Service") apply to visitors of the Site and Users of ioBanker DEX Browser Based Software. You should read these Terms of Service carefully to determine which provisions apply to you. By using any of ioBanker DEX Browser Based Software services, functions, or features offered from time to time on the Site (collectively or individually, the "Services"), the user (referred to herein as "you" or "your") agrees to these Terms of Service.
+Thank you for choosing ioBanker DEX; the browser based decentralized blockchain client module hosted on dex.iobanker.com (the "Site"). The following terms and conditions of service (these "Terms of Service") apply to visitors of the Site and Users of ioBanker DEX Browser Based Software. You should read these Terms of Service carefully to determine which provisions apply to you. By using any of ioBanker DEX Browser Based Software services, functions, or features offered from time to time on the Site (collectively or individually, the "Services"), the user (referred to herein as "you" or "your") agrees to these Terms of Service.
 
 By using the Site, you understand and agree that the Site is only a terminal that is interfacing with a Community Managed BitShares Blockchain as is, where Blockchain contents are NOT made by a ioBanker DEX Browser Based Software, but by the BitShares Blockchain Community (the “Community”).
 
