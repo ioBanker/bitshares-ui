@@ -5,6 +5,14 @@
 
 ioBanker DEX Platform is a browser based decentralized blockchain client module developed on top of the BitShares blockchain.
 
+BitShares is a decentralized permissionless “Blockchain As Organization” (BAO) network; a powerful innovation in which its core asset BTS is being utilized as an organization proof of stake and utility token to satisfy Blockchain users financial means in a form of smart transactions fully stored on each node within its decentralized network. 
+
+BTS core asset is also used for BitShares development purposes; while BTS asset shareholders are in power to manage and develop BitShares and influence it's future using several decentralized integrated functions and tools such as decentralized worker and voting system. 
+
+BitShares Blockchain is very similar to public companies and open joint-stock companies yet it's not required to be registered nor trusted. 
+
+BitShares is trustless, permissionless and fully managed on the internet. BitShares had enabled several blockchain functions at its single core such as DEX decentralized exchange engine, DeFi and AMM enabled assets factory and HTLC.
+
 The main focuses for the design of ioBanker DEX platform and BitShares Blockchain are:
 
     No custody of funds: traders maintain control of their own private keys and funds.
