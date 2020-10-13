@@ -6,7 +6,7 @@
     * [DEXbot](dex/dexbot.md)
 
 * [HONEST MPAs](assets/mpa.md)
-    * [Short Selling](dex/shorting.md)
+    * [Margin Position](dex/margin.md)
 
 * [Blockchain](introduction/blockchain.md)
 

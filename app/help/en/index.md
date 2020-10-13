@@ -21,7 +21,7 @@ of this application.
 
 ## [Decentralized Exchange](dex/introduction.md)
  * [Trading](dex/trading.md)
- * [Short Selling](dex/shorting.md)
+ * [Margin Position](dex/margin.md)
  * [DEXbot](dex/dexbot.md)
 
 ## Development

@@ -507,10 +507,8 @@ class SettingsStore {
             let marketID10 = "BTS" + "_" + "HONEST.BTC";
             let marketID11 = "BTS" + "_" + "HONEST.USD";
             let marketID12 = "IOB.XRP" + "_" + "BTS";
-            let marketID13 = "RUDEX.ETH" + "_" + "HONEST.ETH";
-            let marketID14 = "BTS" + "_" + "HONEST.ETH";
-            let marketID15 = "HONEST.USD" + "_" + "HONEST.ETH";
-            let marketID16 = "HONEST.ETH" + "_" + "HONEST.USD";
+            let marketID13 = "IOB.XRP" + "_" + "HONEST.USD";
+            let marketID14 = "EUR" + "_" + "HONEST.USD";
             let marketID17 = "TWENTIX" + "_" + "BTS";
 
             this.starredMarkets = this.starredMarkets.set(marketID, {
@@ -564,22 +562,12 @@ class SettingsStore {
             });
 
             this.starredMarkets = this.starredMarkets.set(marketID13, {
-                quote: "RUDEX.ETH",
-                base: "HONEST.ETH"
+                quote: "IOB.XRP",
+                base: "HONEST.USD"
             });
 
             this.starredMarkets = this.starredMarkets.set(marketID14, {
-                quote: "BTS",
-                base: "HONEST.ETH"
-            });
-
-            this.starredMarkets = this.starredMarkets.set(marketID15, {
-                quote: "HONEST.USD",
-                base: "HONEST.ETH"
-            });
-
-            this.starredMarkets = this.starredMarkets.set(marketID16, {
-                quote: "HONEST.ETH",
+                quote: "EUR",
                 base: "HONEST.USD"
             });
 
