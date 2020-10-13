@@ -93,7 +93,7 @@ export function getUnits() {
     if (_isTestnet()) {
         return ["TEST"];
     }
-    return ["BTS", "HONEST.BTC", "HONEST.USD", "HONEST.ETH"];
+    return ["BTS", "HONEST.BTC", "HONEST.USD"];
 }
 
 export function getDefaultMarket() {
@@ -112,7 +112,7 @@ export function getMyMarketsBases() {
     if (_isTestnet()) {
         return ["TEST"];
     }
-    return ["BTS", "HONEST.USD", "HONEST.BTC", "HONEST.ETH"];
+    return ["BTS", "HONEST.USD", "HONEST.BTC"];
 }
 
 /**
@@ -201,13 +201,9 @@ export function getFeaturedMarkets(quotes = []) {
         ["HONEST.USD", "HONEST.XAU"],
         ["HONEST.USD", "HONEST.XAG"],
         ["HONEST.USD", "RUDEX.USDT"],
+        ["HONEST.USD", "EUR"],
+        ["HONEST.USD", "IOB.XRP"]
 
-        ["HONEST.ETH", "HONEST.CNY"], // HONEST.ETH pairs
-        ["HONEST.ETH", "HONEST.USD"],
-        ["HONEST.ETH", "HONEST.XRP"],
-        ["HONEST.ETH", "HONEST.XAU"],
-        ["HONEST.ETH", "HONEST.XAG"],
-        ["HONEST.ETH", "RUDEX.ETH"]
     ].filter(a => {
         if (!quotes.length) return true;
         return quotes.indexOf(a[0]) !== -1;
