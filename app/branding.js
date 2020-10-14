@@ -42,7 +42,7 @@ export function getWalletURL() {
  */
 export function getFaucet() {
     return {
-        url: "https://faucet.bitshares.eu/65097bd7ef684532", // 2017-12-infrastructure worker proposal
+        url: "https://faucet.xbts.io",
         show: false,
         editable: false,
         referrer: "iobanker-core"
@@ -127,6 +127,7 @@ export function getMyMarketsQuotes() {
     let tokens = {
         nativeTokens: [
             "BTS",
+            "EUR",
             "HONEST.BTC",
             "HONEST.ETH",
             "HONEST.XRP",
