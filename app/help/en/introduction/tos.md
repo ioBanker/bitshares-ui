@@ -25,11 +25,11 @@ What can you do with ioBanker DEX platform on BitShares Blockchain?
 
 You can:
 
-Login to BitShares with your private keys to Send and receive BTS
-Issue new tokens on BitShares Blockchain
-Send, receive, burn/issue and freeze/unfreeze tokens on BitShares Blockchain
-Propose transactions and send memos on BitShares Blockchain
-Send orders to buy or sell assets through trading pairs created on BitShares Blockchain
+Login to BitShares with your private keys to Send and receive BTS.
+Issue new tokens on BitShares Blockchain.
+Send, receive, burn/issue and freeze/unfreeze tokens on BitShares Blockchain.
+Propose transactions and send memos on BitShares Blockchain.
+Send orders to buy or sell assets through trading pairs created on BitShares Blockchain.
 
 ### Telegram Chat
 
