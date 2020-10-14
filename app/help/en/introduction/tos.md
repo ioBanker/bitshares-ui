@@ -15,21 +15,21 @@ BitShares is trustless, permissionless and fully managed on the internet. BitSha
 
 The main focuses for the design of ioBanker DEX platform and BitShares Blockchain are:
 
-    No custody of funds: traders maintain control of their own private keys and funds.
-    High performance: low latency, high throughput for a large user base, and high liquidity trading.
-    Low cost: in both fees and liquidity cost.
-    Fair trading: minimize front-running, to the extent possible.
-    Evolvable: able to develop with forever-improving technology stack, architecture, and ideas.
+No custody of funds: traders maintain control of their own private keys and funds.
+High performance: low latency, high throughput for a large user base, and high liquidity trading.
+Low cost: in both fees and liquidity cost.
+Fair trading: minimize front-running, to the extent possible.
+Evolvable: able to develop with forever-improving technology stack, architecture, and ideas.
 
 What can you do with ioBanker DEX platform on BitShares Blockchain?
 
 You can:
 
-    Login to BitShares with your private keys to Send and receive BTS
-    Issue new tokens on BitShares Blockchain
-    Send, receive, burn/issue and freeze/unfreeze tokens on BitShares Blockchain
-    Propose transactions and send memos on BitShares Blockchain
-    Send orders to buy or sell assets through trading pairs created on BitShares Blockchain
+Login to BitShares with your private keys to Send and receive BTS
+Issue new tokens on BitShares Blockchain
+Send, receive, burn/issue and freeze/unfreeze tokens on BitShares Blockchain
+Propose transactions and send memos on BitShares Blockchain
+Send orders to buy or sell assets through trading pairs created on BitShares Blockchain
 
 ### Telegram Chat
 
