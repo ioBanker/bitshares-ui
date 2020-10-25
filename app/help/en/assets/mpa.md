@@ -8,7 +8,7 @@
 * **[HONEST.XAG](/asset/HONEST.XAG)** SILVER TROY OUNCE - *Asset ID 1.3.5652*
 
 ## Price Feed
-- **Collateral Ratio**: 1.5
+- **Maintenance Collateral Ratio**: 1.5
 - **Liquidation Penalty**: 0-25%
 - **Interest Rate**: 0%
 - [CEX](https://github.com/litepresence/Honest-MPA-Price-Feeds/blob/master/honest/pricefeed_cex.py#L39)
@@ -38,7 +38,8 @@
 * Under no circumstance should monetary policy induce an MPA to become pegged to the backing asset (typically BTS).
 * Under no circumstance should monetary policy induce an MPA to become frozen by the chain - "supergao".
 
-## More information
+## More Information
+* [Telegram](https://t.me/onestcommunity)
 * [bitsharestalk.org](https://bitsharestalk.org/index.php?topic=32035)
 * [github.com](https://github.com/litepresence/Honest-MPA-Price-Feeds)
 * [Whitepaper](https://github.com/litepresence/Honest-MPA-Price-Feeds/blob/master/docs/whitepaper.md)

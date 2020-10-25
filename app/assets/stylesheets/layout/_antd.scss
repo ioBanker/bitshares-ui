@@ -5,6 +5,9 @@
 */
 
 /* Exchange Overrides */
+body.darkTheme .ant-btn-icon-only {
+    padding: 0 0px !important;
+}
 .darkTheme .button span {color: #fff !important;}
 div.account-creation {
     width: 35rem !important;

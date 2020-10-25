@@ -5,9 +5,9 @@ function createNotifcationString() {
             {
                 type: "warning",
                 begin_date: "16.05.2019",
-                end_date: "31.12.2019",
+                end_date: "31.12.2020",
                 content:
-                    "Please be aware of scam attempts using Proposed Transactions in your Dashboard. Never approve a proposal if you are not expecting one!"
+                    "Please be aware of scam attempts using Assets and Proposed Transactions. Never approve a proposal if you are not expecting one!"
             },
             {
                 type: "info",
