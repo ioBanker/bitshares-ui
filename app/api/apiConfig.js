@@ -91,6 +91,14 @@ export const settingsAPIs = {
             contact: "email:admin@iobanker.com"
         },
         {
+            url: "wss://nexus01.co.uk/ws",
+            region: "Northern Europe",
+            country: "England",
+            location: "Gloucester",
+            operator: "Witness: nexus01",
+            contact: "telegram:rosswlkr"
+        },
+        {
             url: "wss://ws.gdex.top",
             region: "Eastern Asia",
             country: "China",
@@ -110,8 +118,8 @@ export const settingsAPIs = {
             url: "wss://eu.nodes.bitshares.ws",
             region: "Western Europe",
             country: "Germany",
-            operator: "Infrastructure Worker",
-            contact: "email:info@blockchainprojectsbv.com"
+            operator: "Witness: blocksights",
+            contact: "telegram:sschiessl"
         },
         {
             url: "wss://api.bts.mobi/ws",
@@ -152,7 +160,14 @@ export const settingsAPIs = {
             operator: "Witness: zapata42-witness",
             contact: "telegram:Zapata_42"
         },
-
+        {
+            url: "wss://public.xbts.io/ws",
+            region: "Europe",
+            country: "Germany",
+            location: "Nürnberg",
+            operator: "Witness: xbtsio-wallet",
+            contact: "telegram:EuropaSH"
+        },
         // Testnet
         {
             url: "wss://node.testnet.bitshares.eu",
