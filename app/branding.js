@@ -260,7 +260,7 @@ export function getConfigurationAsset() {
     if (_isTestnet()) {
         assetSymbol = "NOTIFICATIONS";
     } else {
-        assetSymbol = "TEST";
+        assetSymbol = null;
     }
     // explanation will be parsed out of the asset description (via split)
     return {
