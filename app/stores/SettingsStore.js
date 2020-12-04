@@ -508,7 +508,7 @@ class SettingsStore {
             let marketID11 = "BTS" + "_" + "HONEST.USD";
             let marketID12 = "IOB.XRP" + "_" + "BTS";
             let marketID13 = "IOB.XRP" + "_" + "HONEST.USD";
-            let marketID14 = "EUR" + "_" + "HONEST.USD";
+            let marketID14 = "CNY" + "_" + "HONEST.USD";
             let marketID17 = "TWENTIX" + "_" + "BTS";
 
             this.starredMarkets = this.starredMarkets.set(marketID, {
@@ -567,7 +567,7 @@ class SettingsStore {
             });
 
             this.starredMarkets = this.starredMarkets.set(marketID14, {
-                quote: "EUR",
+                quote: "CNY",
                 base: "HONEST.USD"
             });
 
