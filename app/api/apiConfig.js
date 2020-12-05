@@ -145,14 +145,6 @@ export const settingsAPIs = {
             contact: "telegram:bhuzor"
         },
         {
-            url: "wss://btsfullnode.bangzi.info/ws",
-            region: "Western Europe",
-            country: "Germany",
-            location: "Munich",
-            operator: "Witness: Bangzi",
-            contact: "telegram:Bangzi"
-        },
-        {
             url: "wss://api.dex.trading/",
             region: "Western Europe",
             country: "France",
