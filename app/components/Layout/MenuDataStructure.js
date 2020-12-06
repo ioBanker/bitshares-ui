@@ -237,8 +237,8 @@ class MenuDataStructure {
                 },
                 text: "modal.deposit.submit",
                 submenu: {
-                    target: "/deposit-withdraw",
-                    text: "header.deposit_legacy",
+                    target: "",
+                    text: "",
                     disabled: !state.enableDepositWithdraw
                 },
                 disabled: !state.enableDepositWithdraw,
@@ -249,8 +249,8 @@ class MenuDataStructure {
                 icon: "withdraw",
                 text: "modal.withdraw.submit",
                 submenu: {
-                    target: "/deposit-withdraw",
-                    text: "header.withdraw_legacy",
+                    target: "",
+                    text: "",
                     disabled: !state.enableDepositWithdraw
                 },
                 disabled: !state.enableDepositWithdraw,
