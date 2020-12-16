@@ -82,7 +82,7 @@ class AccountVoting extends React.Component {
         this.onPublish = this.onPublish.bind(this);
         this.onReset = this.onReset.bind(this);
         this._getVoteObjects = this._getVoteObjects.bind(this);
-        
+
         this.showCreateLockModal = this.showCreateLockModal.bind(this);
         this.hideCreateLockModal = this.hideCreateLockModal.bind(this);
     }
@@ -102,7 +102,7 @@ class AccountVoting extends React.Component {
     shouldComponentUpdate(np, ns) {
         return (
             ns.isCreateLockModalVisible !=
-            this.state.isCreateLockModalVisible ||
+                this.state.isCreateLockModalVisible ||
             np.location.pathname !== this.props.location.pathname ||
             ns.prev_proxy_account_id !== this.state.prev_proxy_account_id ||
             ns.hideLegacyProposals !== this.state.hideLegacyProposals ||
@@ -622,14 +622,10 @@ class AccountVoting extends React.Component {
                     }}
                 >
                     <Button type="primary" onClick={this.showCreateLockModal}>
-                       <Translate content="voting.increase_voting_power" />
+                        <Translate content="voting.increase_voting_power" />
                     </Button>
                 </div>
             </Tooltip>
-        );
-        console.log(
-            this.state.isCreateLockModalVisible,
-            this.state.isCreateLockModalVisibleBefore
         );
         return (
             <div className="main-content grid-content">
@@ -717,7 +713,7 @@ class AccountVoting extends React.Component {
                         })}
                     </Tabs>
                 </div>
-                                {/* CreateLock Modal */}
+                {/* CreateLock Modal */}
                 {(this.state.isCreateLockModalVisible ||
                     this.state.isCreateLockModalVisibleBefore) && (
                     <CreateLockModal
@@ -726,10 +722,6 @@ class AccountVoting extends React.Component {
                         asset={"1.3.0"}
                         account={this.props.account}
                     />
-                )}
-                {(this.state.isCreateLockModalVisible ||
-                    this.state.isCreateLockModalVisibleBefore) && (
-                    <div>fff fff fff</div>
                 )}
             </div>
         );
@@ -747,6 +739,7 @@ class AccountVoting extends React.Component {
             isCreateLockModalVisible: false
         });
     }
+
     _getBudgets(globalObject) {
         let budgetObject;
         if (this.state.lastBudgetObject) {
