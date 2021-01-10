@@ -146,7 +146,7 @@
         "bignumber.js": "^4.0.0",
         "bitshares-report": "git+https://github.com/iobanker/bitshares-report.git#22d5cac2432016149dd7534c8e0bd747d33e92d0",
         "bitshares-ui-style-guide": "git+https://github.com/bitshares/bitshares-ui-style-guide.git#23ca108d47442dc70634797fb113d1e751e9b1cb",
-        "bitsharesjs": "git+https://github.com/iobanker/bitsharesjs.git#bb718f294fa54c38ad6d6a6a4e3682562747d309",
+        "bitsharesjs": "git+https://github.com/iobanker/bitsharesjs.git#ebe1777b68c76027dbcdaf3349e743ca88030b7b",
         "browser-locale": "^1.0.3",
         "classnames": "^2.2.1",
         "cookies-js": "^1.2.1",
