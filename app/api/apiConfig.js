@@ -196,11 +196,11 @@ export const settingsAPIs = {
     ],
     ES_WRAPPER_LIST: [
         {
-            url: "https://kibana.bts.mobi",
-            region: "N/A",
-            country: "N/A",
-            operator: "N/A",
-            contact: "N/A"
+            url: "https://api.bitshares.ws/openexplorer",
+            region: "Western Europe",
+            country: "Germany",
+            operator: "blocksights.info",
+            contact: "bitshares:blocksights"
         }
     ],
     DEFAULT_FAUCET: getFaucet().url,
