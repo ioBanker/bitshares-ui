@@ -145,14 +145,6 @@ export const settingsAPIs = {
             contact: "telegram:bhuzor"
         },
         {
-            url: "wss://btsfullnode.bangzi.info/ws",
-            region: "Western Europe",
-            country: "Germany",
-            location: "Munich",
-            operator: "Witness: Bangzi",
-            contact: "telegram:Bangzi"
-        },
-        {
             url: "wss://api.dex.trading/",
             region: "Western Europe",
             country: "France",
@@ -204,11 +196,11 @@ export const settingsAPIs = {
     ],
     ES_WRAPPER_LIST: [
         {
-            url: "https://kibana.bts.mobi",
-            region: "N/A",
-            country: "N/A",
-            operator: "N/A",
-            contact: "N/A"
+            url: "https://api.bitshares.ws/openexplorer",
+            region: "Western Europe",
+            country: "Germany",
+            operator: "blocksights.info",
+            contact: "bitshares:blocksights"
         }
     ],
     DEFAULT_FAUCET: getFaucet().url,

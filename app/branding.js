@@ -127,7 +127,9 @@ export function getMyMarketsQuotes() {
     let tokens = {
         nativeTokens: [
             "BTS",
+            "CNY",
             "EUR",
+            "RUBLE",
             "HONEST.BTC",
             "HONEST.ETH",
             "HONEST.XRP",
@@ -204,7 +206,6 @@ export function getFeaturedMarkets(quotes = []) {
         ["HONEST.USD", "RUDEX.USDT"],
         ["HONEST.USD", "EUR"],
         ["HONEST.USD", "IOB.XRP"]
-
     ].filter(a => {
         if (!quotes.length) return true;
         return quotes.indexOf(a[0]) !== -1;
@@ -229,7 +230,7 @@ export function getAssetNamespaces() {
  */
 export function getAssetHideNamespaces() {
     // e..g "OPEN.", "bit"
-    return ["HONEST."];
+    return [];
 }
 
 /**

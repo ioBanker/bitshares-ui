@@ -18,6 +18,7 @@ require("file-loader?name=asset-symbols/[name].png!./xau.png");
 
 // BitAssets
 require("file-loader?name=asset-symbols/[name].png!./pic/eur.png");
+require("file-loader?name=asset-symbols/[name].png!./pic/ruble.png");
 
 // 3rd party assets
 require("file-loader?name=asset-symbols/[name].png!./twentix.png");
