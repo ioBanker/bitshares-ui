@@ -99,12 +99,28 @@ export const settingsAPIs = {
             contact: "telegram:rosswlkr"
         },
         {
+            url: "wss://api.iamredbar.com/ws",
+            region: "New Jersey",
+            country: "U.S.A.",
+            location: "Clifton",
+            operator: "Witness: iamredbar",
+            contact: "telegram:iamredbar"
+        },
+        {
             url: "wss://ws.gdex.top",
             region: "Eastern Asia",
             country: "China",
             location: "Shanghai",
             operator: "Witness: gdex-witness",
             contact: "telegram:BrianZhang"
+        },
+        {
+            url: "wss://api.61bts.com",
+            region: "Zhejiang",
+            country: "China",
+            location: "Hangzhou",
+            operator: "Witness: gbac-ety001",
+            contact: "email:work@domyself.me"
         },
         {
             url: "wss://api.weaccount.cn",
