@@ -107,6 +107,22 @@ export const settingsAPIs = {
             contact: "telegram:iamredbar"
         },
         {
+            url: "wss://tokyo.bitshares.im/ws",
+            region: "Eastern Asia",
+            country: "Japan",
+            location: "Tokyo",
+            operator: "Witness: clone",
+            contact: "telegram: yexiao"
+        },
+        {
+            url: "wss://bangalore.bitshares.im/ws",
+            region: "South Asia",
+            country: "India",
+            location: "Bangalore",
+            operator: "Witness: clone",
+            contact: "telegram: yexiao"
+        },
+        {
             url: "wss://ws.gdex.top",
             region: "Eastern Asia",
             country: "China",
