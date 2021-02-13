@@ -59,21 +59,21 @@ particular HONEST.Asset. When the particular debt is payed back to the network, 
 - When collateral value increases, debt can be increased
 
 
-- Use max. 50% of your funds as collateral
+- Use max. 50% of your total funds as collateral
 - Keep enough HONEST.Assets for liquidity or *CR* adjustments
-- Keep your *CR* over 1.75
+- Keep your *CR* over 1.75 - 2.0
 
 ## Poolmart Staking
 Both assets are needed in equal amounts at the current pool price.
 Different debt and debt asset allocations are used, to stake a long or short position.
 
-**MPA long - Collateral Short:**
-Sell 50% of the collateral for the MPA part.
+**HONEST.Asset Long - Collateral Short:**
+Sell 50% of the collateral for the HONEST part.
 
-**MPA/Collateral Neutral:**
-Borrow the 50% MPA part and add an extra 50% collateral.
+**HONEST.Asset/Collateral Neutral:**
+Borrow the 50% HONEST part and add an extra 50% collateral.
 
-**MPA Short - Collateral Long:**
-Use all collateral for borrowing. Sell 50% of your borrowed MPA for the collateral part.
+**HONEST.Asset Short - Collateral Long:**
+Use all collateral for borrowing. Sell 50% of your borrowed assets for the collateral part.
 
 Reducing a short or long position can also be archived by selling the pool-token for the other asset, instead of withdrawing the assets from the pool.  
