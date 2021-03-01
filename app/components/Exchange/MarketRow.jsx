@@ -36,11 +36,12 @@ class MarketRow extends React.Component {
             this.props.quote.get &&
             this.props.quote.get("id")
         ) {
-        this.statsInterval = MarketsActions.getMarketStatsInterval(
-            35 * 1000,
-            this.props.base,
-            this.props.quote
-        );
+            this.statsInterval = MarketsActions.getMarketStatsInterval(
+                35 * 1000,
+                this.props.base,
+                this.props.quote
+            );
+        }
     }
 
     componentWillUnmount() {
