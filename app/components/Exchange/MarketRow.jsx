@@ -30,6 +30,12 @@ class MarketRow extends React.Component {
 
     componentDidMount() {
         this.statsChecked = new Date();
+        if (
+            this.props.base.get &&
+            this.props.base.get("id") &&
+            this.props.quote.get &&
+            this.props.quote.get("id")
+        ) {
         this.statsInterval = MarketsActions.getMarketStatsInterval(
             35 * 1000,
             this.props.base,
