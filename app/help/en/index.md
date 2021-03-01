@@ -26,6 +26,5 @@ of this application.
 
 ## Development
  * [ioBanker UI Github](https://github.com/ioBanker/bitshares-ui)
- * [HackTheDEX](introduction/hackthedex.md)
 
 ----------
