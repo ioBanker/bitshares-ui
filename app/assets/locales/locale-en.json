@@ -137,6 +137,7 @@
         "new_user": "New user?",
         "no_order_history": "No order history",
         "no_orders": "No open orders",
+        "no_trades": "No last trades",
         "no_price": "--",
         "open_orders": "Open Orders",
         "optional": {
@@ -1294,12 +1295,12 @@
             "support_block": "For support, please contact XBTS at:",
             "under_construction": "Under Construction"
         },
-      "iobanker": {
-                "coming_soon": "Coming soon",
-                "min_amount": "Minimum amount: %(minAmount)s %(symbol)s",
-                "min_amount_error": "Please enter number >= minimum",
-                "support_block": "For support, please contact ioxbank at:",
-                "under_construction": "Under Construction"
+        "iobanker": {
+            "coming_soon": "Coming soon",
+            "min_amount": "Minimum amount: %(minAmount)s %(symbol)s",
+            "min_amount_error": "Please enter number >= minimum",
+            "support_block": "For support, please contact ioxbank at:",
+            "under_construction": "Under Construction"
         },
         "your_account": "Your account"
     },
@@ -1589,7 +1590,7 @@
             "amount": "Amount to Convert",
             "submit": "Ok"
         },
-         "create_lock": {
+        "create_lock": {
             "amount": "Amount to lock",
             "from": "Account to lock from",
             "targetType": "Lock Type",
@@ -1812,9 +1813,9 @@
             "3": "Claimable 720 days after unlock request",
             "4": "Locked forever",
             "liquid": "Liquid",
-            "lock_180_days": "Claimable 180 days after unlock request",	
-            "lock_360_days": "Claimable 360 days after unlock request",	
-            "lock_720_days": "Claimable 720 days after unlock request",	
+            "lock_180_days": "Claimable 180 days after unlock request",
+            "lock_360_days": "Claimable 360 days after unlock request",
+            "lock_720_days": "Claimable 720 days after unlock request",
             "lock_forever": "Locked forever"
         }
     },
