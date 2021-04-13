@@ -344,6 +344,30 @@
             "white_list": "Require holders to be white-listed",
             "witness_fed_asset": "Allow witnesses to provide feeds"
         },
+	"liquidity_pools": {
+            "asset_a": "Asset A",
+            "asset_a_balance": "Asset A Balance",
+            "asset_b": "Asset B",
+            "asset_b_balance": "Asset B Balance",
+            "create_pool": "Create Pool",
+            "delete": "Delete",
+            "liquidity_pools": "Liquidity Pools",
+            "pool_name": "Pool Name",
+            "pool_balance": "Pool Balance",
+            "stake_status": "Stake/Unstake",
+            "title": "Pools",
+            "taker_fee": "Taker Fee",
+	    "unstake_fee": "Unstake Fee",
+            "alert_asset_a": "ID of ASSET A should be greater than ID of ASSET B",
+            "alert_asset_b": "ID of ASSET B should be smaller than ID of ASSET A",
+            "alert_taker_fee": "",
+            "alert_unstack_fee": "",
+            "alert_request_input_pool": "Please select pool",
+            "alert_request_input_asset_a": "Please select ASSET A",
+            "alert_request_input_asset_b": "Please select ASSET B",
+            "alert_request_input_taker_fee": "Please input taker fee",
+            "alert_request_input_unstack_fee": "Please input unstacke fee"
+        },
         "vesting": {
             "balance_number": "Balance #%(id)s",
             "explain": "Vesting balances contain any fees earned through the referral program or from worker pay, for example. They have a certain vesting period and are continually unlocked during that vesting period until all of the balances are available",
@@ -1295,12 +1319,12 @@
             "support_block": "For support, please contact XBTS at:",
             "under_construction": "Under Construction"
         },
-        "iobanker": {
-            "coming_soon": "Coming soon",
-            "min_amount": "Minimum amount: %(minAmount)s %(symbol)s",
-            "min_amount_error": "Please enter number >= minimum",
-            "support_block": "For support, please contact ioxbank at:",
-            "under_construction": "Under Construction"
+      "iobanker": {
+                "coming_soon": "Coming soon",
+                "min_amount": "Minimum amount: %(minAmount)s %(symbol)s",
+                "min_amount_error": "Please enter number >= minimum",
+                "support_block": "For support, please contact ioxbank at:",
+                "under_construction": "Under Construction"
         },
         "your_account": "Your account"
     },
@@ -1340,6 +1364,7 @@
         "logout": "Logout",
         "payments": "Send",
         "payments_legacy": "or Legacy Send",
+	"poolmart": "Poolmart",
         "settings": "Settings",
         "showcases": "Spotlight",
         "title": "%(wallet_name)s UI",
@@ -1439,6 +1464,9 @@
             "add_contact": "Add contact to the list",
             "show_asset": "Show asset",
             "show_market": "Show market"
+        },
+	"poolmart": {
+            "title": "Poolmart"
         },
         "power": "Login",
         "question_circle": "Help",
@@ -1590,7 +1618,7 @@
             "amount": "Amount to Convert",
             "submit": "Ok"
         },
-        "create_lock": {
+         "create_lock": {
             "amount": "Amount to lock",
             "from": "Account to lock from",
             "targetType": "Lock Type",
@@ -1813,9 +1841,9 @@
             "3": "Claimable 720 days after unlock request",
             "4": "Locked forever",
             "liquid": "Liquid",
-            "lock_180_days": "Claimable 180 days after unlock request",
-            "lock_360_days": "Claimable 360 days after unlock request",
-            "lock_720_days": "Claimable 720 days after unlock request",
+            "lock_180_days": "Claimable 180 days after unlock request",	
+            "lock_360_days": "Claimable 360 days after unlock request",	
+            "lock_720_days": "Claimable 720 days after unlock request",	
             "lock_forever": "Locked forever"
         }
     },
@@ -1829,6 +1857,29 @@
     "pagination": {
         "newer": "Newer",
         "older": "Older"
+    },
+    "poolmart": {
+        "liquidity_pools": {
+            "amount_to_sell": "Amount to sell",
+            "asset_a": "Asset A",
+            "asset_b": "Asset B",
+            "asset_a_qty": "Asset A QTY",
+            "asset_b_qty": "Asset B QTY",
+            "exchange": "Exchange",
+            "min_to_receive": "Min to receive",
+            "need_stake_first": "Need Stake The Pool First!",
+            "pool_id": "Pool Id",
+            "share_asset": "Share Asset",
+            "stake_unstake": "Stake/Unstake",
+            "taker_fee_percent": "Taker Fee",
+            "taker_fee_percent_rate": "Taker Fee Rate",
+            "title": "Pools",
+            "withdrawal_fee_percent": "Withdrawal Fee",
+            "stake": "Stake",
+            "unstake": "Unstake",
+	    "delete_pool": "Delete",
+            "confirm_delete_pool": "Are you sure you want to delete the pool?"
+        }
     },
     "prediction": {
         "add_opinion_modal": {
