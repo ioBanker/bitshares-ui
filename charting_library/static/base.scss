@@ -1,7 +1,7 @@
 // main colors
 
-$primary-background: #001e34 !default;
-$primary-border-color: #001e34 !default;
+$primary-background: #383838 !default;
+$primary-border-color: #535353 !default;
 $primary-background-active: $primary-border-color !default;
 
 $primary-text-color: #bababa !default;
@@ -31,12 +31,12 @@ $icon-light-color-active: $primary-text-color-active !default;
 
 
 body.chart-page, .loading-indicator {
-  background: #001e34;
+  background: $primary-background;
 }
 
 .chart-page .chart-container {
   border: none;
-  background: #001e34;
+  background: $primary-background;
 }
 
 .header-chart-panel .group {
@@ -128,7 +128,7 @@ input.symbol-edit,
     height: 42px !important;
     .header-chart-panel-content {
       padding: 5px !important;
-      background: #001e34;
+      background: $primary-background;
 
       .button, .apply-common-tooltip {
         border: 1px solid $layout-top-button-border-color !important;
@@ -137,7 +137,7 @@ input.symbol-edit,
 
       // template button border
       .favored-list-container .submenu {
-        border-color: #001e34;
+        border-color: $primary-background;
       }
 
     }
@@ -533,10 +533,10 @@ input.symbol-edit,
 
 .layout__area--left {
   [class|=separator] {
-    background-color: #001e34;
+    background-color: $primary-border-color;
   }
   [class|=inner] {
-    background: #001e34;
+    background: $primary-background;
     [class|=buttonIcon] {
       color: $primary-text-color;
     }
@@ -624,11 +624,11 @@ input.symbol-edit,
 
 [class|=menuWrap] {
   [class|=menu] {
-    background-color: #001e34 !important;
+    background-color: $primary-background !important;
     [class|=item] {
       cursor: pointer;
       color: $primary-text-color;
-      background-color: #001e34 !important;
+      background-color: $primary-background !important;
       [class|=labelRow] {
         color: $primary-text-color !important;
       }
