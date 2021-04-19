@@ -160,6 +160,7 @@ export function getMyMarketsQuotes() {
             "XBTSX.LTC",
             "XBTSX.DASH",
             "XBTSX.ETH",
+            "XBTSX.USDT",
             "XBTSX.XRP"
             
         ],
