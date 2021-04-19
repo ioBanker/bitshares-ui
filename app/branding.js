@@ -130,6 +130,7 @@ export function getMyMarketsQuotes() {
             "CNY",
             "EUR",
             "RUBLE",
+            "USD",
             "HONEST.BTC",
             "HONEST.ETH",
             "HONEST.XRP",
@@ -147,7 +148,8 @@ export function getMyMarketsQuotes() {
             "RUDEX.EOS",
             "RUDEX.USDT",
             "RUDEX.WLS",
-            "RUDEX.SMOKE"
+            "RUDEX.SMOKE",
+            "RUDEX.XMR"
         ],
 
         xbtsxTokens: [
@@ -157,10 +159,11 @@ export function getMyMarketsQuotes() {
             "XBTSX.BCH",
             "XBTSX.LTC",
             "XBTSX.DASH",
-            "XBTSX.ETH"
+            "XBTSX.ETH",
+            "XBTSX.XRP"
+            
         ],
-        iobankerTokens: ["IOB.XRP"],
-        otherTokens: ["SOUNDAC.XSD"]
+        iobankerTokens: ["IOB.XRP"]
     };
 
     let allTokens = [];
@@ -221,7 +224,7 @@ export function getAssetNamespaces() {
     if (_isTestnet()) {
         return [];
     }
-    return ["HONEST.", "XBTSX.", "RUDEX.", "SOUNDAC.", "IOB."];
+    return ["HONEST.", "XBTSX.", "RUDEX.", "IOB."];
 }
 
 /**
