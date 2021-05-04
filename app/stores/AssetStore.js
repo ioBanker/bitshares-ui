@@ -72,21 +72,21 @@ class AssetStore extends BaseStore {
                     }
                 }
 
-                if (asset.bitasset_data_id) {
-                    asset.market_asset = true;
-
-                    for (var i = 0; i < payload.bitasset_data.length; i++) {
-                        if (
-                            payload.bitasset_data[i].id ===
-                            asset.bitasset_data_id
-                        ) {
-                            asset.bitasset_data = payload.bitasset_data[i];
-                            break;
-                        }
-                    }
-                } else {
-                    asset.market_asset = false;
-                }
+//                if (asset.bitasset_data_id) {
+//                    asset.market_asset = true;
+//
+//                    for (var i = 0; i < payload.bitasset_data.length; i++) {
+//                        if (
+//                            payload.bitasset_data[i].id ===
+//                            asset.bitasset_data_id
+//                        ) {
+//                            asset.bitasset_data = payload.bitasset_data[i];
+//                            break;
+//                        }
+//                    }
+//                } else {
+//                    asset.market_asset = false;
+//                }
 
                 this.assets = this.assets.set(asset.id, asset);
 
