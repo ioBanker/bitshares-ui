@@ -99,14 +99,6 @@ export const settingsAPIs = {
             contact: "telegram:rosswlkr"
         },
         {
-            url: "wss://ws.gdex.top",
-            region: "Eastern Asia",
-            country: "China",
-            location: "Shanghai",
-            operator: "Witness: gdex-witness",
-            contact: "telegram:BrianZhang"
-        },
-        {
             url: "wss://api.weaccount.cn",
             region: "Eastern Asia",
             country: "China",
