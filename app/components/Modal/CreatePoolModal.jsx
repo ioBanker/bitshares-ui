@@ -144,7 +144,7 @@ class CreatePoolModal extends React.Component {
 
     componentWillReceiveProps(nextProps) {
         if (nextProps.marketPickerAsset !== this.props.marketPickerAsset)
-            this.setState(this.initialState());
+//            this.setState(this.initialState());
         console.log("componentWillReceiveProps is invoked.");
         if (nextProps.searchList !== this.props.searchList)
         if (this.state.searchAssetA) {
@@ -246,12 +246,13 @@ class CreatePoolModal extends React.Component {
 
     onCancel() {
         this.props.hideModal();
+	this.setState(this._getInitialState());
         this.onClose();
     }
 
     onClose() {
-        // this.setState(this._getInitialState());
-        this.onCancel();
+        this.setState(this._getInitialState());
+//        this.onCancel();
     }
 
     onCreatePool() {
@@ -318,31 +319,37 @@ class CreatePoolModal extends React.Component {
 
             if (nAssetA_id > nAssetB_id)
             {
-                this.setState(
-                    {
-                        showAlertChangeAssetA: true
-                    }
-                );
-                return;
-            }
+console.log(this.state.assetsB[1]["quote"], this.state.assetsA[1]["quote"]);
+ApplicationApi.liquidityPoolCreate(this.props.account, this.state.assetsB[1]["quote"], this.state.assetsA[1]["quote"], this.state.poolName, this.state.takerFee * 100.0,
+this.state.unstakeFee * 100.0);//.then(() => {
+//if (this.timer) {
+//clearTimeout(this.timer);
+//}
+//this.timer = setTimeout(() => {
+//PoolmartActions.getLiquidityPoolsAccount.defer(this.props.account_name);
+//}, 500);
+//});
+this.props.hideModal();
+}else{
+console.log(this.state.assetsA[1]["quote"], this.state.assetsB[1]["quote"]);
 
             ApplicationApi.liquidityPoolCreate(this.props.account, this.state.assetsA[1]["quote"], this.state.assetsB[1]["quote"], this.state.poolName, this.state.takerFee * 100.0,
-            this.state.unstakeFee * 100.0).then(() => {
+            this.state.unstakeFee * 100.0);//.then(() => {
 
-                if (this.timer) {
-                    clearTimeout(this.timer);
-                }
-                this.timer = setTimeout(() => {
-                    PoolmartActions.getLiquidityPoolsAccount.defer(this.props.account_name);
-                }, 500);
-
-            });
+//                if (this.timer) {
+//                    clearTimeout(this.timer);
+//                }
+//                this.timer = setTimeout(() => {
+//                    PoolmartActions.getLiquidityPoolsAccount.defer(this.props.account_name);
+//                }, 500);
+//
+//            });
 
             this.props.hideModal();
         }
+}
 
-
-        // this.onCancel();
+        this.onCancel();
     }
 
     onPoolNameChange(getBackedAssets, e) {
