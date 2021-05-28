@@ -216,7 +216,8 @@ class MenuDataStructure {
             }),
             poolmart: state => ({
                 includePattern: "/poolmart/",
-                target: state.poolmartUrl,
+                //target: state.poolmartUrl,
+                target: "/poolmart/liquidity-pools",
                 icon: {name: "poolmart", title: "icons.poolmart.title"},
                 text: "header.poolmart",
                 inHeaderBehavior: MenuItemType.Always,
