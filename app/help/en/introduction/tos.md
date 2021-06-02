@@ -7,7 +7,9 @@ ioBanker DEX Platform is a browser based decentralized blockchain client module 
 
 ioBanker DEX Platform is a client interface for BitShares Blockchain which might be subjected to supervision and control by various regulatory bodies around the world.
 
-ioBanker DEX Platform and BitShares Blockchain are not offering any investment, the means behind using it are decided by it's solo BitShares Blockchain user.
+ioBanker DEX Platform and BitShares Blockchain are not offering any financial service nor any investment, the means behind using it are decided by it's solo BitShares Blockchain user.
+
+ioBanker DEX Platform and BitShares Blockchain are not selling utility tokens, liquidity provider tokens, governance tokens or any issued tokens; any selling or buying orders are just an information and the means of their own creators on the Blockchain.
 
 BitShares Blockchain issued assets are not a “surrogate currency”.
 
