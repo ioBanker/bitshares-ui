@@ -10,7 +10,7 @@ In order to provide liquidity for HONEST.Assets, you can *borrow* HONEST.Assets 
 * *Target Collateral Ratio* (TCR): Sell only enough collateral to reach *TCR* again.
 * *Call Price* (CP): `= DEBT / COLLATERAL * MCR`
 The price at which short/borrowed positions are getting margin called.
-* *Maximum Short Squeeze Ratio* (MSSR): Max. liquidation penalty. Real penalty is dependent on market liquidity.
+* *Maximum Short Squeeze Ratio* (MSSR): ` =  Feed Price / Call Price` = max. liquidation penalty. Real penalty is dependent on market liquidity. 
 * *Short Squeeze Protection* (SSP): ` = Call Price / MSSR`
 Min. price for collateral sell. Real price is dependent on market liquidity.
 * *Force Settlement Offset* (FSO): Fee for HONEST.Asset settlement, from the HONEST.Asset holder.
@@ -61,7 +61,7 @@ particular HONEST.Asset. When the particular debt is payed back to the network, 
 
 - Use max. 50% of your total funds as collateral
 - Keep enough HONEST.Assets for liquidity or *CR* adjustments
-- Keep your *CR* over 1.75 - 2.0
+- Keep your *CR* over 2.0
 
 ## Poolmart Staking
 Both assets are needed in equal amounts at the current pool price.
