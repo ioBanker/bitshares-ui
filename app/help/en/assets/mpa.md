@@ -14,7 +14,7 @@
 
 ## Price Feed
 - **Maintenance Collateral Ratio**: 1.5
-- **Liquidation Penalty**: 0-25%
+- **Liquidation Penalty**: 0-13%
 - **Interest Rate**: 0%
 - [CEX](https://github.com/litepresence/Honest-MPA-Price-Feeds/blob/master/honest/pricefeed_cex.py#L39)
 - [Forex](https://github.com/litepresence/Honest-MPA-Price-Feeds/blob/master/honest/pricefeed_forex.py#L34)
